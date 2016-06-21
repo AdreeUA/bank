@@ -2,16 +2,11 @@ mixin submenu(data)
     +b.UL.submenu&attributes(attributes)
         each ent2, num2 in data
 
-            if (ent2.submenu)
-                - var mainMenuDropdownClass = '_dropdown'
-            else
-                - var mainMenuDropdownClass = ''
-
-            +e.item(class="#{mainMenuDropdownClass}")
+            +e.item
                 +e.link(href="#{ent2.link}") #{ent2.title}
 
             if (ent2.submenu)
-                //+e.UL.sub
                 each ent3, num3 in ent2.submenu
+
                     +e.sub-item
                         +e.sub-link(href="#{ent3.link}") #{ent3.title}

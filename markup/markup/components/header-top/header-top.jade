@@ -4,12 +4,15 @@ include ../main-nav/main-nav
 
 mixin header-top(data)
     +b.HEADER.header-top&attributes(attributes)
-        +logo.__logo
-        +search.__search
-        +e.notification
-            +e.user
-                | Афанасий Белосельский-Белозерский
-            +e.notification-phone
-            +e.notification-message
-                +e.SPAN.notification-count 29
+        .container.header-top__inner
+            +logo.__logo
+            +search.__search
+            +e.notification
+                +e.A.user(href="#")
+                    +e.user-avatar
+                        +e.IMG.user-avatar-img(src="__static__img/content/avatar.png" alt="Афанасий Белосельский-Белозерский")
+                    +e.user-name Афанасий <br> Белосельский-Белозерский
+                +e.notification-phone
+                +e.notification-message
+                    +e.SPAN.notification-count 29
         +main-nav(mainNav.defaults).__menu

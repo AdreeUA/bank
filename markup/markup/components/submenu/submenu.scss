@@ -1,14 +1,12 @@
 .submenu {
-    position: absolute;
-    top: rem(-8);
-    left: 0;
+    position: relative;
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
-    border: 2px solid #ededed;
+    border: 2px solid #dadbdb;
     padding: rem(17) 0 rem(15) !important;
 
     text-align: left;
@@ -19,16 +17,6 @@
 
         padding-left: rem(21);
         width: 20%;
-
-        &::before{
-            position: absolute;
-            right: 0;
-
-            height: 140%;
-            border-right: 1px solid #dadbdb;
-
-            content: '';
-        }
     }
 
     &__item{

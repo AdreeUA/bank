@@ -46,6 +46,21 @@
             .main-nav__submenu{
                display: block;
            }
+            
+            .main-nav__link{
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    bottom: rem(-2);
+                    z-index: 2;
+
+                    width: 100%;
+                    height: rem(3);
+
+                    background-color: #fff;
+                    content: '';
+                }
+            }
         }
 
     }
@@ -53,6 +68,7 @@
     &__link{
         padding-top: rem(19);
         padding-bottom: rem(15);
+        position: relative;
 
         display: block;
 
@@ -66,7 +82,7 @@
 
     &__submenu{
         position: absolute;
-        top: rem(70);
+        top: rem(61.2);
         left: 0;
 
         display: none;

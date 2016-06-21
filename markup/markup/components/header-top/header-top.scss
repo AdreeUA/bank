@@ -1,24 +1,20 @@
 .header-top{
     padding-bottom: rem(28);
 
-    @include clearfix;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__menu{
         margin-top: rem(28);
     }
 
-    &__logo{
-        margin-right: rem(87);
-    }
-
-    &__search{
-        margin-top: rem(17);
-    }
-
     &__notification{
-        float: right;
-
-        margin-top: rem(17);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         color: #58595b;
         font-size: rem(14);
@@ -28,32 +24,50 @@
     &__notification-message{
         position: relative;
 
-        display: inline-block;
-        vertical-align: top;
+        cursor: pointer;
 
-        width: 33px;
-        height: 33px;
-        background-color: #ddd;
+        &::before{
+            font-family: glyphicons;
+            font-size: rem(37);
+        }
     }
 
     &__user{
-        display: inline-block;
-        vertical-align: top;
-
-        max-width: rem(187);
+        display: flex;
+        align-items: center;
+        max-width: rem(260);
         margin-right: rem(59);
 
         text-align: left;
+        font-size: rem(14);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__user-avatar{
+        margin-right: rem(10);
     }
 
     &__notification-phone{
         margin-right: rem(34);
+
+        &::before{
+            content: '\e183';
+        }
+    }
+
+    &__notification-message{
+
+        &::before{
+            content: '\e123';
+            //font-size: rem(35);
+        }
     }
 
     &__notification-count{
         position: absolute;
-        top: 0;
-        right: 0;
+        top: rem(6);
+        right: rem(-6);
 
         width: rem(23);
         height: rem(23);

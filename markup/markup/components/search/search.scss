@@ -2,8 +2,6 @@
     position: relative;
 
     min-width: rem(356);
-    display: inline-block;
-    vertical-align: top;
 
     color: $dark-color;
     font-size: rem(12);
@@ -12,22 +10,32 @@
     input{
         width: 100%;
         padding: rem(8) rem(30) rem(6) rem(11);
-        border: 2px solid #e2e3e4;
+        border: 2px solid $bg-color;
 
         border-radius: rem(4);
         outline: none;
+
+        //&::-webkit-input-placeholder{
+        //    color: $bg-color;
+        //}
     }
 
     button{
         position: absolute;
-        top: 0;
-        right: 0;
+        top: rem(5);
+        right: rem(7);
 
-        width: 20px;
-        height: 20px;
         border: none;
 
         font-size: 0;
-        background-color: #ddd;
+        background-color: transparent;
+        color: $bg-color;
+
+        &::before{
+
+            font-family: glyphicons;
+            font-size: rem(18);
+            content: '\e003';
+        }
     }
 }

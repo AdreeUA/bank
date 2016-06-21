@@ -2,14 +2,15 @@ include ../submenu/submenu
 
 mixin main-nav(data)
     +b.NAV.main-nav&attributes(attributes)
-        +e.UL.list
-            each ent, num in data
-                if (ent.submenu)
-                    - var mainMenuDropdownClass = '_dropdown'
-                else
-                    - var mainMenuDropdownClass = ''
-                +e.LI.item(class="#{mainMenuDropdownClass}")
-                    +e.link(href="#{ent.link}") #{ent.title}
+        .container
+            +e.UL.list
+                each ent, num in data
                     if (ent.submenu)
-                        .main-nav__submenu
-                            +submenu(ent.submenu)
+                        - var mainMenuDropdownClass = '_dropdown'
+                    else
+                        - var mainMenuDropdownClass = ''
+                    +e.LI.item(class="#{mainMenuDropdownClass}")
+                        +e.link(href="#{ent.link}") #{ent.title}
+                        if (ent.submenu)
+                            .main-nav__submenu
+                                +submenu(ent.submenu)
