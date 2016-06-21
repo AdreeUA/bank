@@ -1,0 +1,71 @@
+.header-top{
+    padding-bottom: rem(28);
+
+    @include clearfix;
+
+    &__menu{
+        margin-top: rem(28);
+    }
+
+    &__logo{
+        margin-right: rem(87);
+    }
+
+    &__search{
+        margin-top: rem(17);
+    }
+
+    &__notification{
+        float: right;
+
+        margin-top: rem(17);
+
+        color: #58595b;
+        font-size: rem(14);
+    }
+
+    &__notification-phone,
+    &__notification-message{
+        position: relative;
+
+        display: inline-block;
+        vertical-align: top;
+
+        width: 33px;
+        height: 33px;
+        background-color: #ddd;
+    }
+
+    &__user{
+        display: inline-block;
+        vertical-align: top;
+
+        max-width: rem(187);
+        margin-right: rem(59);
+
+        text-align: left;
+    }
+
+    &__notification-phone{
+        margin-right: rem(34);
+    }
+
+    &__notification-count{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: rem(23);
+        height: rem(23);
+        border: 1px solid #fff;
+
+        color: $light-color;
+        background-color: $hover-color;
+        font-size: rem(11);
+        line-height: rem(23);
+        font-weight: 700;
+        border-radius: 50%;
+        text-align: center;
+
+    }
+}

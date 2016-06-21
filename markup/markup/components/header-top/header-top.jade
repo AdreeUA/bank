@@ -1,0 +1,15 @@
+include ../logo/logo
+include ../search/search
+include ../main-nav/main-nav
+
+mixin header-top(data)
+    +b.HEADER.header-top&attributes(attributes)
+        +logo.__logo
+        +search.__search
+        +e.notification
+            +e.user
+                | Афанасий Белосельский-Белозерский
+            +e.notification-phone
+            +e.notification-message
+                +e.SPAN.notification-count 29
+        +main-nav(mainNav.defaults).__menu

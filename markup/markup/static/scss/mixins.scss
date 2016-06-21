@@ -8,7 +8,7 @@
     list-style-position: outside;
 }
 
-@mixin cf {
+@mixin clearfix {
     &:before,
     &:after {
         display: table;
@@ -30,3 +30,16 @@
 }
 
 // You can add your own mixins here:
+
+
+@function vw($px, $root: 1920) {
+    @return $px / $root * 100 + vw;
+}
+
+@function vh($px, $root: 1080) {
+    @return $px / $root * 100 + vh;
+}
+
+@function rem($px, $root: 16) {
+    @return $px / $root + rem;
+}

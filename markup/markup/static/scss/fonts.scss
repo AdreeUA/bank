@@ -1,0 +1,45 @@
+/* Your custom fonts here */
+
+/* Example
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+    }
+
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/
+
+@font-face {
+  font-family: 'PFBeauSansPro';
+  src: url('../fonts/pfbeausanspro-regular/PFBeauSansPro-Regular.otf');
+  src: url('../fonts/pfbeausanspro-regular/PFBeauSansPro-Regular.woff') format('woff'),
+       url('../fonts/pfbeausanspro-regular/PFBeauSansPro-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBeauSansPro-bold';
+  src: url('../fonts/pfbeausanspro-bold/PFBeauSansPro-bold.otf');
+  src: url('../fonts/pfbeausanspro-bold/PFBeauSansPro-bold.woff') format('woff'),
+       url('../fonts/pfbeausanspro-bold/PFBeauSansPro-bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBeauSansPro-light';
+  src: url('../fonts/pfbeausanspro-light/PFBeauSansPro-light.otf');
+  src: url('../fonts/pfbeausanspro-light/PFBeauSansPro-light.woff') format('woff'),
+       url('../fonts/pfbeausanspro-light/PFBeauSansPro-light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+}

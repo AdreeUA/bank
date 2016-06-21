@@ -1,0 +1,33 @@
+.search {
+    position: relative;
+
+    min-width: rem(356);
+    display: inline-block;
+    vertical-align: top;
+
+    color: $dark-color;
+    font-size: rem(12);
+    font-weight: 300;
+
+    input{
+        width: 100%;
+        padding: rem(8) rem(30) rem(6) rem(11);
+        border: 2px solid #e2e3e4;
+
+        border-radius: rem(4);
+        outline: none;
+    }
+
+    button{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 20px;
+        height: 20px;
+        border: none;
+
+        font-size: 0;
+        background-color: #ddd;
+    }
+}

@@ -1,0 +1,25 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+html{
+    font-size: vw(16, 1183);
+}
+
+.page {
+    font-family: PFBeauSansPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: rem(18);
+}
+
+.page__wrapper {
+    min-height: 100%;
+    max-width: 1183px;
+    margin: 0 auto;
+    padding-top: rem(34);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
