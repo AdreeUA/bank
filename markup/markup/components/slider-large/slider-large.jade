@@ -1,5 +1,11 @@
 mixin slider-large(data)
     +b.slider-large&attributes(attributes)
-        +e.UL.list
+        +e.UL.list.js-slider-large
+            +e.item(style="background-image: url(__static__img/content/slider-big.png)")
+                +e.link(href="ent.link")
+            +e.item(style="background-image: url(__static__img/content/slider-big.png)")
+                +e.link(href="ent.link")
+            +e.item(style="background-image: url(__static__img/content/slider-big.png)")
+                +e.link(href="ent.link")
             +e.item(style="background-image: url(__static__img/content/slider-big.png)")
                 +e.link(href="ent.link")

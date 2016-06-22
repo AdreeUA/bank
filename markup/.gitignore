@@ -7,6 +7,8 @@ dev
 .tmpPreproc
 
 .idea
+.idea/*.xml
+*.iml
 npm-debug.log
 phantomjsdriver.log
 /nbproject/*

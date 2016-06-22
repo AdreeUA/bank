@@ -1,3 +1,8 @@
-/**
- * Created by adree on 22.06.16.
- */
+$(document).ready(function () {
+    console.log('q');
+
+    $('.js-slider-large').slick({
+        arrows: false,
+        dots: true
+    });
+});

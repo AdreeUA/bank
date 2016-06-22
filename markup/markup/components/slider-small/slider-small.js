@@ -3,8 +3,8 @@
 $(document).ready(function () {
     console.log('q');
 
+    $('.js-slider-small').slick({
+        // arrows: false
 
-    // $('.js-slider-small').slick({
-    //
-    // });
+    });
 });

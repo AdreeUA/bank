@@ -21,7 +21,7 @@
 
         width: 100%;
         min-height: rem(60);
-        padding: rem(0)  rem(25);
+        padding: rem(0)  rem(29);
 
         color: $light-color;
         background-color: $title-bg;
@@ -35,6 +35,42 @@
             font-size: rem(18);
 
 
+        }
+    }
+
+    // SLICK arrows
+
+    .slick-arrow{
+        position: absolute;
+        bottom: rem(14);
+        z-index: 1;
+
+        height: rem(30);
+        width: rem(30);
+
+        font-size: 0;
+        border: none;
+        background-color: transparent;
+        outline: none;
+
+        &::before{
+            content: '';
+        }
+    }
+
+    .slick-prev{
+        left: rem(5);
+
+        &::before{
+            @include triangle(14px, $light-color, left);
+        }
+    }
+
+    .slick-next{
+        right: rem(5);
+
+        &::before{
+            @include triangle(14px, $light-color, right);
         }
     }
 }
