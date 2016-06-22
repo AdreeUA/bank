@@ -46,6 +46,12 @@
 
     &__user-avatar{
         margin-right: rem(10);
+
+        border-radius: 50%;
+    }
+
+    &__user-avatar-img{
+        width: 100%;
     }
 
     &__notification-phone{

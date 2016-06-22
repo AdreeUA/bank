@@ -1,0 +1,10 @@
+.news-block {
+    display: flex;
+    flex-direction: column;
+
+    &__item{
+        width: 100%;
+        margin: rem(4) 0;
+        border: 1px solid $bg-color;
+    }
+}

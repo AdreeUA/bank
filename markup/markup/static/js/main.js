@@ -1,6 +1,6 @@
 'use strict';
 
-/*
-    This file can be used as entry point for webpack!
- */
+// import 'slick-carousel';
 
+//
+// import 'components/slider-small/slider-small';

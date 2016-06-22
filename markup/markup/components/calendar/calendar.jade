@@ -1,0 +1,18 @@
+include ../date/date
+
+mixin calendar(data)
+    +b.calendar&attributes(attributes)
+        each ent, num in data
+
+            +e.H2.header= ent.header
+
+            if ent.items
+                +e.UL.list
+                    each ent2, num2 in ent.items
+                        +e.item
+                            +e.link(href="#{ent2.link}")
+                                +date.__date
+                                    +e.day= ent2.day
+                                    +e.month= ent2.month
+                                +e.context
+                                    +e.text= ent2.text

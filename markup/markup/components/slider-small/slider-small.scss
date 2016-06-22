@@ -1,0 +1,40 @@
+.slider-small {
+
+    &__link{
+        position: relative;
+
+        display: block;
+    }
+
+    &__title-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: rem(60);;
+    }
+
+    &__title{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        min-height: rem(60);
+        padding: rem(0)  rem(25);
+
+        color: $light-color;
+        background-color: $title-bg;
+        text-align: center;
+
+        h3{
+            margin: 0;
+            display: inline-block;
+            vertical-align: middle;
+
+            font-size: rem(18);
+
+
+        }
+    }
+}

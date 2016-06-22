@@ -1,0 +1,25 @@
+include ../slider-small/slider-small
+include ../date/date
+
+mixin news-bank(data)
+    +b.news-bank&attributes(attributes)
+        each ent, num in data
+            +e.content
+                +e.H2.header #{ent.header}
+                if ent.news
+                    +e.UL.list
+                        each ent2, num2 in ent.news
+                            +e.item
+                                +e.link(href="#{ent2.link}")
+                                    +date.__date
+                                        +e.SPAN.day #{ent2.dateDay}
+                                        +e.SPAN.month #{ent2.dateMonth}
+                                    +e.H3.title= ent2.title
+
+            if ent.slider
+                +e.slider
+                    if ent.sliderActive
+                        +slider-small(ent.slider).js-slider-small
+                    else
+                        +slider-small(ent.slider)
+

@@ -43,3 +43,29 @@
 @function rem($px, $root: 16) {
     @return $px / $root + rem;
 }
+
+
+// =============================================================================
+// Медиа запросы
+// =============================================================================
+
+// меньше указанной ширины
+@mixin below($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+// больше указанной ширины
+@mixin above($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+// между первой и второй шириной
+@mixin between($minWidth, $maxWidth) {
+    @media screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+        @content;
+    }
+}

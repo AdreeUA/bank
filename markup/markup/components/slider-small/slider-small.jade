@@ -1,0 +1,9 @@
+mixin slider-small(data)
+    +b.slider-small&attributes(attributes)
+        each ent, num in data
+            +e.item
+                +e.link(href="#{ent.link}")
+                    +e.IMG.image(src="#{ent.image}")
+                    +e.title
+                        +e.title-inner
+                            h3= ent.title

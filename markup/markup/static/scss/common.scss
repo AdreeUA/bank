@@ -5,7 +5,11 @@ html, body {
 }
 
 html{
-    font-size: vw(16, 1183);
+    font-size: vw(16, 1185);
+
+    @include above(1185px){
+        font-size: 16px;
+    }
 }
 
 .page {
@@ -26,4 +30,31 @@ html{
 .container{
     max-width: 1183px;
     margin: 0 auto;
+}
+
+p{
+    color: $main-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: $bg-color;
+}
+
+a,
+a:focus{
+    color: $title-color;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+img{
+    max-width: 100%;
 }

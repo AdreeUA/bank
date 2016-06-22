@@ -1,0 +1,12 @@
+include ../news-block/news-block
+include ../calendar/calendar
+include ../birthday/birthday
+
+mixin content(data)
+    +b.content&attributes(attributes)
+        +e.col-2-of-3
+            +news-block.__item
+        +e.col-1-of-6
+            +calendar(calendar.defaults).__item
+        +e.col-1-of-6
+            +birthday.__item

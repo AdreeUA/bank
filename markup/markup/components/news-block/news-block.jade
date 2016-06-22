@@ -1,0 +1,8 @@
+include ../news-bank/news-bank
+include ../slider-large/slider-large
+
+mixin news-block(data)
+    +b.news-block&attributes(attributes)
+        +slider-large.__item
+        +news-bank(news.bank).__item
+        +news-bank(init.defaults).__item.news-bank_units

@@ -1,7 +1,10 @@
 extends ../components/layout/layout
 include ../components/head/head
+include ../components/content/content
 
 block head
     +head(head.defaults)
 
 block content
+    .container
+        +content

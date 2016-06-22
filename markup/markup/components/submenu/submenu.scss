@@ -1,29 +1,39 @@
 .submenu {
     position: relative;
+    z-index: 10;
 
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 100%;
+    //columns: 5;
     border: 2px solid #dadbdb;
     padding: rem(17) 0 rem(15) !important;
 
     text-align: left;
+    background-color: $light-color;
 
-    &__item,
-    &__sub-item{
-        position: relative;
+    &__col{
+        max-width: 290px;
+        padding-left: rem(23);
+        padding-right: rem(15);
 
-        padding-left: rem(21);
-        width: 20%;
+        &:not(:last-of-type){
+            border-right: 1px solid #dadbdb;
+        }
     }
 
     &__item{
+        margin-left: rem(25);
+        position: relative;
 
-        &::before{
-            right: rem(-20);
-        }
+
+        //&::before{
+        //    position: absolute;
+        //    right: 0;
+        //    top: 0;
+        //    height: 600px;
+        //    border-right: 1px solid #dadbdb;
+        //
+        //    content: '';
+        //}
     }
 
     &__link{

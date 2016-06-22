@@ -1,0 +1,13 @@
+.date {
+
+    font-size: rem(46);
+    color: $dark-color;
+
+    &__month{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: rem(7);
+
+        font-size: rem(22);
+    }
+}

@@ -1,0 +1,16 @@
+.slider-large {
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__item{
+        min-height: rem(230);
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}

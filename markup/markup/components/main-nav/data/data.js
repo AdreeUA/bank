@@ -7,6 +7,7 @@ data = {mainNav: {
                 {
                     title: "Стратегия Банка",
                     link: "#",
+                    col: true,
                     submenu:[
                         {
                             title: "Главная цель",
@@ -25,6 +26,7 @@ data = {mainNav: {
                 {
                     title: "Правление Банка",
                     link: "#",
+                    col: true,
                     submenu: [
                         {
                             title: "Кадровый актив",
@@ -65,7 +67,7 @@ data = {mainNav: {
                         {
                             title: "Банк подарков",
                             link: "#"
-                        },
+                        }
                     ]
                 },
                 {
@@ -107,6 +109,7 @@ data = {mainNav: {
                 {
                     title: "Заголовок второго уровня 5",
                     link: "#",
+                    col: true,
                     submenu:[
                         {
                             title: "Заголовок третьего уровня 1",
@@ -132,7 +135,26 @@ data = {mainNav: {
                 },
                 {
                     title: "Бренд Банка",
-                    link: "#"
+                    link: "#",
+                    col: true,
+                    submenu:[
+                        {
+                            title: "Заголовок третьего уровня 1",
+                            link: "#"
+                        },
+                        {
+                            title: "Заголовок третьего уровня 1",
+                            link: "#"
+                        },
+                        {
+                            title: "Заголовок третьего уровня 1",
+                            link: "#"
+                        },
+                        {
+                            title: "Заголовок третьего уровня 1",
+                            link: "#"
+                        }
+                    ]
                 },
                 {
                     title: "Бронирование конференц-зала",
@@ -141,6 +163,7 @@ data = {mainNav: {
                 {
                     title: "Заголовок второго уровня 5",
                     link: "#",
+                    col: true,
                     submenu:[
                         {
                             title: "Заголовок третьего уровня 1",
