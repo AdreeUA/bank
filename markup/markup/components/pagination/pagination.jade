@@ -1,0 +1,27 @@
+mixin pagination(data)
+    +b.NAV.pagination&attributes(attributes)
+        +e.UL.list
+            +e.item.__arrow_prev
+
+            +e.item
+                +e.link(href="#" aria-label="First") 1
+
+            +e.item_spaser ...
+                //+e.link ...
+
+            +e.item
+                +e.link(href="#") 18
+
+            +e.item_active 19
+
+            +e.item
+                +e.link(href="#") 20
+
+            +e.item_spaser ...
+                //+e.link ...
+
+            +e.item
+                +e.link(href="#" aria-label="Last") 1
+
+            +e.item.__arrow_next
+

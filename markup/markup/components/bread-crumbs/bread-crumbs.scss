@@ -1,0 +1,31 @@
+.bread-crumbs {
+    margin-bottom: rem(17);
+
+    color: $main-color;
+    font-size: rem(13);
+
+    &__list{
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+
+    }
+
+    &__item{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__link{
+        color: inherit;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &__separator{
+        margin-left: rem(4);
+    }
+}

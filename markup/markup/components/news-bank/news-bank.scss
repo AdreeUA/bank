@@ -1,29 +1,10 @@
 .news-bank {
-    display: flex;
 
-    &__content{
-        width: 65%;
-        padding: rem(22) rem(24) rem(4);
-        margin-right: rem(8);
-        border: 1px solid $bg-color;
+    padding: rem(22) rem(100) rem(15) rem(24);
 
-        &:hover{
-            .news-bank__header{
-                color: $hover-color;
-            }
-        }
-    }
-
-    &__slider{
-        width: 35%;
-    }
-
-    &_units{
-        flex-direction: row-reverse;
-
-        .news-bank__content{
-            margin-right: 0;
-            margin-left: rem(8);
+    &:hover{
+        .news-bank__header{
+            color: $hover-color;
         }
     }
 
@@ -41,9 +22,6 @@
         list-style-type: none;
     }
 
-    &__item{
-        margin-bottom: rem(34);
-    }
 
     &__link{
         display: flex;

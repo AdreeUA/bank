@@ -1,0 +1,22 @@
+include ../submenu-left/submenu-left
+
+mixin menu-left(data)
+    +b.menu-left&attributes(attributes)
+        +e.UL.list
+            each ent, num in data
+
+                if (ent.submenu)
+                    - var mainMenuDropdownClass = '_dropdown'
+                else
+                    - var mainMenuDropdownClass = ''
+
+                if (ent.active)
+                    - var activeClass = '_active'
+                else
+                    - var activeClass = ''
+
+                +e.LI.item(class="#{mainMenuDropdownClass}")
+                    +e.link(href="#{ent.link}" class="#{activeClass}") #{ent.title}
+                    if (ent.submenu)
+                        +e.submenu
+                            +submenu-left(ent.submenu)

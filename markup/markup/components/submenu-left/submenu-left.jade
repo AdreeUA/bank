@@ -1,0 +1,13 @@
+mixin submenu-left(data)
+    +b.UL.submenu-left&attributes(attributes)
+        each ent2, num2 in data
+
+            +e.item
+                +e.link(href="#{ent2.link}") #{ent2.title}
+
+            if (ent2.submenu)
+                each ent3, num3 in ent2.submenu
+
+                    +e.sub-item
+                        +e.sub-link(href="#{ent3.link}") #{ent3.title}
+

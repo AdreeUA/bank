@@ -12,5 +12,5 @@ mixin main-nav(data)
                     +e.LI.item(class="#{mainMenuDropdownClass}")
                         +e.link(href="#{ent.link}") #{ent.title}
                         if (ent.submenu)
-                            .main-nav__submenu
-                                +submenu(ent.submenu)
+                            +e.submenu
+                                +submenu(ent.submenu).

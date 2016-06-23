@@ -1,3 +1,14 @@
 mixin interview(data)
     +b.interview&attributes(attributes)
-        | interview
+        +e.content
+            +e.H2.header ОПРОС
+            +e.question Как вы оцениваете новый дизайн портала?
+            +e.FORM.ansers
+                - var question = ["Нравится", "Не нравится", "Дали бы мне, я бы лучше сделал", "Разве что-то изменилось?"]
+                - for (var i = 0; i < question.length; i++)
+
+                    +e.INPUT.radio(name="question" type="radio" id="interview-#{i}")
+                    +e.LABEL.label(for="interview-#{i}")
+                        +e.SPAN.label-text= question[i]
+        +e.btn-wrap
+            +e.BUTTON.btn Проголосовать

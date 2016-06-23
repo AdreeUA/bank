@@ -28,8 +28,11 @@ html{
 }
 
 .container{
-    max-width: 1183px;
+    max-width: 1185px;
     margin: 0 auto;
+    padding: 0 rem(15);
+
+    @include clearfix;
 }
 
 p{
@@ -45,6 +48,10 @@ h6{
     color: $bg-color;
 }
 
+h2{
+    font-size: rem(19);
+}
+
 a,
 a:focus{
     color: $title-color;
@@ -57,4 +64,11 @@ a:focus{
 
 img{
     max-width: 100%;
+}
+
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide{
+    height: 100%;
 }

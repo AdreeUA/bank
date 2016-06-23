@@ -1,0 +1,10 @@
+mixin bread-crumbs(data)
+    +b.bread-crumbs&attributes(attributes)
+        +e.UL.list
+            +e.item
+                +e.link(href="#")
+                    | Наш Банк
+                    +e.SPAN.separator >
+
+            +e.item
+                +e.link(href="#") Стратегия Банка

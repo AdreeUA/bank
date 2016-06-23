@@ -1,0 +1,20 @@
+.grid {
+
+    &__item{
+        width: 19%;
+        height: 228px;
+        border: 1px solid $bg-color;
+
+        &_height-2x{
+            height: 464px;
+        }
+
+        &_width-3x{
+            width: 59%;
+        }
+
+        &_width-2x{
+            width: 39%;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.pagination {
+    font-size: rem(14);
+    color: $main-color;
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        list-style-type: none;
+    }
+
+    &__item{
+        width: rem(35);
+        height: rem(30);
+        border: 1px solid $bg-color;
+
+        border-radius: rem(5);
+        text-align: center;
+        line-height: rem(30);
+
+        cursor: pointer;
+
+        &:not(:last-of-type){
+            margin-right: rem(8);
+        }
+
+        &_active{
+            background-color: rgba(#bcbec0, .3);
+            cursor: default;
+        }
+
+        &_spaser{
+            cursor: default;
+        }
+    }
+
+    &__link{
+        display: block;
+
+        color: inherit;
+
+        &:hover{
+            text-decoration: none;
+            background-color: rgba(#bcbec0, .3);
+        }
+    }
+
+    &__arrow{
+        position: relative;
+
+        &:hover{
+            background-color: rgba(#bcbec0, .3);
+        }
+
+        &::before{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+
+            content: '';
+        }
+
+        &_prev{
+
+            &::before{
+                @include triangle(10px, $main-color, left);
+                transform: translate(-75%, -50%);
+            }
+        }
+
+        &_next{
+
+            &::before{
+                @include triangle(10px, $main-color, right);
+                transform: translate(-25%, -50%);
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+include ../filter/filter
+include ../pagination/pagination
+
+mixin content-news(data)
+    +b.content-news&attributes(attributes)
+        h2 Новости Банка
+        +filter
+        +pagination

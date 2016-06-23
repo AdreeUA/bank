@@ -1,0 +1,105 @@
+.menu-left {
+    float: left;
+    
+    width: 22%;
+
+    color: $main-color;
+
+    a{
+        display: block;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &__list{
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+    }
+
+    &__item{
+        position: relative;
+
+        transition: all .3s;
+
+        &_dropdown{
+
+            &:hover{
+                &::before{
+                    transform: rotate(90deg);
+                    right: rem(12);
+                    top: 49%;
+                }
+
+                .menu-left__submenu{
+                    //transform: translateX(0);
+                    transition: all .3s;
+                    display: block;
+                }
+            }
+
+            &::before{
+                position: absolute;
+                right: rem(10);
+                top: 50%;
+
+                transform: translateY(-50%);
+
+                @include triangle(9px, $main-color, right);
+
+                content: '';
+                transition: all .3s;
+            }
+        }
+
+    }
+
+    &__link{
+        position: relative;
+
+        padding: rem(17) rem(20) rem(17) rem(33);
+        border-top: rem(3) solid #e1e0df;
+
+        text-transform: uppercase;
+        font-size: rem(14);
+        color: $main-color;
+
+        &:hover{
+            color: $dark-color;
+            font-weight: 600;
+        }
+
+        &_active{
+            color: $dark-color;
+            font-weight: 600;
+
+            &::before{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+
+                border-left: 4px solid;
+
+                color: $hover-color;
+                content: '';
+            }
+        }
+    }
+
+    &__submenu{
+        position: absolute;
+        left: rem(262);
+        top: 0;
+        //transform: translateX(-9999px);
+
+        display: none;
+        max-width: (rem(920));
+        width: 100%;
+
+        overflow: hidden;
+    }
+}

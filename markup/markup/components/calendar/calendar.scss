@@ -1,7 +1,7 @@
 .calendar {
 
-    border: 1px solid $bg-color;
-    padding: rem(20);
+    padding: rem(19);
+    height: 100%;
 
     &:hover{
         .calendar__header{

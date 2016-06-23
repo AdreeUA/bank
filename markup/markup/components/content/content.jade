@@ -1,12 +1,34 @@
-include ../news-block/news-block
 include ../calendar/calendar
 include ../birthday/birthday
+include ../interview/interview
+include ../news-bank/news-bank
+include ../slider-large/slider-large
+include ../grid/grid
+include ../slider-small/slider-small
 
 mixin content(data)
     +b.content&attributes(attributes)
-        +e.col-2-of-3
-            +news-block.__item
-        +e.col-1-of-6
-            +calendar(calendar.defaults).__item
-        +e.col-1-of-6
-            +birthday.__item
+        +grid
+            +e.item_width-3x
+                +slider-large
+            +e.item_height-2x
+                +calendar(calendar.defaults)
+            +e.item
+                +slider-small(birthday.defaults).js-slider-small
+            +e.item_width-2x
+                +news-bank(bank.defaults)
+            +e.item
+                +slider-small(slider1.defaults).js-slider-small
+            +e.item_height-2x
+                +interview
+            +e.item
+                +slider-small(slider2.defaults).js-slider-small
+            +e.item_width-2x
+                +news-bank(unit.defaults)
+            +e.item
+                img(src="http://placehold.it/350x350")
+
+
+
+
+
