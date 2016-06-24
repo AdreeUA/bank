@@ -66,6 +66,14 @@
             content: '';
         }
 
+        &:hover{
+
+            .interview__label-text{
+                color: $hover-color;
+                transition: all .3s;
+            }
+        }
+
     }
 
     &__radio{
@@ -73,6 +81,7 @@
 
         &:checked + .interview__label:after{
             opacity: 1;
+            transition: all .3s;
         }
     }
 
@@ -93,9 +102,11 @@
 
         &:hover{
             background-color: $hover-color;
+            transition: all .3s;
 
             &::before{
-                color: $hover-color
+                color: $hover-color;
+                transition: all .3s;
             }
         }
 
@@ -114,7 +125,7 @@
             color: #27aae1;
             border-radius: 50%;
             text-align: center;
-            line-height: rem(26);
+            line-height: rem(27);
 
         }
     }

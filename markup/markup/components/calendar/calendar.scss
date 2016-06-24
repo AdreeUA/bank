@@ -3,14 +3,17 @@
     padding: rem(19);
     height: 100%;
 
+    transition: all .3s;
+
     &:hover{
         .calendar__header{
             color: $hover-color;
+            transition: all .3s;
         }
     }
 
     &__header{
-        margin: 0 0 rem(46);
+        margin: 0 0 rem(30);
 
         color: $title-color;
         font-size: rem(19);
@@ -24,9 +27,9 @@
     }
 
     &__item{
-        margin-bottom: rem(35);
+        margin-bottom: rem(27);
 
-        font-size: rem(18);
+        font-size: rem(17);
         font-weight: 300;
         color: $main-color;
     }
@@ -43,6 +46,6 @@
 
     &__date{
         display: block;
-        margin-bottom: rem(18);
+        margin-bottom: rem(15);
     }
 }

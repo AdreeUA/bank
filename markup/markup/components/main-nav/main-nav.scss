@@ -29,11 +29,14 @@
     &__item{
         //width: 20%;
         flex-grow: 1;
+        position: relative;
+
 
         border-right: 3px solid #dadbdb;
         border-top: rem(4) solid transparent;
 
         text-align: center;
+        transition: all .3s;
 
         &:first-of-type{
             border-left: 3px solid #dadbdb;
@@ -43,9 +46,14 @@
             border-top: rem(4) solid $hover-color;
 
             background-color: $light-color;
+            transition: all .3s;
 
             .main-nav__submenu{
-               display: block;
+
+                //display: inline-block;
+                height: auto;
+
+                transition: all .3s;
            }
             
             .main-nav__link{
@@ -83,11 +91,26 @@
 
     &__submenu{
         position: absolute;
-        top: rem(64);
-        left: 0;
+        top: rem(56);
+        left: rem(-2);
 
-        display: none;
+        height: 0;
+
+        overflow: hidden;
+        transition: all .3s;
+
+        //display: none;
         //width: 100%;
+
+        &_right{
+            right: 0;
+            left: auto;
+        }
+    }
+
+    &__submenu-wrap{
+        display: inline-block;
+        vertical-align: top;
     }
 
 }

@@ -1,15 +1,16 @@
 .news-bank {
 
-    padding: rem(22) rem(100) rem(15) rem(24);
+    padding: rem(22) rem(60) rem(15) rem(24);
 
     &:hover{
         .news-bank__header{
             color: $hover-color;
+            transition: all .4s;
         }
     }
 
     &__header{
-        margin: 0 0 rem(48) 0 ;
+        margin: 0 0 rem(30) 0 ;
 
         color: $title-color;
         font-size: rem(19);
@@ -20,6 +21,10 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
+    }
+
+    &__item{
+        margin-bottom: rem(15);
     }
 
 

@@ -1,5 +1,13 @@
 include ../search/search
+include ../categories/categories
+include ../btn-follow/btn-follow
+include ../btn-grid-filter/btn-grid-filter
+include ../date-filter/date-filter
 
 mixin filter(data)
     +b.filter&attributes(attributes)
-        +search.__s
+        +search.__search
+        +categories.js-categories.__caterories(style="width: 12.5rem")
+        +btn-follow.__follow
+        +btn-grid-filter
+        +date-filter

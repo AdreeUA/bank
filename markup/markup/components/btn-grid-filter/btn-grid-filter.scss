@@ -1,0 +1,107 @@
+.btn-grid-filter {
+    position: relative;
+    z-index: 2;
+
+    width: rem(70);
+    height: rem(33);
+    border: rem(2) solid $bg-color;
+
+    border-radius: rem(4);
+    font-size: 0;
+
+    &__radio{
+        display: none;
+
+        &:checked + .btn-grid-filter__label{
+            background-color: rgba($main-color, .3);
+            transition: all .3s;
+        }
+    }
+
+    &__label{
+        position: relative;
+
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+
+        cursor: pointer;
+
+        &:first-of-type{
+            border-right: rem(2) solid $bg-color;
+        }
+    }
+
+    &__decor-square{
+
+        &::before,
+        &::after{
+            position: absolute;
+
+            width: rem(5);
+            height: rem(4);
+
+            background-color: $main-color;
+            content: '';
+        }
+
+        &_top{
+
+            &::before{
+                left: rem(8);
+                top: rem(8);
+            }
+
+            &::after{
+                right: rem(8);
+                top: rem(8);
+            }
+        }
+
+        &_bottom{
+
+            &::before{
+                left: rem(8);
+                bottom: rem(8);
+            }
+
+            &::after{
+                right: rem(8);
+                bottom: rem(8);
+            }
+        }
+
+    }
+
+    &__decor-line{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        width: rem(16);
+        height: rem(2);
+
+        background-color: $main-color;
+
+        &::before,
+        &::after{
+            position: absolute;
+
+            width: rem(16);
+            height: rem(2);
+
+            background-color: $main-color;
+            content: '';
+        }
+
+        &::before{
+            top: rem(6);
+        }
+
+        &::after{
+            bottom: rem(6);
+        }
+
+    }
+}

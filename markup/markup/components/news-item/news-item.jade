@@ -1,0 +1,17 @@
+include ../date/date
+
+mixin news-item(data)
+    +b.news-item&attributes(attributes)
+
+        +e.image(style="background-image: url(__static__img/content/news.jpeg)")
+        +e.link(href="#")
+
+        +e.content
+
+            +date.__date
+                +e.SAPN.day 26
+                +e.SPAN.month 07
+
+            +e.A.promo(href="#") НОВОСТИ БАНКА
+
+        +e.title Банк начинает эквайринг карт платежной системы МИР

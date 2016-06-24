@@ -1,6 +1,8 @@
 .header-top{
     padding-bottom: rem(28);
 
+    font-family: PFBeauSansPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -9,6 +11,10 @@
 
     &__menu{
         margin-top: rem(28);
+    }
+
+    &__search{
+        min-width: rem(356);
     }
 
     &__notification{

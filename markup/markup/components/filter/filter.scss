@@ -1,1 +1,14 @@
-.filter {}
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(20);
+
+    &__search{
+        max-width: rem(200);
+        min-width: 1px;
+    }
+
+    &__follow{
+        width: rem(150);
+    }
+}

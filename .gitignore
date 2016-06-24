@@ -1,1 +1,18 @@
-# Created by .ignore support plugin (hsz.mobi)
+node_modules
+dev
+.DS_Store
+._.DS_Store
+
+.tmpTemplater
+.tmpPreproc
+
+.idea
+.idea/*.xml
+*.iml
+npm-debug.log
+phantomjsdriver.log
+/nbproject/*
+
+**/sprite_96.*
+**/svg-fallback-sprite.*
+**/svg-sprite.*

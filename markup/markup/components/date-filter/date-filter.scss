@@ -1,0 +1,181 @@
+.date-filter {
+    position: relative;
+
+    color: $main-color;
+
+    &:hover{
+
+        .date-filter__inner{
+            //transform: translateX(0);
+            transition: all .3s;
+            display: block;
+        }
+    }
+
+    &__btn{
+        position: relative;
+
+        padding: rem(7) rem(25) rem(7) rem(10);
+        border: rem(2) solid $bg-color;
+
+        font-size: rem(14);
+        background-color: #fff;
+        border-radius: rem(5);
+
+        &::before{
+            position: absolute;
+            right: rem(10);
+            top: 50%;
+
+            transform: translateY(-10%);
+
+            @include triangle(9px, $main-color, down);
+
+            content: '';
+            transition: all .3s;
+        }
+    }
+
+    &__inner{
+        position: absolute;
+        right: 0;
+        top: rem(40);
+        z-index: 10;
+
+        transform: translateX(9999px);
+        border: rem(2) solid $bg-color;
+
+        background-color: #fff;
+        border-radius: rem(10);
+        transition: all .3s;
+
+        &_open{
+            transform: translateX(0);
+            transition: all .3s;
+        }
+    }
+
+    &__slider-wrap{
+        width: rem(230);
+        padding: rem(22) rem(22) rem(15) rem(22);
+
+        font-size: rem(14);
+    }
+
+    &__year{
+        margin-bottom: rem(19);
+
+        color: $title-color;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    &__month{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__month-label{
+        //width: rem(84);
+        margin-bottom: rem(6);
+    }
+
+    &__month-item{
+        width: rem(84);
+        display: block;
+        border: rem(2) solid $bg-color;
+        padding: rem(9) rem(11);
+
+        text-align: center;
+        border-radius: rem(10);
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgba($main-color, .3);
+            transition: all .3s;
+        }
+    }
+
+    &__month-checkbox{
+        display: none;
+
+        &:checked + .date-filter__month-item{
+            border: rem(2) solid $title-color;
+
+            background-color: $title-color;
+            color: $light-color;
+            transition: all .3s;
+        }
+    }
+
+    &__btn-choose{
+        width: 100%;
+        padding: rem(9);
+        border: none;
+
+        background-color: $hover-color;
+        color: $light-color;
+        border-radius: rem(10);
+        transition: all .3s;
+
+        &:hover{
+            background-color: lighten($hover-color, 10);
+        }
+    }
+
+    // SLICK slider
+
+    .slick-arrow{
+        position: absolute;
+        top: rem(-6);
+        z-index: 2;
+
+        font-size: 0;
+        border: none;
+        background: transparent;
+        width: rem(30);
+        height: rem(30);
+
+        &::before{
+            display: inline-block;
+
+            content: '';
+        }
+
+    }
+
+    .slick-prev{
+        left: rem(30);
+
+        &::before{
+            @include triangle(9px, $main-color, left);
+        }
+
+        &:hover{
+
+            &::before{
+                border-right-color: $title-color;
+            }
+        }
+
+    }
+
+    .slick-next{
+        right: rem(30);
+
+        &::before{
+            @include triangle(9px, $main-color, right);
+
+        }
+
+        &:hover{
+
+            &::before{
+                border-left-color: $title-color;
+            }
+        }
+
+    }
+
+}

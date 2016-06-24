@@ -1,0 +1,18 @@
+.btn-more-news {
+    float: left;
+
+    padding: 0 rem(18);
+    border: rem(2) solid $bg-color;
+    height: rem(30);
+
+    border-radius: rem(5);
+    font-size: rem(14);
+    color: $main-color;
+    background-color: #fff;
+    line-height: rem(30);
+
+    &:hover{
+        transition: all .3s;
+        background-color: rgba(#bcbec0, .3);
+    }
+}

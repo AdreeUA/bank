@@ -66,10 +66,24 @@
         text-transform: uppercase;
         font-size: rem(14);
         color: $main-color;
+        transition: all .3s;
 
         &:hover{
             color: $dark-color;
-            font-weight: 600;
+            //font-weight: 600;
+
+            &::before{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+
+                border-left: 4px solid;
+
+                color: $hover-color;
+                content: '';
+            }
+
         }
 
         &_active{
@@ -94,6 +108,7 @@
         position: absolute;
         left: rem(262);
         top: 0;
+        z-index: 10;
         //transform: translateX(-9999px);
 
         display: none;

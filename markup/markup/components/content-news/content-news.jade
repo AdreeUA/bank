@@ -1,8 +1,16 @@
 include ../filter/filter
 include ../pagination/pagination
+include ../news-item/news-item
+include ../btn-more-news/btn-more-news
 
 mixin content-news(data)
     +b.content-news&attributes(attributes)
         h2 Новости Банка
         +filter
-        +pagination
+        +news-item
+        +news-item
+        +news-item
+        +news-item
+        +e.footer
+            +btn-more-news
+            +pagination

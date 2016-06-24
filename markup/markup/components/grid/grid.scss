@@ -1,12 +1,13 @@
 .grid {
+    overflow: hidden;
 
     &__item{
-        width: 19%;
-        height: 228px;
+        width: rem(224);
+        height: rem(240);
         border: 1px solid $bg-color;
 
         &_height-2x{
-            height: 464px;
+            height: rem(488);
         }
 
         &_width-3x{

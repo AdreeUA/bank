@@ -1,6 +1,8 @@
 .slider-large {
     height: 100%;
 
+    overflow: hidden;
+
     &__list{
         margin: 0;
         padding: 0;
@@ -13,5 +15,46 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
+    }
+
+    .slick-arrow{
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: rem(50);
+        height: rem(50);
+
+        font-size: 0;
+        border-radius: 50%;
+        border: none;
+        background: rgba($light-color, .5);
+
+
+        &::before{
+            content: '';
+
+        }
+    }
+
+    .slick-prev {
+        left: rem(-25);
+
+        &::before{
+            margin-left: rem(10);
+
+            @include triangle(19px, $light-color, left)
+        }
+    }
+
+    .slick-next{
+        right: rem(-25);
+
+        &::before{
+            margin-right: rem(10);
+
+            @include triangle(19px, $light-color, right)
+        }
     }
 }

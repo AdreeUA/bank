@@ -1,0 +1,25 @@
+mixin date-filter(data)
+    +b.date-filter&attributes(attributes)
+        +e.BUTTON.btn Фильтр по дате
+
+        +e.inner
+            +e.slider-wrap
+                .js-date-filter-slider
+
+                    - for (var i = 0; i < 10; i++)
+
+                        +e.slider
+
+                            +e.year 201#{i}
+
+                            +e.month
+
+                                - var month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь", ]
+                                - for (var n = 0; n < month.length; n++)
+
+                                    +e.LABEL.month-label
+                                        +e.INPUT.month-checkbox(type="checkbox"
+                                                                name="month")
+                                        +e.SPAN.month-item= month[n]
+
+                +e.BUTTON.btn-choose Выбрать

@@ -13,4 +13,5 @@ mixin main-nav(data)
                         +e.link(href="#{ent.link}") #{ent.title}
                         if (ent.submenu)
                             +e.submenu
-                                +submenu(ent.submenu).
+                                +e.submenu-wrap
+                                    +submenu(ent.submenu)

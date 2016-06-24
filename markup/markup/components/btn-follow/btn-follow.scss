@@ -1,0 +1,53 @@
+.btn-follow {
+    position: relative;
+
+    border: rem(2) solid $bg-color;
+    height: rem(33);
+    padding-left: rem(33);
+    padding-right: rem(10);
+
+    border-radius: rem(4);
+    color: $main-color;
+    font-size: rem(14);
+    line-height: rem(33);
+    text-align: center;
+    cursor: pointer;
+
+    &__input{
+        display: none;
+
+        &:checked + .btn-follow__label::before{
+            color: $hover-color;
+        }
+    }
+
+    &__label{
+        cursor: pointer;
+
+        &::before{
+            position: absolute;
+            left: rem(6);
+            top: rem(3);
+
+            font-family: glyphicons;
+            content: '\e013';
+            font-size: rem(16);
+            font-weight: bold;
+            color: $main-color;
+            border-radius: 50%;
+            text-align: center;
+            line-height: rem(26);
+        }
+
+        &::after{
+            position: absolute;
+            left: rem(30);
+
+            height: 100%;
+            border-right: rem(2) solid $bg-color;
+
+            content: '';
+        }
+    }
+
+}
