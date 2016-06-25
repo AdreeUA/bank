@@ -1,6 +1,16 @@
 include ../slider-small/slider-small
 
 mixin birthday(data)
-    +b.birthday&attributes(attributes)
+    +b.birthday&attributes(attributes).js-slider-birthday
 
-        +slider-small(birthday.defaults).js-slider-small
+        //+slider-small(birthday.defaults).js-slider-birthday
+
+        each ent, num in data
+            +e.item
+                +e.image(style="background-image: url(__static__img/content/slider-small.jpg)")
+                +e.link(href="#{ent.link}")
+                +e.name-wrap
+                    +e.A.name(href="#") Петров Петр Иванович
+                +e.content
+                    +e.title-wrap
+                        h3= ent.title

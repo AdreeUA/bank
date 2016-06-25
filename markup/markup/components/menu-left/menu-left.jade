@@ -3,6 +3,7 @@ include ../submenu-left/submenu-left
 mixin menu-left(data)
     +b.menu-left&attributes(attributes)
         +e.UL.list
+
             each ent, num in data
 
                 if (ent.submenu)
@@ -15,8 +16,51 @@ mixin menu-left(data)
                 else
                     - var activeClass = ''
 
-                +e.LI.item(class="#{mainMenuDropdownClass}")
-                    +e.link(href="#{ent.link}" class="#{activeClass}") #{ent.title}
+                +e.LI.item(class="#{mainMenuDropdownClass} #{activeClass}")
+                    +e.link(href="#{ent.link}" class="") #{ent.title}
+
                     if (ent.submenu)
-                        +e.submenu
-                            +submenu-left(ent.submenu)
+                        +e.UL.submenu-2lvl
+
+                            each ent2, num2 in ent.submenu
+
+                                if (ent2.submenu)
+                                    - var submenuDropdownClass = '_dropdown'
+                                else
+                                    - var submenuDropdownClass = ''
+
+                                +e.submenu-2lvl-item(class="#{submenuDropdownClass}")
+                                    +e.submenu-2lvl-link(href="#{ent2.link}") #{ent2.title}
+
+                                    if (ent2.submenu)
+                                        +e.submenu-3lvl-wrap
+                                            +e.UL.submenu-3lvl
+
+                                                each ent3, num3 in ent2.submenu
+
+                                                    if (ent3.submenu)
+                                                        - var submenuLvlThreeDropdownClass = '_dropdown'
+                                                    else
+                                                        - var submenuLvlThreeDropdownClass = ''
+
+                                                    +e.submenu-3lvl-item(class="#{submenuLvlThreeDropdownClass}")
+                                                        +e.submenu-3lvl-link(href="#{ent3.link}") #{ent3.title}
+
+                                                        if (ent3.submenu)
+                                                            +e.UL.submenu-4lvl
+
+                                                                each ent4, num4 in ent3.submenu
+
+                                                                    if (ent3.submenu)
+                                                                        - var submenuLvlFourDropdownClass = '_dropdown'
+                                                                    else
+                                                                        - var submenuLvlFourDropdownClass = ''
+
+                                                                    +e.submenu-4lvl-item(class="#{submenuLvlFourDropdownClass}")
+                                                                        +e.submenu-4lvl-link(href="#{ent4.link}") #{ent4.title}
+
+
+
+
+                        //+e.submenu
+                        //    +submenu-left(ent.submenu)

@@ -5,13 +5,14 @@
     width: calc(50% - .25rem);
     margin: 0 rem(8) rem(8) 0;
     height: rem(241);
+    border: rem(2) solid $bg-color;
 
     overflow: hidden;
     transition: all .3s;
 
     &:hover{
         .news-item__image{
-            transform: scale(1);
+            transform: scale(1.05);
         }
     }
 
@@ -20,6 +21,34 @@
         margin: 0 0 rem(8) 0;
 
         transition: all .5s;
+    }
+
+    &_img{
+
+        .news-item__date{
+            color: $light-color;
+        }
+
+        .news-item__title{
+            color: $light-color;
+            background-color: rgba(#0e3c62, .9);
+        }
+
+        .news-item__image{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            height: 100%;
+            width: 100%;
+            display: block;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            //transform: scale(1.05);
+            transition: all .5s;
+        }
     }
 
     &__link{
@@ -35,18 +64,7 @@
     }
 
     &__image{
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        height: 100%;
-        width: 100%;
-
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        transform: scale(1.05);
-        transition: all .5s;
+        display: none;
     }
 
     &__content{
@@ -58,7 +76,7 @@
     }
 
     &__date{
-        color: $light-color;
+        color: $dark-color;
     }
 
     &__promo{
@@ -89,8 +107,7 @@
         width: 100%;
         padding: rem(5) rem(24);
 
-        color: $light-color;
-        background-color: rgba(#0e3c62, .9);
+        color: $main-color;
         font-size: rem(20);
     }
 }

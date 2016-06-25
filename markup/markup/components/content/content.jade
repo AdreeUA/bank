@@ -4,6 +4,7 @@ include ../interview/interview
 include ../news-bank/news-bank
 include ../slider-large/slider-large
 include ../grid/grid
+include ../birthday/birthday
 include ../slider-small/slider-small
 
 mixin content(data)
@@ -14,7 +15,7 @@ mixin content(data)
             +e.item_height-2x
                 +calendar(calendar.defaults)
             +e.item
-                +slider-small(birthday.defaults).js-slider-small
+                +birthday(birthday.defaults)
             +e.item_width-2x
                 +news-bank(bank.defaults)
             +e.item

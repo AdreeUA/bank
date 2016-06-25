@@ -2,6 +2,7 @@
 
     font-size: rem(46);
     color: $dark-color;
+    transition: all .3s;
 
     &__month{
         display: inline-block;

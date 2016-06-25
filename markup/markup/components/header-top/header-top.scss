@@ -48,6 +48,10 @@
         font-size: rem(14);
         text-decoration: none;
         color: inherit;
+
+        &:hover{
+            text-decoration: none;
+        }
     }
 
     &__user-avatar{

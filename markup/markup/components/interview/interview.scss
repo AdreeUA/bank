@@ -16,6 +16,7 @@
         margin: 0 0 rem(31) 0;
 
         color: $title-color;
+        transition: all .3s;
     }
 
     &__question{
@@ -85,6 +86,10 @@
         }
     }
 
+    &__btn-wrap{
+        margin-left: rem(-11);
+    }
+
     &__btn{
         position: relative;
 
@@ -99,14 +104,15 @@
         border-radius: rem(30);
         color: $light-color;
         text-transform: uppercase;
+        transition: all .3s;
 
         &:hover{
             background-color: $hover-color;
-            transition: all .3s;
+            //transition: all .3s;
 
             &::before{
                 color: $hover-color;
-                transition: all .3s;
+
             }
         }
 
@@ -126,6 +132,7 @@
             border-radius: 50%;
             text-align: center;
             line-height: rem(27);
+            transition: all .3s;
 
         }
     }

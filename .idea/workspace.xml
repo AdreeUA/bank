@@ -2,145 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f253e4-b4b3-4e86-af27-2bfadf65f722" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/markup/components/btn-grid-filter/btn-grid-filter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/markup/components/categories/categories.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/markup/components/date-filter/date-filter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/banner.end.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/banner.start.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/jquery.mousewheel.shim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/jquery.select2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/jquery.shim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/compat/containerCss.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/compat/dropdownCss.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/compat/initSelection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/compat/inputData.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/compat/matcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/compat/query.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/compat/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/data/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/data/array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/data/base.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/data/maximumInputLength.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/data/maximumSelectionLength.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/data/minimumInputLength.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/data/select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/data/tags.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/data/tokenizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/defaults.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/diacritics.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown/attachBody.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown/attachContainer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown/closeOnSelect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown/hidePlaceholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown/infiniteScroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown/minimumResultsForSearch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown/search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown/selectOnClose.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/dropdown/stopPropagation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/mk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/sr-Cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/i18n/zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/keys.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/results.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/selection/allowClear.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/selection/base.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/selection/clickMask.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/selection/eventRelay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/selection/multiple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/selection/placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/selection/search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/selection/single.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/selection/stopPropagation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/translation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/select2/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/wrapper.end.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/js/plugins/select2/wrapper.start.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/_dropdown.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/_multiple.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/_single.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/mixins/_gradients.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/theme/classic/_defaults.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/theme/classic/_multiple.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/theme/classic/_single.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/theme/classic/layout.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/theme/default/_multiple.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/theme/default/_single.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/theme/default/layout.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/markup/components/birthday/biethday.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/birthday/birthday.jade" afterPath="$PROJECT_DIR$/markup/markup/components/birthday/birthday.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/birthday/birthday.scss" afterPath="$PROJECT_DIR$/markup/markup/components/birthday/birthday.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/calendar/calendar.scss" afterPath="$PROJECT_DIR$/markup/markup/components/calendar/calendar.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/content-news/content-news.jade" afterPath="$PROJECT_DIR$/markup/markup/components/content-news/content-news.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/content-news/content-news.scss" afterPath="$PROJECT_DIR$/markup/markup/components/content-news/content-news.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/content/content.scss" afterPath="$PROJECT_DIR$/markup/markup/components/content/content.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/filter/filter.jade" afterPath="$PROJECT_DIR$/markup/markup/components/filter/filter.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/filter/filter.scss" afterPath="$PROJECT_DIR$/markup/markup/components/filter/filter.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/grid/grid.scss" afterPath="$PROJECT_DIR$/markup/markup/components/grid/grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/content/content.jade" afterPath="$PROJECT_DIR$/markup/markup/components/content/content.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/date/date.scss" afterPath="$PROJECT_DIR$/markup/markup/components/date/date.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/header-top/header-top.scss" afterPath="$PROJECT_DIR$/markup/markup/components/header-top/header-top.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/interview/interview.scss" afterPath="$PROJECT_DIR$/markup/markup/components/interview/interview.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/main-nav/data/data.js" afterPath="$PROJECT_DIR$/markup/markup/components/main-nav/data/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.jade" afterPath="$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.scss" afterPath="$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/menu-left/data/data.js" afterPath="$PROJECT_DIR$/markup/markup/components/menu-left/data/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.jade" afterPath="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.scss" afterPath="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/news-bank/news-bank.scss" afterPath="$PROJECT_DIR$/markup/markup/components/news-bank/news-bank.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/pagination/pagination.scss" afterPath="$PROJECT_DIR$/markup/markup/components/pagination/pagination.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/search/search.scss" afterPath="$PROJECT_DIR$/markup/markup/components/search/search.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.js" afterPath="$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/news-item/news-item.scss" afterPath="$PROJECT_DIR$/markup/markup/components/news-item/news-item.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.scss" afterPath="$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.jade" afterPath="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.js" afterPath="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/submenu-left/submenu-left.scss" afterPath="$PROJECT_DIR$/markup/markup/components/submenu-left/submenu-left.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/submenu/submenu.scss" afterPath="$PROJECT_DIR$/markup/markup/components/submenu/submenu.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/static/scss/common.scss" afterPath="$PROJECT_DIR$/markup/markup/static/scss/common.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.scss" afterPath="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.scss" />
     </list>
     <ignored path="MCART.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -162,91 +43,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="slider-large.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slider-large.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main-nav.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/markup/markup/components/search/search.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="btn-follow.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/markup/markup/components/btn-follow/btn-follow.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grid.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/markup/markup/components/grid/grid.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="date-filter.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/markup/markup/components/date-filter/date-filter.scss">
+      <file leaf-file-name="birthday.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/birthday/birthday.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="137" selection-end-column="24" />
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mixins.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/markup/markup/static/scss/mixins.scss">
+      <file leaf-file-name="birthday.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/birthday/birthday.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/markup/markup/static/scss/common.scss">
+      <file leaf-file-name="date.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/date/date.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news-bank.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/news-bank/news-bank.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calendar.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/calendar/calendar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interview.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/interview/interview.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="134" column="32" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news-item.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/news-item/news-item.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news-item.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/news-item/news-item.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header-top.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/header-top/header-top.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-news.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/markup/markup/components/content-news/content-news.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -264,40 +155,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/markup/markup/components/data-news-bank/data/data.js" />
-        <option value="$PROJECT_DIR$/markup/markup/components/content/content.jade" />
-        <option value="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.jade" />
-        <option value="$PROJECT_DIR$/markup/markup/components/menu-left/data/data.js" />
-        <option value="$PROJECT_DIR$/markup/markup/components/bread-crumbs/bread-crumbs.scss" />
-        <option value="$PROJECT_DIR$/markup/markup/components/pagination/data/data.js" />
-        <option value="$PROJECT_DIR$/markup/markup/components/pagination/pagination.jade" />
-        <option value="$PROJECT_DIR$/markup/markup/pages/news.jade" />
-        <option value="$PROJECT_DIR$/markup/markup/components/filter/filter.js" />
-        <option value="$PROJECT_DIR$/markup/tars-config.js" />
         <option value="$PROJECT_DIR$/markup/markup/components/categories/categories.jade" />
         <option value="$PROJECT_DIR$/markup/markup/components/categories/categories.js" />
         <option value="$PROJECT_DIR$/markup/markup/components/categories/categories.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/btn-follow/btn-follow.jade" />
-        <option value="$PROJECT_DIR$/markup/markup/components/calendar/calendar.scss" />
-        <option value="$PROJECT_DIR$/markup/markup/components/news-bank/news-bank.scss" />
-        <option value="$PROJECT_DIR$/markup/markup/components/interview/interview.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/filter/filter.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/news-item/news-item.jade" />
-        <option value="$PROJECT_DIR$/markup/markup/components/header-top/header-top.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/content/content.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/btn-more-news/btn-more-news.jade" />
         <option value="$PROJECT_DIR$/markup/markup/components/pagination/pagination.scss" />
-        <option value="$PROJECT_DIR$/markup/markup/components/content-news/content-news.jade" />
         <option value="$PROJECT_DIR$/markup/markup/components/btn-more-news/btn-more-news.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/btn-date-filter/btn-date-filter.jade" />
         <option value="$PROJECT_DIR$/markup/markup/components/filter/filter.jade" />
-        <option value="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.js" />
         <option value="$PROJECT_DIR$/markup/markup/components/date-filter/js-date-filter-slider.js" />
         <option value="$PROJECT_DIR$/markup/markup/components/btn-grid-filter/btn-grid-filter.jade" />
         <option value="$PROJECT_DIR$/markup/markup/components/btn-grid-filter/btn-grid-filter.scss" />
@@ -305,9 +177,7 @@
         <option value="$PROJECT_DIR$/markup/markup/components/btn-grid-filter/btn-grid-filter.js" />
         <option value="$PROJECT_DIR$/markup/markup/components/date-filter/date-filter.js" />
         <option value="$PROJECT_DIR$/markup/markup/components/date-filter/date-filter.jade" />
-        <option value="$PROJECT_DIR$/markup/markup/components/news-item/news-item.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/date-filter/date-filter.scss" />
-        <option value="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/submenu-left/submenu-left.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/content-news/content-news.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.jade" />
@@ -317,10 +187,28 @@
         <option value="$PROJECT_DIR$/markup/markup/components/submenu/submenu.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.js" />
         <option value="$PROJECT_DIR$/markup/markup/components/grid/grid.scss" />
-        <option value="$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.js" />
         <option value="$PROJECT_DIR$/markup/markup/components/search/search.scss" />
         <option value="$PROJECT_DIR$/markup/markup/components/btn-follow/btn-follow.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/menu-left/data/data.js" />
+        <option value="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.jade" />
+        <option value="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.js" />
+        <option value="$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.jade" />
+        <option value="$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.js" />
+        <option value="$PROJECT_DIR$/markup/markup/components/birthday/biethday.js" />
+        <option value="$PROJECT_DIR$/markup/markup/components/content/content.jade" />
+        <option value="$PROJECT_DIR$/markup/markup/components/birthday/birthday.jade" />
+        <option value="$PROJECT_DIR$/markup/markup/components/birthday/birthday.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/date/date.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/news-bank/news-bank.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/calendar/calendar.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/interview/interview.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/content-news/content-news.jade" />
+        <option value="$PROJECT_DIR$/markup/markup/components/news-item/news-item.scss" />
+        <option value="$PROJECT_DIR$/markup/markup/components/header-top/header-top.scss" />
       </list>
     </option>
   </component>
@@ -368,7 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ColorIdeProjectViewPane">
         <subPane>
           <PATH>
@@ -420,118 +307,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCART" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCART" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCART" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCART" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCART" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCART" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCART" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MCART" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markup" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -608,10 +383,6 @@
               <option name="myItemId" value="markup" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -657,12 +428,117 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="btn-follow" />
+              <option name="myItemId" value="slider-small" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCART" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCART" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slider-large" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCART" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCART" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news-item" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCART" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCART" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news-bank" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCART" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MCART" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="header-top" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -741,31 +617,32 @@
       <workItem from="1466618190032" duration="1553000" />
       <workItem from="1466679076820" duration="21704000" />
       <workItem from="1466747405194" duration="101000" />
-      <workItem from="1466749823136" duration="33347000" />
+      <workItem from="1466749823136" duration="33625000" />
+      <workItem from="1466842777899" duration="11768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119189000" />
+    <option name="totallyTimeSpent" value="131235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32854986" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22583081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="123" width="1166" height="507" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -791,107 +668,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/markup/markup/static/js/plugins/select2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/static/scss/plugins/select2/mixins/_gradients.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/categories/categories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/static/scss/vars.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/categories/categories.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/grid/grid.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/categories/categories.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/news-bank/news-bank.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/interview/interview.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/content/content.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/btn-follow/btn-follow.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/filter/filter.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/markup/markup/components/pagination/pagination.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,15 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/calendar/calendar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,19 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/header-top/header-top.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/markup/markup/components/btn-more-news/btn-more-news.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,30 +712,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/news-item/news-item.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/btn-date-filter/btn-date-filter.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/content-news/content-news.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/btn-date-filter/btn-date-filter.jade" />
     <entry file="file://$PROJECT_DIR$/markup/markup/components/btn-more-news/btn-more-news.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -983,27 +721,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/markup/markup/components/btn-grid-filter/btn-grid-filter.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,31 +769,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/news-item/news-item.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="78" column="56" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/static/js/plugins/jquery.liMenuHor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/static/js/plugins/jquery.liMenuHor.js" />
     <entry file="file://$PROJECT_DIR$/markup/markup/components/main-nav/data/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="292" column="17" selection-start-line="292" selection-start-column="17" selection-end-line="292" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,14 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="26" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/submenu/submenu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -1107,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,26 +811,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1153,7 +829,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/markup/markup/static/scss/mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1161,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/markup/markup/components/date-filter/date-filter.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="1995">
           <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="137" selection-end-column="24" />
           <folding />
         </state>
@@ -1175,17 +851,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/markup/markup/components/search/search.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="480">
           <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
           <folding />
         </state>
@@ -1195,6 +863,192 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/menu-left/data/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/submenu-left/submenu-left.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/submenu/submenu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="42" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/main-nav/main-nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="2" selection-end-line="26" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/menu-left/menu-left.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/slider-large/slider-large.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/content/content.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/slider-small/slider-small.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/birthday/biethday.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/birthday/birthday.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/birthday/birthday.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/date/date.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/news-bank/news-bank.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/calendar/calendar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/interview/interview.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="134" column="32" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/news-item/news-item.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/content-news/content-news.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/news-item/news-item.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/markup/markup/components/header-top/header-top.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
           <folding />
         </state>
       </provider>

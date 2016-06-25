@@ -1,1 +1,148 @@
-.birthday {}
+.birthday {
+    height: 100%;
+
+    &__item{
+        position: relative;
+
+        &:hover{
+
+            .birthday__image{
+                transform: scale(1.05);
+            }
+
+            .birthday__name-wrap{
+                opacity: 1;
+                transition: all .3s;
+            }
+        }
+    }
+
+    &__name-wrap{
+        position: absolute;
+        left: 0;
+        z-index: 11;
+        top: 30%;
+
+        width: 100%;
+        opacity: 0;
+    }
+
+    &__name{
+        padding: rem(0) rem(20);
+        display: block;
+
+        text-align: center;
+        color: $light-color;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &__image{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 100%;
+        width: 100%;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        transition: all .3s;
+    }
+
+    &__link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__title-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: rem(60);;
+    }
+
+    &__content{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        min-height: rem(60);
+        padding: rem(0)  rem(29);
+
+        color: $light-color;
+        background-color: rgba($title-bg, .8);
+        text-align: center;
+
+        h3{
+            margin: 0;
+            display: inline-block;
+            vertical-align: middle;
+
+            font-size: rem(18);
+
+
+        }
+    }
+
+
+    // SLICK arrows
+
+    .slick-arrow{
+        position: absolute;
+        bottom: rem(14);
+        z-index: 2;
+
+        height: rem(30);
+        width: rem(30);
+
+        font-size: 0;
+        border: none;
+        background-color: transparent;
+        outline: none;
+
+        &::before{
+            content: '';
+        }
+
+    }
+
+    .slick-prev{
+        left: rem(5);
+
+        &::before{
+            @include triangle(14px, $light-color, left);
+        }
+
+        &:hover{
+            &:before{
+                border-right-color: rgba($main-color, .8);
+            }
+        }
+    }
+
+    .slick-next{
+        right: rem(5);
+
+        &::before{
+            @include triangle(14px, $light-color, right);
+        }
+
+        &:hover{
+            &:before{
+                border-left-color: rgba($main-color, .8);
+            }
+        }
+    }
+}
