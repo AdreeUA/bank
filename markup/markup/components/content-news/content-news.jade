@@ -4,8 +4,8 @@ include ../news-item/news-item
 include ../btn-more-news/btn-more-news
 
 mixin content-news(data)
-    +b.content-news&attributes(attributes)
-        h2 Новости Банка
+    +b.SECTION.content-news&attributes(attributes)
+        h1 Новости Банка
         +filter
         +news-item._img
         +news-item._img

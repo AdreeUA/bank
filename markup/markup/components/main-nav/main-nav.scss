@@ -32,14 +32,14 @@
         position: relative;
 
 
-        border-right: 3px solid #dadbdb;
+        border-right: rem(2) solid #dadbdb;
         border-top: rem(4) solid transparent;
 
         text-align: center;
         transition: all .3s;
 
         &:first-of-type{
-            border-left: 3px solid #dadbdb;
+            border-left: rem(2) solid #dadbdb;
         }
 
         &:hover{

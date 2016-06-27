@@ -22,6 +22,7 @@
         line-height: rem(30);
 
         cursor: pointer;
+        overflow: hidden;
 
         &:not(:last-of-type){
             margin-right: rem(8);

@@ -6,11 +6,10 @@
 
     @include clearfix;
 
-    h2 {
+    h1 {
         margin: 0 0 rem(18);
 
-        font-size: 24px;
-        color: $main-color;
+        font-size: rem(24);
     }
 
     .news-item:nth-child(even){

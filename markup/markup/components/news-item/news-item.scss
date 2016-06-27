@@ -5,25 +5,40 @@
     width: calc(50% - .25rem);
     margin: 0 rem(8) rem(8) 0;
     height: rem(241);
+    padding: rem(20);
     border: rem(2) solid $bg-color;
 
     overflow: hidden;
-    transition: all .3s;
+    transition: background .3s;
 
     &:hover{
+        background-color: $bg-color;
+
         .news-item__image{
             transform: scale(1.05);
         }
-    }
 
-    &_full{
-        width: 100%;
-        margin: 0 0 rem(8) 0;
+        .news-item__title{
+            color: $dark-color;
+        }
 
-        transition: all .5s;
+        .news-item__date{
+            color: $main-color;
+        }
     }
 
     &_img{
+
+        &:hover{
+
+            .news-item__title{
+                color: $light-color;
+            }
+
+            .news-item__date{
+                color: $light-color;
+            }
+        }
 
         .news-item__date{
             color: $light-color;
@@ -51,6 +66,86 @@
         }
     }
 
+    // Списочное представление
+
+    &_list{
+        width: 100%;
+        margin: 0 !important;
+        height: auto;
+        border-color: transparent;
+        border-bottom-color: $bg-color;
+
+        &:hover{
+            border-bottom-color: $title-color;
+
+            .news-item__title{
+                color: $dark-color;
+            }
+
+            .news-item__date{
+                color: $main-color;
+            }
+
+        }
+
+        .news-item__image {
+            display: none;
+        }
+
+        .news-item__date{
+            display: inline-block;
+            vertical-align: top;
+            
+            color: $dark-color;
+        }
+
+        .news-item__share{
+            display: block;
+        }
+
+        .news-item__category-wrap{
+            display: inline-block;
+            vertical-align: top;
+            max-width: 100%;
+        }
+
+        .news-item__category{
+            background-color: transparent;
+            color: $main-color;
+
+            &:hover{
+                color: inherit;
+                background-color: transparent;
+            }
+        }
+
+        .news-item__content{
+            //display: block;
+        }
+
+        .news-item__text{
+            display: block;
+            margin: 0 0 rem(10);
+
+            :first-of-type{
+                margin: 0;
+            }
+        }
+
+        .news-item__title{
+            position: static;
+
+            padding: 0;
+            margin-bottom: rem(12);
+
+            color: $main-color;
+            background-color: transparent;
+        }
+
+    }
+
+    // КОНЕЦ Списочное представление
+
     &__link{
         position: absolute;
         top: 0;
@@ -72,26 +167,46 @@
         display: flex;
         justify-content: space-between;
 
-        padding: rem(22);
+        margin-bottom: rem(20);
     }
 
     &__date{
+        margin-right: rem(29);
+
         color: $dark-color;
     }
 
-    &__promo{
+    &__share{
+        margin-left: rem(10);
+        display: none;
+    }
+
+    &__category-wrap{
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        flex-basis: 100%;
+    }
+
+    &__category{
         position: relative;
         z-index: 3;
 
+        margin-bottom: rem(5);
         padding: rem(10);
         display: inline-block;
         vertical-align: top;
-        height: rem(30);
+        //height: rem(30);
 
         color: $light-color;
         background-color: $hover-color;
         border-radius: rem(5);
         font-size: rem(11);
+        text-transform: uppercase;
+
+        @include clearfix;
 
         &:hover{
             background-color: lighten($hover-color, 10);
@@ -109,5 +224,13 @@
 
         color: $main-color;
         font-size: rem(20);
+        transition: color .3s;
+    }
+
+    &__text{
+        display: none;
+
+        color: $main-color;
+        font-size: rem(15);
     }
 }

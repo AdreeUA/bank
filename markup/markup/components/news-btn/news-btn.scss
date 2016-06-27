@@ -1,0 +1,60 @@
+.news-btn {
+    margin-top: rem(8);
+    padding: 0;
+
+    list-style-type: none;
+    text-align: center;
+    color: #939598;;
+
+    &__item{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__link{
+        position: relative;
+
+        display: block;
+        padding: rem(10) rem(14) rem(8);
+        border: rem(1) solid $bg-color;
+
+        border-radius: rem(5);
+        color: inherit;
+        font-size: rem(14);
+        transition: background .3s;
+        
+        &:hover{
+            background-color: $bg-color;
+            text-decoration: none;
+        }
+
+        &::before{
+            position: absolute;
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            content: '';
+        }
+
+        &_prev{
+            padding: rem(10) rem(14) rem(8) rem(38);
+
+            &::before{
+                left: rem(10);
+
+                @include triangle(0.625rem, #939598, left)
+            }
+        }
+
+        &_next{
+            padding: rem(10) rem(38) rem(8) rem(14);
+
+            &::before{
+                right: rem(10);
+
+                @include triangle(0.625rem, #939598, right)
+            }
+        }
+    }
+}

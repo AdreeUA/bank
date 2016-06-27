@@ -2,6 +2,7 @@
     float: left;
     
     width: 22%;
+    border-bottom: rem(2) solid #dadbdb;
 
     color: $main-color;
 
@@ -190,11 +191,11 @@
     &__submenu-3lvl{
         position: relative;
 
-        border: rem(3) solid #dadbdb;
+        border: rem(2) solid #dadbdb;
         border-left-color: transparent;
         padding: rem(17) 0 rem(15);
         margin: 0;
-        width: rem(256);
+        width: rem(475);
 
         list-style-type: none;
         background-color: $light-color;
@@ -205,10 +206,10 @@
     }
 
     &__submenu-3lvl-link{
-        padding: rem(8) rem(10);
+        padding: rem(6) rem(10);
 
-        color: $dark-color;
-        font-size: rem(14);
+        color: $main-color;
+        font-size: rem(15);
         font-weight: 600;
 
         &_active{
@@ -224,11 +225,11 @@
     }
 
     &__submenu-4lvl-link{
-        padding: rem(5) rem(10) rem(5) rem(25);
+        padding: rem(6) rem(10) rem(6) rem(25);
 
-        color: $main-color;
-        font-size: rem(12);
+        color: #939598;
         font-weight: 400;
+        font-size: rem(12);
 
         &_active{
             background-color: $bg-color;

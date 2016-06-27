@@ -1,0 +1,75 @@
+.share {
+    float: right;
+
+    font-size: rem(11);
+
+    &__list{
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+        white-space: nowrap;
+    }
+
+    &__item{
+        display: inline-block;
+        vertical-align: top;
+        margin-right: rem(25);
+    }
+
+    &__link{
+        position: relative;
+        z-index: 5;
+
+        display: block;
+        padding: rem(8) rem(8) rem(8) rem(25);
+
+        color: $main-color;
+        border-radius: rem(5);
+        transition: background .3s;
+
+        &:hover{
+            text-decoration: none;
+
+            background-color: $bg-color;
+        }
+
+        &::before{
+            position: absolute;
+            left: rem(3);
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            content: '';
+        }
+
+        &_comment{
+
+            &::before{
+                @include bg($icon-message);
+            }
+        }
+
+        &_like{
+
+            &::before{
+                @include bg($icon-like);
+            }
+        }
+
+        &_liked{
+
+            &::before{
+                @include bg($icon-liked);
+            }
+        }
+
+        &_views{
+
+            &::before{
+                @include bg($icon-views);
+            }
+        }
+    }
+}

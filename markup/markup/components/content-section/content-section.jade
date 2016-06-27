@@ -1,0 +1,8 @@
+include ../news-details/news-details
+include ../news-btn/news-btn
+
+mixin content-section(data)
+    +b.SECTION.content-section&attributes(attributes)
+        h1 Возвращение нефтяного гиганта
+        +news-details
+        +news-btn

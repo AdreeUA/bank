@@ -1,16 +1,9 @@
 mixin btn-grid-filter(data)
     +b.btn-grid-filter&attributes(attributes)
 
-        +e.INPUT.radio(type="radio"
-                        name="grid"
-                        id="gridHalf"
-                        checked)
-        +e.LABEL.label(for="gridHalf")
+        +e.BUTTON.item_grid._active
             +e.SPAN.decor-square_top
             +e.SPAN.decor-square_bottom
 
-        +e.INPUT.radio(type="radio"
-                        name="grid"
-                        id="gridFull")
-        +e.LABEL.label(for="gridFull")
+        +e.BUTTON.item_list
             +e.SPAN.decor-line

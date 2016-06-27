@@ -1,0 +1,42 @@
+.news-details {
+
+    border-bottom: rem(2) solid #dadbdb;
+
+    @include clearfix;
+
+    p {
+        font-size: rem(16);
+        margin: rem(25) 0;
+    }
+
+    &__header{
+        @include clearfix;
+    }
+
+    &__date{
+        float: left;
+        //display: inline-block;
+        //vertical-align: top;
+
+        font-size: rem(11);
+        color: $main-color;
+    }
+
+    &__image{
+        margin: rem(7) 0 rem(27);
+
+        &_left{
+            float: left;
+
+            width: calc(50% - 0.21875rem);
+            margin: rem(7) rem(3.5) rem(27) 0;
+        }
+
+        &_right{
+            float: right;
+
+            width: calc(50% - 0.21875rem);
+            margin: rem(7) 0 rem(27) rem(3.5);
+        }
+    }
+}

@@ -1,0 +1,8 @@
+mixin news-btn(data)
+    +b.UL.news-btn&attributes(attributes)
+        +e.item
+            +e.link_prev(href="#") Предыдущая новость
+        +e.item
+            +e.link_back(href="#") Вернуться к ленте
+        +e.item
+            +e.link_next(href="#") Следующая новость

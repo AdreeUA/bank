@@ -1,19 +1,25 @@
 $(document).ready(function () {
 
-    var gridFull = $('#gridFull');
-    var gridHalf = $('#gridHalf');
+    var gridBtnFull = $('.btn-grid-filter__item_grid');
+    var gridBtnHalf = $('.btn-grid-filter__item_list');
     var gridItem = $('.news-item');
 
-    gridFull.click(function (e) {
+    gridBtnHalf.click(function (e) {
         e.preventDefault();
 
-        gridItem.toggleClass('news-item_full');
+        gridItem.addClass('news-item_list');
+        gridBtnHalf.addClass('btn-grid-filter__item_active');
+        gridBtnFull.removeClass('btn-grid-filter__item_active');
+
     });
 
-    gridHalf.click(function (e) {
+    gridBtnFull.click(function (e) {
         e.preventDefault();
 
-        gridItem.removeClass('news-item_full');
+        gridItem.removeClass('news-item_list');
+        gridBtnHalf.removeClass('btn-grid-filter__item_active');
+        gridBtnFull.addClass('btn-grid-filter__item_active');
+
     });
 
 

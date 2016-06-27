@@ -1,4 +1,5 @@
 include ../date/date
+include ../share/share
 
 mixin news-item(data)
     +b.news-item&attributes(attributes)
@@ -12,6 +13,11 @@ mixin news-item(data)
                 +e.SAPN.day 26
                 +e.SPAN.month 07
 
-            +e.A.promo(href="#") НОВОСТИ БАНКА
+            +e.category-wrap
+                +e.A.category(href="#") НОВОСТИ БАНКА
+                +e.A.category(href="#") Карьера
+
+            +share.__share
 
         +e.title Банк начинает эквайринг карт платежной системы МИР
+        +e.P.text Наш Банк вполне может похвастаться списком крупных корпоративных клиентов – заводов и предприятий, играющих не последнюю роль в экономике региона.
