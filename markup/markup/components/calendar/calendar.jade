@@ -4,7 +4,7 @@ mixin calendar(data)
     +b.calendar&attributes(attributes)
         each ent, num in data
 
-            +e.H2.header= ent.header
+            +e.A.header(href="#")= ent.header
 
             if ent.items
                 +e.UL.list

@@ -15,7 +15,7 @@ $(document).ready( function () {
             $value = $submenuRightPos - $menuRightPos;
 
         if ( $value > 0 ) {
-            $(this).css('left', -$value);
+            $(this).css('left', -$value - 2);
         }
 
     });

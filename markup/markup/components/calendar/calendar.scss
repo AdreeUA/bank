@@ -14,11 +14,16 @@
 
     &__header{
         margin: 0 0 rem(30);
+        display: block;
 
         color: $title-color;
         font-size: rem(19);
         text-transform: uppercase;
         transition: all .3s;
+
+        &:hover{
+            text-decoration: none;
+        }
     }
 
     &__list{

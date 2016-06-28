@@ -2,17 +2,22 @@
     position: relative;
     z-index: 10;
 
-    display: flex;
+    //display: flex;
+    display: table;
+    //width: 100%;
+    
     //columns: 5;
     border: 2px solid #dadbdb;
-    border-top-color: transparent;
+    //border-top-color: transparent;
     padding: rem(17) 0 rem(15) !important;
 
     text-align: left;
     background-color: $light-color;
 
     &__col{
-        max-width: rem(231);
+        display: table-cell;
+        
+        max-width: rem(233);
         padding-left: rem(18);
         padding-right: rem(65);
 
@@ -21,6 +26,7 @@
         }
 
         white-space: nowrap;
+        word-break: break-all;
     }
 
     &__item{
@@ -28,17 +34,6 @@
         position: relative;
 
         margin: rem(6) 0;
-
-
-        //&::before{
-        //    position: absolute;
-        //    right: 0;
-        //    top: 0;
-        //    height: 600px;
-        //    border-right: 1px solid #dadbdb;
-        //
-        //    content: '';
-        //}
     }
 
     &__link{
@@ -50,6 +45,8 @@
     &__sub-item{
         margin-left: rem(20);
         margin-bottom: rem(6);
+
+        color: $main-color;
     }
 
     &__sub-link{

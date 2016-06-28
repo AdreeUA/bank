@@ -21,11 +21,7 @@
             text-decoration: none;
         }
 
-        //line-height: 1.5;
-
-        //&:focus,
         //&:visited{
-        //    text-decoration: none;
         //    color: inherit;
         //}
     }
@@ -38,7 +34,6 @@
     }
 
     &__item{
-        //width: 20%;
         flex-grow: 1;
         position: relative;
 
@@ -71,11 +66,11 @@
                 &::before{
                     position: absolute;
                     left: 0;
-                    bottom: rem(-2);
-                    z-index: 2;
+                    bottom: rem(-3);
+                    z-index: 11;
 
                     width: 100%;
-                    height: rem(3);
+                    height: rem(10);
 
                     background-color: #fff;
                     content: '';
@@ -108,16 +103,14 @@
 
     &__submenu{
         position: absolute;
-        top: rem(56);
+        top: rem(54);
         left: rem(-2);
 
         height: 0;
+        //width: 1355px;
 
         overflow: hidden;
         transition: all .3s;
-
-        //display: none;
-        //width: 100%;
 
         &_right{
             right: 0;
@@ -128,6 +121,8 @@
     &__submenu-wrap{
         display: inline-block;
         vertical-align: top;
+        max-width: 1155px;
+
     }
 
 }

@@ -15,6 +15,7 @@
             background-color: $bg-color;
 
         }
+
     }
 
     &__list{
@@ -110,7 +111,7 @@
         position: relative;
 
         padding: rem(17) rem(20) rem(17) rem(12);
-        border-top: rem(3) solid #e1e0df;
+        border-top: rem(2) solid #e1e0df;
 
         text-transform: uppercase;
         font-size: rem(14);
@@ -192,7 +193,7 @@
         position: relative;
 
         border: rem(2) solid #dadbdb;
-        border-left-color: transparent;
+        //border-left-color: transparent;
         padding: rem(17) 0 rem(15);
         margin: 0;
         width: rem(475);
