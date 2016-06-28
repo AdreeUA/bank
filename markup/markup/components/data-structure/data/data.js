@@ -4,6 +4,7 @@ data = {structure: {
             title: "СТРАТЕГИЯ БАНКА",
             link: "#",
             active: true,
+            plus: true,
             submenu: [
                 {
                     title: "ГЛАВНАЯ ЦЕЛЬА",
@@ -12,6 +13,7 @@ data = {structure: {
                 {
                     title: "ПРИОРИТЕТЫ",
                     link: "#",
+                    plus: true,
                     submenu:[
                         {
                             title: "Заголовок третьего уровня 1",
@@ -24,6 +26,7 @@ data = {structure: {
                         {
                             title: "Заголовок третьего уровня 1",
                             link: "#",
+                            plus: true,
                             submenu:[
                                 {
                                     title: "Заголовок третьего уровня 1",
@@ -58,6 +61,7 @@ data = {structure: {
         {
             title: "СТРАТЕГИЯ БАНКА",
             link: "#",
+            plus: true,
             submenu: [
                 {
                     title: "ГЛАВНАЯ ЦЕЛЬА",
@@ -94,6 +98,7 @@ data = {structure: {
         {
             title: "СТРАТЕГИЯ БАНКА",
             link: "#",
+            plus: true,
             submenu: [
                 {
                     title: "ГЛАВНАЯ ЦЕЛЬА",
@@ -102,6 +107,7 @@ data = {structure: {
                 {
                     title: "ПРИОРИТЕТЫ",
                     link: "#",
+                    plus: true,
                     submenu:[
                         {
                             title: "Заголовок третьего уровня 1",
@@ -114,6 +120,7 @@ data = {structure: {
                         {
                             title: "Заголовок третьего уровня 1",
                             link: "#",
+                            plus: true,
                             submenu:[
                                 {
                                     title: "Заголовок третьего уровня 1",
@@ -148,6 +155,7 @@ data = {structure: {
         {
             title: "СТРАТЕГИЯ БАНКА",
             link: "#",
+            plus: true,
             submenu: [
                 {
                     title: "ГЛАВНАЯ ЦЕЛЬА",
@@ -156,6 +164,7 @@ data = {structure: {
                 {
                     title: "ПРИОРИТЕТЫ",
                     link: "#",
+                    plus: true,
                     submenu:[
                         {
                             title: "Заголовок третьего уровня 1",
@@ -168,6 +177,7 @@ data = {structure: {
                         {
                             title: "Заголовок третьего уровня 1",
                             link: "#",
+                            plus: true,
                             submenu:[
                                 {
                                     title: "Заголовок третьего уровня 1",

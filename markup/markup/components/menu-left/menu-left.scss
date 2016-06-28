@@ -19,39 +19,114 @@
 
     }
 
+    li{
+        position: relative;
+    }
+
     &_structure{
         width: 18%;
 
         font-size: rem(12);
 
+        li{
+            border-top: rem(2) solid #dadbdb;
+            //margin-top: rem(-2);
+        }
+
+        .menu-left__list{
+
+            ul {
+                display: none;
+            }
+        }
+
+        .menu-left__item_active{
+            a{
+                &:before{
+                    display: none;
+                }
+            }
+        }
+
+        .menu-left__item{
+
+            &:hover{
+                .menu-left__link::before{
+                    display: none;
+                }
+            }
+        }
+
+        .menu-left__item_dropdown,
+        .menu-left__submenu-2lvl-item_dropdown{
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .menu-left__submenu-2lvl-item_dropdown{
+
+            &:hover{
+                .menu-left__submenu-3lvl{
+                    display: none;
+                }
+            }
+        }
+
         .menu-left__link{
-            padding: rem(10) rem(10) rem(10) rem(8);
+            padding: rem(10) rem(15) rem(10) rem(18);
+            border: none;
+
+            font-size: rem(12);
+            text-transform: capitalize;
+        }
+
+        .menu-left__submenu-2lvl-link{
+            padding: rem(10) rem(10) rem(10) rem(22);
+
+            font-size: rem(12);
+            text-transform: capitalize;
+        }
+
+
+        .menu-left__submenu-2lvl-item{
+            .menu-left__plus{
+                top: rem(8);
+                left: rem(0);
+            }
+        }
+
+        .menu-left__submenu-3lvl-item{
+            .menu-left__plus{
+                left: rem(8);
+            }
+        }
+
+        .menu-left__submenu-3lvl-link{
+            padding: rem(10) rem(10) rem(10) rem(32);
+
+            font-size: rem(12);
+            font-weight: 400;
+        }
+
+        .menu-left__submenu-4lvl-link{
+            padding: rem(10) rem(10) rem(10) rem(42);
 
             font-size: rem(12);
         }
 
-        .menu-left__submenu-2lvl-link{
-            padding: rem(10) rem(10) rem(10) rem(18);
-
-            font-size: rem(11);
-        }
-
-        .menu-left__submenu-3lvl-link{
-            padding: rem(8);
-
-            font-size: rem(10);
-        }
-
-        .menu-left__submenu-4lvl-link{
-            font-size: rem(9);
-        }
-
-        .menu-left__submenu-3lvl-wrap{
-            left: rem(208);
-        }
-
         .menu-left__submenu-3lvl{
+            position: static;
+
             padding: 0;
+            width: auto;
+            border: none;
+        }
+
+        .menu-left__submenu-2lvl{
+            height: auto;
+            visibility: visible;
         }
     }
 
@@ -182,8 +257,8 @@
 
             &:hover{
 
-                .menu-left__submenu-3lvl-wrap{
-                    width: auto;
+                .menu-left__submenu-3lvl{
+                    display: block;
                 }
             }
 
@@ -223,10 +298,13 @@
     }
 
     &__submenu-3lvl{
-        position: relative;
+        position: absolute;
+        left: rem(254);
+        top: rem(-3);
+        z-index: 100;
 
+        display: none;
         border: rem(2) solid #dadbdb;
-        //border-left-color: transparent;
         padding: rem(17) 0 rem(15);
         margin: 0;
         width: rem(475);
@@ -268,6 +346,41 @@
         &_active{
             background-color: $bg-color;
         }
+    }
+
+    &__plus{
+        position: absolute;
+        top: rem(10);
+        left: 0;
+        z-index: 2;
+
+        width: rem(20);
+        height: rem(20);
+
+        text-align: center;
+        cursor: pointer;
+        transition: color .3s;
+
+        &::before{
+            display: inline-block;
+            vertical-align: middle;
+
+            font-size: rem(12);
+            font-family: glyphicons;
+            content: '\002b';
+        }
+
+        &:hover{
+            color: $hover-color;
+        }
+
+        &_active{
+
+            &::before{
+                content: '\2212';
+            }
+        }
+
     }
 
 }

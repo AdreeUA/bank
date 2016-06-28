@@ -17,7 +17,12 @@ mixin menu-left(data)
                     - var activeClass = ''
 
                 +e.LI.item(class="#{mainMenuDropdownClass} #{activeClass}")
+
+                    if (ent.plus)
+                        span.menu-left__plus
+
                     +e.link(href="#{ent.link}" class="") #{ent.title}
+
 
                     if (ent.submenu)
                         +e.UL.submenu-2lvl
@@ -30,37 +35,45 @@ mixin menu-left(data)
                                     - var submenuDropdownClass = ''
 
                                 +e.submenu-2lvl-item(class="#{submenuDropdownClass}")
+
+                                    if (ent2.plus)
+                                        span.menu-left__plus
+
                                     +e.submenu-2lvl-link(href="#{ent2.link}") #{ent2.title}
 
                                     if (ent2.submenu)
-                                        +e.submenu-3lvl-wrap
-                                            +e.UL.submenu-3lvl
+                                        +e.UL.submenu-3lvl
 
-                                                each ent3, num3 in ent2.submenu
+                                            each ent3, num3 in ent2.submenu
+
+                                                if (ent3.submenu)
+                                                    - var submenuLvlThreeDropdownClass = '_dropdown'
+                                                else
+                                                    - var submenuLvlThreeDropdownClass = ''
+
+                                                +e.submenu-3lvl-item(class="#{submenuLvlThreeDropdownClass}")
+
+                                                    if (ent3.plus)
+                                                        span.menu-left__plus
+
+                                                    +e.submenu-3lvl-link(href="#{ent3.link}") #{ent3.title}
 
                                                     if (ent3.submenu)
-                                                        - var submenuLvlThreeDropdownClass = '_dropdown'
-                                                    else
-                                                        - var submenuLvlThreeDropdownClass = ''
+                                                        +e.UL.submenu-4lvl
 
-                                                    +e.submenu-3lvl-item(class="#{submenuLvlThreeDropdownClass}")
-                                                        +e.submenu-3lvl-link(href="#{ent3.link}") #{ent3.title}
+                                                            each ent4, num4 in ent3.submenu
 
-                                                        if (ent3.submenu)
-                                                            +e.UL.submenu-4lvl
+                                                                if (ent3.submenu)
+                                                                    - var submenuLvlFourDropdownClass = '_dropdown'
+                                                                else
+                                                                    - var submenuLvlFourDropdownClass = ''
 
-                                                                each ent4, num4 in ent3.submenu
+                                                                +e.submenu-4lvl-item(class="#{submenuLvlFourDropdownClass}")
 
-                                                                    if (ent3.submenu)
-                                                                        - var submenuLvlFourDropdownClass = '_dropdown'
-                                                                    else
-                                                                        - var submenuLvlFourDropdownClass = ''
+                                                                    if (ent4.plus)
+                                                                        span.menu-left__plus
 
-                                                                    +e.submenu-4lvl-item(class="#{submenuLvlFourDropdownClass}")
-                                                                        +e.submenu-4lvl-link(href="#{ent4.link}") #{ent4.title}
+                                                                    +e.submenu-4lvl-link(href="#{ent4.link}") #{ent4.title}
 
 
 
-
-                        //+e.submenu
-                        //    +submenu-left(ent.submenu)
