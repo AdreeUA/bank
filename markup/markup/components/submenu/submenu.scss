@@ -19,10 +19,10 @@
         
         max-width: rem(233);
         padding-left: rem(18);
-        padding-right: rem(65);
+        padding-right: rem(30);
 
         &:not(:last-of-type){
-            border-right: 1px solid #dadbdb;
+            border-right: rem(1) solid #dadbdb;
         }
 
         white-space: nowrap;
@@ -53,6 +53,10 @@
         color: $main-color;
         font-size: rem(12);
         font-weight: 400;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     &__link,

@@ -1,7 +1,12 @@
 mixin categories(data)
     +b.SELECT.categories&attributes(attributes)
-        +e.OPTION.item Категория 1
-        +e.OPTION.item Категория 1
-        +e.OPTION.item Категория 1
-        +e.OPTION.item Категория 1
-        +e.OPTION.item Категория 1
+        optgroup(label="Group Name")
+            +e.OPTION.item Категория 1
+        +e.OPTION.item Категория 2
+        +e.OPTION.item Категория 3
+        +e.OPTION.item Категория 4
+        +e.OPTION.item Категория 5
+        +e.OPTION.item Категория 2
+        +e.OPTION.item Категория 3
+        +e.OPTION.item Категория 4
+        +e.OPTION.item Категория 5

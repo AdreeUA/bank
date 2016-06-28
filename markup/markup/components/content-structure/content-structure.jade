@@ -1,0 +1,8 @@
+include ../form-structure/form-structure
+include ../structure-catalog/structure-catalog
+
+mixin content-structure(data)
+    +b.SECTION.content-structure&attributes(attributes)
+        h1 Структура организации
+        +form-structure
+        +structure-catalog

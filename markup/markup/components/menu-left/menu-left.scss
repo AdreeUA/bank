@@ -6,9 +6,10 @@
 
     color: $main-color;
 
+
     a{
         display: block;
-        transition: all .3s;
+        //transition: all .3s;
 
         &:hover{
             text-decoration: none;
@@ -16,6 +17,42 @@
 
         }
 
+    }
+
+    &_structure{
+        width: 18%;
+
+        font-size: rem(12);
+
+        .menu-left__link{
+            padding: rem(10) rem(10) rem(10) rem(8);
+
+            font-size: rem(12);
+        }
+
+        .menu-left__submenu-2lvl-link{
+            padding: rem(10) rem(10) rem(10) rem(18);
+
+            font-size: rem(11);
+        }
+
+        .menu-left__submenu-3lvl-link{
+            padding: rem(8);
+
+            font-size: rem(10);
+        }
+
+        .menu-left__submenu-4lvl-link{
+            font-size: rem(9);
+        }
+
+        .menu-left__submenu-3lvl-wrap{
+            left: rem(208);
+        }
+
+        .menu-left__submenu-3lvl{
+            padding: 0;
+        }
     }
 
     &__list{
@@ -33,7 +70,7 @@
         &:hover{
 
             .menu-left__link{
-                transition: all .3s;
+                //transition: all .3s;
 
                 &::before{
                     position: absolute;
@@ -128,11 +165,10 @@
         margin: 0;
         padding: 0;
         height: 0;
-        //transform: translateY(-10%);
 
         visibility: hidden;
         list-style-type: none;
-        //transition: all .3s;
+        transition: height .3s;
 
         font-size: rem(14);
     }
@@ -141,16 +177,13 @@
         border-top: rem(3) solid #e1e0df;
 
         position: relative;
+
         &_dropdown{
 
             &:hover{
-                //transition: all .3s;
 
                 .menu-left__submenu-3lvl-wrap{
-                    //transform: scaleX(1);
                     width: auto;
-                    transition: all .3s;
-                    //display: block;
                 }
             }
 

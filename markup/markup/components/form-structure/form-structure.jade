@@ -1,0 +1,39 @@
+include ../categories/categories
+
+mixin form-structure(data)
+    +b.FORM.form-structure&attributes(attributes)(action="#")
+        +e.LABEL.label
+            +e.INPUT.input(type="text"
+                            name="name"
+                            placeholder="Ф.И.О.")
+        +e.LABEL.label
+            +e.INPUT.input(type="text"
+                            name="email"
+                            placeholder="E-mail")
+        +e.LABEL.label
+            +e.INPUT.input(type="text"
+                            name="phone"
+                            placeholder="Телефон")
+        +e.LABEL.label
+            +e.INPUT.input(type="text"
+                            name="phone-out"
+                            placeholder="Внутрений телефон")
+
+        +categories.js-categories-structure(style="width: 22%" multiple="multiple")
+
+        +e.LABEL.label
+            +e.INPUT.input(type="text"
+                            name="key-words"
+                            placeholder="Ключевые слова")
+
+        +e.INPUT.checkbox(type="checkbox"
+                            id="myOffice")
+        +e.LABEL.label-checkbox(for="myOffice")
+            +e.SPAN.label-text Мой офис
+
+        +e.INPUT.checkbox(type="checkbox"
+                            id="online")
+        +e.LABEL.label-checkbox(for="online")
+            +e.SPAN.label-text В онлайне
+
+        +e.BUTTON.btn Найти

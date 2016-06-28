@@ -1,0 +1,41 @@
+.structure-catalog {
+
+    font-size: rem(13);
+    color: $main-color;
+
+    &__row{
+        display: flex;
+        border-bottom: rem(2) solid $bg-color;
+    }
+
+    &__item{
+        padding: rem(20) rem(30) rem(20) rem(20);
+    }
+
+    &__avatar-wrap{
+        display: inline-block;
+        vertical-align: top;
+        padding: rem(5);
+        border: rem(1) solid $bg-color;
+        width: rem(200);
+    }
+
+    &__avatar{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__label{
+        padding: rem(6) 0;
+
+
+        &_name{
+            color: $hover-color;
+            font-weight: bold;
+        }
+    }
+
+    &__phone-work{
+        margin: 0 rem(3);
+    }
+}
