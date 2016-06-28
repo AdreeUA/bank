@@ -1,9 +1,9 @@
 mixin share(data)
     +b.share&attributes(attributes)
         +e.UL.list
-            +e.item
-                +e.link_comment(href="#") 500
-            +e.item
-                +e.link_like._liked(href="#") 400
-            +e.item
-                +e.link_views(href="#") 2500
+            +e.item_comment 500
+                //+e.link_comment(href="#") 500
+            +e.item_like._liked 400
+                //+e.link_like._liked(href="#") 400
+            +e.item_views 2500
+                //+e.link_views(href="#") 2500

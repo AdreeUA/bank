@@ -12,27 +12,15 @@
     }
 
     &__item{
-        display: inline-block;
-        vertical-align: top;
-        margin-right: rem(25);
-    }
-
-    &__link{
         position: relative;
         z-index: 5;
 
-        display: block;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: rem(25);
         padding: rem(8) rem(8) rem(8) rem(25);
 
         color: $main-color;
-        border-radius: rem(5);
-        transition: background .3s;
-
-        &:hover{
-            text-decoration: none;
-
-            background-color: $bg-color;
-        }
 
         &::before{
             position: absolute;
@@ -52,6 +40,7 @@
         }
 
         &_like{
+            cursor: pointer;
 
             &::before{
                 @include bg($icon-like);
@@ -72,4 +61,5 @@
             }
         }
     }
+
 }
