@@ -29,11 +29,11 @@
     }
 
     &__title-wrap{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: table;
         width: 100%;
-        min-height: rem(60);;
+        min-height: rem(60);
+
+        vertical-align: middle;
     }
 
     &__content{
@@ -51,12 +51,11 @@
 
         h3{
             margin: 0;
-            display: inline-block;
+            display: table-cell;
             vertical-align: middle;
 
             font-size: rem(18);
-
-
+            color: $light-color;
         }
     }
 

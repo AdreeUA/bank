@@ -52,10 +52,12 @@
 
     &__date{
         margin-right: rem(12);
+        min-width: rem(76);
     }
 
     &__title{
         margin: 0;
+        max-width: 100%;
 
         color: $main-color;
         font-size: rem(18);

@@ -13,7 +13,7 @@
 
     &__col{
         max-width: rem(231);
-        padding-left: rem(27);
+        padding-left: rem(18);
         padding-right: rem(65);
 
         &:not(:last-of-type){
@@ -62,7 +62,7 @@
     &__sub-link{
         &:hover{
             color: $hover-color;
-            transition: all .3s;
+            transition: color .3s;
         }
     }
 }

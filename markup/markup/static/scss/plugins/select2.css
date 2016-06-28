@@ -302,8 +302,8 @@
             padding-left: 6em; }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #DA002E;
-  color: white; }
+  background-color: #F0F0F0;
+  color: #000; }
 
 .select2-container--default .select2-results__group {
   cursor: default;

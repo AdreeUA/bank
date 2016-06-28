@@ -47,7 +47,7 @@
 
             width: rem(18);
             height: rem(18);
-            border: 1px solid ;
+            border: rem(1) solid ;
 
             border-radius: 50%;
             content: '';
@@ -122,16 +122,18 @@
             top: 50%;
             transform: translateY(-50%);
 
+            display: inline-block;
+            vertical-align: middle;
             width: rem(26);
             height: rem(26);
-            background-color: #fff;
 
+            background-color: #fff;
             font-family: glyphicons;
             content: '\e013';
             color: #27aae1;
             border-radius: 50%;
             text-align: center;
-            line-height: rem(27);
+            //line-height: rem(27);
             transition: all .3s;
 
         }

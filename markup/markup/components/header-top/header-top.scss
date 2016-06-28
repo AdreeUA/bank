@@ -56,7 +56,10 @@
 
     &__user-avatar{
         margin-right: rem(10);
+        display: block;
 
+        width: rem(56);
+        height: rem(56);
         border-radius: 50%;
     }
 

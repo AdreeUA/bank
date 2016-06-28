@@ -1,12 +1,8 @@
 .date {
     position: relative;
-    z-index: 3;
+    //z-index: 3;
 
     white-space: nowrap;
-
-    &:hover{
-        text-decoration: none;
-    }
 
     font-size: rem(46);
     color: $dark-color;

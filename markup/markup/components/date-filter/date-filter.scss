@@ -71,14 +71,21 @@
     }
 
     &__month{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        //display: flex;
+        //justify-content: space-between;
+        //flex-wrap: wrap;
+        @include clearfix;
     }
 
     &__month-label{
         //width: rem(84);
+        float: left;
+
         margin-bottom: rem(6);
+
+        &:nth-of-type(odd){
+            margin-right: rem(7);
+        }
     }
 
     &__month-item{

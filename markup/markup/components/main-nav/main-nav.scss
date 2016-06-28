@@ -16,7 +16,18 @@
         display: block;
 
         text-decoration: none;
+
+        &:hover{
+            text-decoration: none;
+        }
+
         //line-height: 1.5;
+
+        //&:focus,
+        //&:visited{
+        //    text-decoration: none;
+        //    color: inherit;
+        //}
     }
 
     &__list{
@@ -86,7 +97,13 @@
         font-weight: 600;
         text-decoration: none;
 
-
+        &:focus,
+        &:hover,
+        &:visited{
+            text-decoration: none;
+            color: #58595b;
+        }
+        
     }
 
     &__submenu{
