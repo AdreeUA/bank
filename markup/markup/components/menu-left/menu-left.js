@@ -30,22 +30,17 @@ $(document).ready( function () {
 
         $(this).click(function () {
 
-
-
             $(this).toggleClass('menu-left__plus_active');
 
             if ($(this).hasClass('menu-left__plus_active')) {
 
-                $(this).siblings('ul').attr('style', 'display:block');
+                $(this).siblings('ul').attr('style', 'display:none').slideDown(300);
 
             } else {
 
-                $(this).siblings('ul').attr('style', 'display:none');
+                $(this).siblings('ul').attr('style', 'display:block').slideUp(300);
 
             }
-
-            // $(this).siblings('ul').attr('style', 'display:none');
-
 
         });
 
