@@ -103,6 +103,18 @@
             }
         }
 
+        .menu-left__submenu-4lvl-item{
+            .menu-left__plus{
+                left: rem(16);
+            }
+        }
+
+        .menu-left__submenu-5lvl-item{
+            .menu-left__plus{
+                left: rem(24);
+            }
+        }
+
         .menu-left__submenu-3lvl-link{
             padding: rem(10) rem(10) rem(10) rem(32);
 
@@ -112,6 +124,12 @@
 
         .menu-left__submenu-4lvl-link{
             padding: rem(10) rem(10) rem(10) rem(42);
+
+            font-size: rem(12);
+        }
+
+        .menu-left__submenu-5lvl-link{
+            padding: rem(10) rem(10) rem(10) rem(52);
 
             font-size: rem(12);
         }
@@ -330,7 +348,8 @@
         }
     }
 
-    &__submenu-4lvl{
+    &__submenu-4lvl,
+    &__submenu-5lvl{
         margin: 0;
         padding: 0;
 
@@ -347,6 +366,10 @@
         &_active{
             background-color: $bg-color;
         }
+    }
+
+    &__submenu-5lvl-link{
+        color: #939598;
     }
 
     &__plus{

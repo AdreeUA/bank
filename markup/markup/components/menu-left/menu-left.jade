@@ -75,5 +75,16 @@ mixin menu-left(data)
 
                                                                     +e.submenu-4lvl-link(href="#{ent4.link}") #{ent4.title}
 
+                                                                    if (ent4.submenu)
+                                                                        +e.UL.submenu-5lvl
+
+                                                                            each ent5, num5 in ent4.submenu
+
+                                                                                +e.submenu-5lvl-item
+
+                                                                                    if (ent5.plus)
+                                                                                        span.menu-left__plus
+
+                                                                                    +e.submenu-5lvl-link(href="#{ent5.link}") #{ent5.title}
 
 

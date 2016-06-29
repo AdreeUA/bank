@@ -28,7 +28,9 @@ $(document).ready( function () {
 
     $(this).find($plus).each(function () {
 
-        $(this).click(function () {
+        $(this).click(function (e) {
+
+            e.preventDefault();
 
             $(this).toggleClass('menu-left__plus_active');
 
