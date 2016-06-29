@@ -1,72 +1,16 @@
 .ideas {
-    font-size: rem(15);
+
+    float: right;
+    width: rem(300);
+    padding: rem(22) rem(22) rem(15) rem(22);
+    border: rem(2) solid $bg-color;
+
+    font-size: rem(14);
     color: $main-color;
-    position: relative;
 
+    border-radius: rem(10);
+    background-color: $light-color;
 
-    &__inner{
-        position: absolute;
-        right: 0;
-        top: rem(42);
-        z-index: 10;
-        transform: translateX(9999px);
-
-        width: rem(320);
-        padding: rem(22) rem(22) rem(15) rem(22);
-        border: rem(2) solid $bg-color;
-
-        border-radius: rem(10);
-        background-color: $light-color;
-
-        transition: transform .3s;
-
-        &_open{
-            transform: translateX(0);
-        }
-    }
-
-    &__btn{
-        position: relative;
-
-        width: rem(200);
-        padding: rem(7) rem(25) rem(7) rem(10);
-        border: rem(2) solid $bg-color;
-
-        font-size: rem(14);
-        background-color: #fff;
-        border-radius: rem(5);
-
-        &::before{
-            position: absolute;
-            right: rem(10);
-            top: 50%;
-
-            transform: translateY(-10%);
-
-            @include triangle(9px, $main-color, down);
-
-            content: '';
-            transition: all .3s;
-        }
-
-        &::after{
-            position: absolute;
-            left: rem(8);
-            top: 50%;
-
-            height: 100%;
-            padding-right: rem(8);
-            border-right: rem(2) solid $bg-color;
-
-            font-family: glyphicons;
-            font-size: rem(16);
-            line-height: 2;
-
-            transform: translateY(-50%);
-
-            content: '\e086';
-        }
-    }
 
     &__link{
         display: inline-block;
@@ -128,6 +72,7 @@
             font-family: glyphicons;
 
             content: '\2212';
+            pointer-events: none;
         }
     }
 

@@ -17,17 +17,19 @@
     }
 
     &__year{
-        margin-left: rem(-28);
+        position: relative;
+        bottom: rem(-4);
+        margin-left: rem(-20);
 
         font-size: rem(14);
     }
 
     &__time{
         margin-left: rem(8);
-        margin-top: rem(-12);
+        margin-top: rem(-5);
         display: inline-block;
         vertical-align: middle;
 
-        font-size: rem(15);
+        font-size: rem(13);
     }
 }

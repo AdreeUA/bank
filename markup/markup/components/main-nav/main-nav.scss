@@ -26,6 +26,10 @@
         //}
     }
 
+    .container{
+        overflow: inherit;
+    }
+
     &__list{
         position: relative;
 

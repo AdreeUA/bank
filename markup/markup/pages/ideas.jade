@@ -3,6 +3,7 @@ include ../components/head/head
 include ../components/bread-crumbs/bread-crumbs
 include ../components/menu-left/menu-left
 include ../components/content-ideas/content-ideas
+include ../components/ideas/ideas
 
 block head
     +head(head.defaults)
@@ -11,4 +12,5 @@ block content
     .container
         +bread-crumbs
         +menu-left(menuLeft.defaults)
+        +ideas
         +content-ideas

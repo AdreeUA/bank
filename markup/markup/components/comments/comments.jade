@@ -1,3 +1,19 @@
 mixin comments(data)
     +b.comments&attributes(attributes)
         +e.title Комментарии
+
+        +e.item
+            +e.date 16 ноября 2015 г. 11.03
+            +e.A.name(href="#") Кухочкая Екатерина Владимировна
+            +e.text
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
+
+        +e.item
+            +e.date 16 ноября 2015 г. 11.03
+            +e.A.name(href="#") Кухочкая Екатерина Владимировна
+            +e.text
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
+
+        +e.anser
+            +e.TEXTAREA.entry-fiend(placeholder="Введите Ваше сообщение")
+            +e.BUTTON.btn Отправить комментарий

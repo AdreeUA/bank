@@ -157,6 +157,30 @@
 
     // КОНЕЦ Списочное представление
 
+    &_idea{
+
+        .share__item{
+            margin-right: rem(10);
+        }
+
+        .news-item{
+
+            &__date{
+                font-size: rem(28);
+            }
+
+            &__title{
+                font-size: rem(17);
+            }
+        }
+
+        .date__month{
+            margin-top: rem(0);
+
+            font-size: rem(13);
+        }
+    }
+
     &__link{
         position: absolute;
         top: 0;
@@ -276,6 +300,7 @@
         display: block;
 
         color: $main-color;
+        font-size: rem(14);
 
         transition: color .3s;
 

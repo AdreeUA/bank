@@ -1,1 +1,85 @@
-.comments {}
+.comments {
+
+    font-size: rem(15);
+
+    &__title{
+        margin-bottom: rem(30);
+
+        color: $title-color;
+        font-size: rem(18);
+        font-weight: 800;
+    }
+
+    &__item{
+        padding: rem(20) rem(10);
+        border: rem(2) solid $bg-color;
+        margin-bottom: rem(25);
+
+        border-radius: rem(5);
+    }
+
+    &__date{
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px;
+
+        font-size: rem(13);
+
+    }
+
+    &__name{
+        display: inline-block;
+        vertical-align: top;
+
+        color: $title-color;
+        font-size: rem(13);
+
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    &__text{
+        margin-top: rem(18);
+        padding: rem(15) rem(8);
+        border: rem(2) solid $bg-color;
+        
+        border-radius: rem(5);
+        background-color: $bg-color;
+    }
+
+    &__ansers{
+
+    }
+
+    &__entry-fiend{
+        width: 100%;
+        padding: rem(10);
+        border: rem(2) solid $bg-color;
+        min-height: rem(100);
+        margin-bottom: rem(15);
+
+        color: $main-color;
+
+        border-radius: rem(5);
+        resize: none;
+    }
+
+    &__btn{
+        padding: rem(8);
+        border: rem(2) solid $bg-color;
+        margin-bottom: rem(15);
+
+        color: $main-color;
+
+        background-color: transparent;
+        border-radius: rem(5);
+
+        transition: background .3s;
+        
+        &:hover{
+            background-color: $bg-color;
+        }
+    }
+}

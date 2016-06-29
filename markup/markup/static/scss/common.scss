@@ -11,6 +11,7 @@ html{
 .page {
     font-family: 'Calibri-light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: rem(18);
+    padding: 0 rem(15);
 }
 
 .page__wrapper {
@@ -26,7 +27,9 @@ html{
 .container{
     width: 1185px;
     margin: 0 auto;
-    padding: 0 rem(15);
+    //padding: 0 rem(15);
+
+    overflow: hidden;
 
     @include clearfix;
 }
