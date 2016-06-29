@@ -19,6 +19,7 @@ import 'components/btn-follow/btn-follow';
 import 'components/main-nav/main-nav';
 import 'components/menu-left/menu-left';
 import 'components/share/share';
+import 'components/ideas/ideas';
 
 $.bridget( 'packery', packery, $ );
 

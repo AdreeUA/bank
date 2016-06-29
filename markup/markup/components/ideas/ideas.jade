@@ -1,0 +1,19 @@
+mixin ideas(data)
+    +b.ideas&attributes(attributes)
+        +e.BUTTON.btn.js-ideas-btn Идеи
+        +e.inner
+            +e.A.link_title(href="#") Все идеи
+            +e.H3.subtitle Идеи в статусе
+            +e.UL.list
+
+                -var items = ["Новая идея", "У автора на доработке", "На экспертизе", "На рассмотрении", "Внедрено", "Отклонено", "Принята на внедрение", "Лучшая практика", "Повтор идеи (отклонено)"]
+
+                - for (var i = 0; i < items.length; i++)
+
+                    +e.item
+                        +e.link(href="#")= items[i]
+
+            +e.link(href="#") Ответственный за внедрение
+
+            +e.H3.subtitle Мои идеи
+            +e.link_bold(href="#") Идеи с незавершонными экспертизами

@@ -26,6 +26,15 @@
         .news-item__date{
             color: $main-color;
         }
+
+        .news-item__idea{
+            color: $light-color;
+            background-color: $main-color;
+        }
+
+        .news-item__name{
+            color: $dark-color;
+        }
     }
 
     &_img{
@@ -242,5 +251,36 @@
 
         color: $main-color;
         font-size: rem(15);
+    }
+
+    &__idea{
+        padding: rem(10);
+        height: rem(30);
+
+        color: $main-color;
+        background-color: $bg-color;
+        border-radius: rem(5);
+        font-size: rem(11);
+        text-transform: uppercase;
+
+        transition: background .3s, color .3s;
+
+        &:hover{
+            background-color: $main-color;
+            color: $light-color;
+            text-decoration: none;
+        }
+    }
+
+    &__name{
+        display: block;
+
+        color: $main-color;
+
+        transition: color .3s;
+
+        &:hover{
+            text-decoration: none;
+        }
     }
 }

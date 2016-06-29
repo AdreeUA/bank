@@ -1,0 +1,19 @@
+.content-idea {
+    float: right;
+    overflow: hidden;
+
+    width: 75%;
+
+    @include clearfix;
+
+    &__btns{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: rem(20);
+    }
+
+    &__follow{
+        margin-right: rem(30);
+        min-width: rem(150);
+    }
+}

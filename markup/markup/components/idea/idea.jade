@@ -1,0 +1,44 @@
+include ../comments/comments
+
+mixin idea(data)
+    +b.idea&attributes(attributes)
+        +e.content
+            +e.info
+                +e.row
+                    +e.label Номер:
+                    +e.disc 1665
+                +e.row
+                    +e.label Идея:
+                    +e.disc Корпаративная On-line библиотека
+                +e.row
+                    +e.label Описание:
+                    +e.disc
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt voluptates quibusdam?
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt voluptates quibusdam?
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt voluptates quibusdam?
+                +e.row
+                    +e.label Статус:
+                    +e.disc На экспертизе 12.11.2016
+                +e.row
+                    +e.label Комментарий к статусу:
+                    +e.disc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt voluptates quibusdam?
+                +e.row
+                    +e.label Эффективность:
+                    +e.disc 0 рублей/ 0 ПШЕ
+                +e.row
+                    +e.label Номер заявки в СУЗ:
+                    +e.disc
+                +e.row
+                    +e.label Хочу учавствовать в реализации:
+                    +e.disc Да
+                +e.row
+                    +e.label Конкурс Банк идей:
+                    +e.disc Не учавствует
+
+        +e.user
+            +e.avatar
+                img(src="__static__img/content/avatar-big.jpg" alt="Иванов Евгений Владимирович")
+            +e.A.name(href="#") Иванов Евгений Владимирович
+            +e.rang Дополнительный офис Выборгский
+
+        +comments.__comments

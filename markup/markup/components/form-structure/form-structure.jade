@@ -1,4 +1,5 @@
 include ../categories/categories
+include ../btn/btn
 
 mixin form-structure(data)
     +b.FORM.form-structure&attributes(attributes)(action="#")
@@ -36,4 +37,4 @@ mixin form-structure(data)
         +e.LABEL.label-checkbox(for="online")
             +e.SPAN.label-text В онлайне
 
-        +e.BUTTON.btn Найти
+        +btn.__btn Найти

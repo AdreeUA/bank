@@ -1,0 +1,80 @@
+.idea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__user{
+        width: 20%;
+        padding:rem(10);
+
+        color: $main-color;
+        font-size: rem(14);
+
+        text-align: center;
+    }
+
+    &__avatar{
+        border: rem(1) solid $bg-color;
+        padding: rem(5);
+        margin-bottom: rem(5);
+    }
+
+    &__name{
+        display: block;
+        padding: rem(7);
+
+        color: $hover-color;
+
+        border-radius: rem(5);
+
+        transition: background .3s;
+
+        &:hover{
+            background-color: $bg-color;
+            text-decoration: none;
+        }
+    }
+
+    &__rang{
+        font-size: rem(12);
+    }
+
+    &__content{
+        width: 79%;
+    }
+
+    &__comments{
+        width: 100%;
+    }
+
+    &__info{
+        width: 100%;
+        margin-bottom: rem(40);
+
+        font-size: rem(15);
+
+        p{
+            color: inherit;
+        }
+    }
+
+    &__row{
+        @include clearfix;
+    }
+
+    &__label{
+        float: left;
+        width: rem(200);
+        padding: rem(8) 0;
+
+        font-weight: 800;
+    }
+
+    &__disc{
+        padding: rem(8) 0;
+        min-height: rem(34);
+        border-bottom: rem(2) solid $bg-color;
+
+        overflow: hidden;
+    }
+}

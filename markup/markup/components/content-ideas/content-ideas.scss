@@ -1,0 +1,22 @@
+.content-ideas {
+    float: right;
+    overflow: hidden;
+
+    width: 75%;
+
+    @include clearfix;
+
+    h1 {
+        margin: 0 0 rem(18);
+
+        font-size: rem(24);
+    }
+
+    .search,
+    .btn,
+    .btn-follow,
+    .ideas__btn{
+        min-width: 23%;
+    }
+
+}

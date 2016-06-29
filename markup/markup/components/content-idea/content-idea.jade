@@ -1,0 +1,11 @@
+include ../btn-follow/btn-follow
+include ../share/share
+include ../idea/idea
+
+mixin content-idea(data)
+    +b.content-idea&attributes(attributes)
+        +e.btns
+            +btn-follow.__follow
+            +share
+
+        +idea

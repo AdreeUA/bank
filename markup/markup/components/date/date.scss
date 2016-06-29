@@ -15,4 +15,19 @@
 
         font-size: rem(22);
     }
+
+    &__year{
+        margin-left: rem(-28);
+
+        font-size: rem(14);
+    }
+
+    &__time{
+        margin-left: rem(8);
+        margin-top: rem(-12);
+        display: inline-block;
+        vertical-align: middle;
+
+        font-size: rem(15);
+    }
 }

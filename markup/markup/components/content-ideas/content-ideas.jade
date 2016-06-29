@@ -1,0 +1,35 @@
+include ../filter/filter
+include ../btn/btn
+include ../ideas/ideas
+include ../news-item/news-item
+
+mixin content-ideas(data)
+    +b.SECTION.content-ideas&attributes(attributes)
+        h1 Банк Идей
+
+        +filter
+            +search.__search
+            +btn Отправить идею
+            +btn-follow.__follow
+            +ideas
+
+        - for (var i = 0; i < 8; i++)
+
+            +news-item._list._idea
+                    +e.link(href="#")
+
+                    +e.content
+
+                        +date.__date
+                            +e.SAPN.day 26
+                            +e.SPAN.month 07
+                            +e.SPAN.year 2016
+                            +e.SPAN.time 21:01:58
+
+                        +e.A.idea(href="#") Идея №
+                            span 1599
+
+                        +share.__share
+
+                    +e.A.title(href="##") Банк начинает эквайринг карт платежной системы МИР
+                    +e.A.name(href="#") Васильев Андрей Павлович

@@ -1,0 +1,134 @@
+.ideas {
+    font-size: rem(15);
+    color: $main-color;
+    position: relative;
+
+
+    &__inner{
+        position: absolute;
+        right: 0;
+        top: rem(42);
+        z-index: 10;
+        transform: translateX(9999px);
+
+        width: rem(320);
+        padding: rem(22) rem(22) rem(15) rem(22);
+        border: rem(2) solid $bg-color;
+
+        border-radius: rem(10);
+        background-color: $light-color;
+
+        transition: transform .3s;
+
+        &_open{
+            transform: translateX(0);
+        }
+    }
+
+    &__btn{
+        position: relative;
+
+        width: rem(200);
+        padding: rem(7) rem(25) rem(7) rem(10);
+        border: rem(2) solid $bg-color;
+
+        font-size: rem(14);
+        background-color: #fff;
+        border-radius: rem(5);
+
+        &::before{
+            position: absolute;
+            right: rem(10);
+            top: 50%;
+
+            transform: translateY(-10%);
+
+            @include triangle(9px, $main-color, down);
+
+            content: '';
+            transition: all .3s;
+        }
+
+        &::after{
+            position: absolute;
+            left: rem(8);
+            top: 50%;
+
+            height: 100%;
+            padding-right: rem(8);
+            border-right: rem(2) solid $bg-color;
+
+            font-family: glyphicons;
+            font-size: rem(16);
+            line-height: 2;
+
+            transform: translateY(-50%);
+
+            content: '\e086';
+        }
+    }
+
+    &__link{
+        display: inline-block;
+        vertical-align: top;
+        padding: rem(6) rem(10);
+        margin: rem(5) 0;
+
+        color: $title-color;
+
+        border-radius: rem(5);
+
+        transition: color .3s;
+
+        &:hover{
+            background-color: $bg-color;
+            text-decoration: none;
+        }
+
+        &_bold{
+            font-weight: 800;
+        }
+        
+        &_title{
+            display: block;
+            padding: rem(10);
+
+            color: $hover-color;
+            text-align: center;
+
+            background-color: $bg-color;
+        }
+    }
+
+    &__list{
+        margin: 0 0 rem(30) rem(10);
+        padding: 0;
+
+        list-style-type: none;
+
+        a{
+            display: block;
+            padding-left: rem(30);
+            margin: 0;
+
+            color: inherit;
+        }
+    }
+
+    &__item{
+        position: relative;
+
+        &::before{
+            position: absolute;
+            left: rem(4);
+            top: 50%;
+            transform: translateY(-50%);
+
+            font-size: rem(15);
+            font-family: glyphicons;
+
+            content: '\2212';
+        }
+    }
+
+}

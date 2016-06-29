@@ -1,0 +1,14 @@
+extends ../components/layout/layout
+include ../components/head/head
+include ../components/bread-crumbs/bread-crumbs
+include ../components/menu-left/menu-left
+include ../components/content-ideas/content-ideas
+
+block head
+    +head(head.defaults)
+
+block content
+    .container
+        +bread-crumbs
+        +menu-left(menuLeft.defaults)
+        +content-ideas

@@ -7,10 +7,51 @@ mixin content-news(data)
     +b.SECTION.content-news&attributes(attributes)
         h1 Новости Банка
         +filter
-        +news-item._img
-        +news-item._img
-        +news-item._img
+            +search.__search
+            +categories.js-categories.__caterories(style="width: 12.5rem")
+            +btn-follow.__follow
+            +btn-grid-filter
+            +date-filter
+
+        - for (var i = 0; i < 3; i++)
+            +news-item._img
+                +e.image(style="background-image: url(__static__img/content/news.jpeg)")
+                +e.link(href="#")
+
+                +e.content
+
+                    +date.__date
+                        +e.SAPN.day 26
+                        +e.SPAN.month 07
+
+                    +e.category-wrap
+                        +e.SPAN.category НОВОСТИ БАНКА
+                        +e.SPAN.category Карьера
+
+                    +share.__share
+
+                +e.A.title(href="##") Банк начинает эквайринг карт платежной системы МИР
+                +e.P.text Наш Банк вполне может похвастаться списком крупных корпоративных клиентов – заводов и предприятий, играющих не последнюю роль в экономике региона.
+
         +news-item
+            +e.image(style="background-image: url(__static__img/content/news.jpeg)")
+            +e.link(href="#")
+
+            +e.content
+
+                +date.__date
+                    +e.SAPN.day 26
+                    +e.SPAN.month 07
+
+                +e.category-wrap
+                    +e.SPAN.category НОВОСТИ БАНКА
+                    +e.SPAN.category Карьера
+
+                +share.__share
+
+            +e.A.title(href="##") Банк начинает эквайринг карт платежной системы МИР
+            +e.P.text Наш Банк вполне может похвастаться списком крупных корпоративных клиентов – заводов и предприятий, играющих не последнюю роль в экономике региона.
+
         +e.footer
             +btn-more-news
             +pagination
