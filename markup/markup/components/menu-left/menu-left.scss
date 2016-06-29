@@ -22,6 +22,7 @@
 
     li{
         position: relative;
+        z-index: 2;
     }
 
     &_structure{
@@ -206,6 +207,7 @@
                 right: rem(10);
                 top: rem(28);
                 z-index: 8;
+                pointer-events: none;
 
                 @include triangle(9px, $main-color, down);
 
@@ -215,6 +217,7 @@
         }
 
         &_active{
+            z-index: 3 !important;
 
             &::before{
                 display: none;
@@ -270,8 +273,9 @@
         margin: 0;
         padding: 0;
         position: absolute;
+        z-index: -1;
 
-        visibility: hidden;
+        //visibility: hidden;
         list-style-type: none;
 
         transform: translateY(-100%);
@@ -290,8 +294,9 @@
 
             &:hover{
 
-                .menu-left__submenu-3lvl{
+                 >.menu-left__submenu-3lvl{
                     opacity: 1;
+                    z-index: 6;
                     transform: translateX(0);
                 }
             }
@@ -325,8 +330,8 @@
     &__submenu-3lvl{
         position: absolute;
         left: rem(261);
-        top: rem(-3);
-        z-index: 6;
+        top: rem(-2);
+        z-index: -1;
 
         transform: translateX(-999px);
         opacity: 0;
