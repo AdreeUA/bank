@@ -76,4 +76,52 @@
         }
     }
 
+    &__label{
+        position: relative;
+
+        display: block;
+        padding-left: rem(25);
+        margin: rem(7) rem(15) rem(15) 0;
+
+        font-size: rem(14);
+        color: $main-color;
+        cursor: pointer;
+
+        &::before{
+            position: absolute;
+            left: 0;
+
+            width: rem(18);
+            height: rem(18);
+            border: rem(1) solid ;
+
+            border-radius: rem(5);
+            content: '';
+        }
+
+        &::after{
+            position: absolute;
+            left: rem(3);
+            top: rem(2);
+
+            //width: rem(8);
+            //height: rem(8);
+            opacity: 0;
+
+            font-size: rem(12);
+            font-family: glyphicons;
+            content: '\e013';
+        }
+
+    }
+
+    &__checkbox{
+        display: none;
+
+        &:checked + .ideas__label:after{
+            opacity: 1;
+            transition: all .3s;
+        }
+    }
+
 }

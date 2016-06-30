@@ -11,7 +11,8 @@ mixin ideas(data)
                 +e.item
                     +e.link(href="#")= items[i]
 
-        +e.link(href="#") Ответственный за внедрение
+        +e.INPUT.checkbox(type="checkbox" id="checkbox-idea-1")
+        +e.LABEL.label(for="checkbox-idea-1") Ответственный за внедрение
 
-        +e.H3.subtitle Мои идеи
-        +e.link_bold(href="#") Идеи с незавершонными экспертизами
+        +e.INPUT.checkbox(type="checkbox" id="checkbox-idea-2")
+        +e.LABEL.label(for="checkbox-idea-2") Мои идеи

@@ -59,11 +59,7 @@
             transition: all .3s;
 
             .main-nav__submenu{
-
-                //display: inline-block;
                 height: auto;
-
-                transition: all .3s;
            }
             
             .main-nav__link{
@@ -71,7 +67,7 @@
                     position: absolute;
                     left: 0;
                     bottom: rem(-3);
-                    z-index: 11;
+                    z-index: 21;
 
                     width: 100%;
                     height: rem(10);
@@ -107,14 +103,16 @@
 
     &__submenu{
         position: absolute;
+        z-index: 20;
         top: rem(54);
         left: rem(-2);
 
         height: 0;
+        //transform: translateY(-20%);
         //width: 1355px;
 
         overflow: hidden;
-        transition: all .3s;
+        transition: all 5s;
 
         &_right{
             right: 0;

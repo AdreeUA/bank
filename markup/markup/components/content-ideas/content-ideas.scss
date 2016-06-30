@@ -1,7 +1,7 @@
 .content-ideas {
     overflow: hidden;
     margin-right: rem(315);
-    margin-left: rem(270);
+    margin-left: rem(280);
 
     @include clearfix;
 
@@ -13,9 +13,8 @@
 
     .search,
     .btn,
-    .btn-follow,
-    .ideas__btn{
-        min-width: 23%;
+    .btn-follow{
+        min-width: 30%;
     }
 
 }

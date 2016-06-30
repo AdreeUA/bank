@@ -18,8 +18,8 @@ html(class="no-js", lang="ru")
 
 
         //- Main scripts. You can replace it, but I recommend you to leave it here
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+        script(src="https://code.jquery.com/jquery-3.0.0.min.js")
         script
-           | if (!window.jQuery) {document.write('<script src="../bower_components/jquery/dist/jquery.min.js"><\/script>');}
+           | if (!window.jQuery) {document.write('<script src="../node_modules/jquery/dist/jquery.min.js"><\/script>');}
         </script>
         script(src='%=static=%js/main%=hash=%%=min=%.js')
