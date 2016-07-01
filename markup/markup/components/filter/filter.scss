@@ -11,4 +11,53 @@
     &__follow{
         width: rem(150);
     }
+
+    &__btn-wrap {
+        position: relative;
+    }
+
+    &__btn{
+        position: relative;
+
+        border: rem(2) solid $bg-color;
+        //height: rem(33);
+        width: 100%;
+        padding: rem(7) rem(10) rem(7) rem(33);
+
+        border-radius: rem(4);
+        color: $main-color;
+        background-color: $light-color;
+        font-size: rem(14);
+        text-align: center;
+        cursor: pointer;
+
+        &::before{
+            position: absolute;
+            left: rem(6);
+            top: rem(3);
+
+            margin-top: rem(3);
+
+            font-family: glyphicons;
+            content: '\e086';
+            font-size: rem(16);
+            font-weight: bold;
+            color: $main-color;
+            border-radius: 50%;
+            text-align: center;
+            //line-height: rem(26);
+        }
+
+        &::after{
+            position: absolute;
+            left: rem(30);
+            top: 0;
+
+            height: 100%;
+            border-right: rem(2) solid $bg-color;
+
+            content: '';
+        }
+
+    }
 }

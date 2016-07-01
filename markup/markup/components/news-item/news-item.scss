@@ -179,6 +179,14 @@
 
             font-size: rem(13);
         }
+
+        .news-item__share {
+            min-width: 220px;
+        }
+
+        .share__item {
+            margin-right: rem(5);
+        }
     }
 
     &__link{
@@ -214,7 +222,7 @@
     &__share{
         margin-left: rem(10);
         display: none;
-        min-width: rem(220);
+        min-width: rem(300);
 
         pointer-events: none;
     }
@@ -279,7 +287,7 @@
 
     &__idea{
         padding: rem(10);
-        height: rem(30);
+        //height: rem(30);
 
         color: $main-color;
         background-color: $bg-color;

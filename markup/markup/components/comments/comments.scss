@@ -11,11 +11,32 @@
     }
 
     &__item{
+        position: relative;
+
         padding: rem(20) rem(10);
         border: rem(2) solid $bg-color;
         margin-bottom: rem(25);
 
         border-radius: rem(5);
+
+        &_anser {
+            border: none;
+            margin: rem(15) 0 0 rem(15);
+            padding-bottom: 0;
+            padding-right: 0;
+
+            .comments {
+
+                &__text {
+                    margin-top: rem(5);
+                }
+
+                &__btn-anser {
+                    top: rem(31);
+                    right: rem(14);
+                }
+            }
+        }
     }
 
     &__date{
@@ -40,16 +61,42 @@
         }
     }
 
+    &__text-wrap {
+        margin-left: rem(8);
+    }
+
     &__text{
+        position: relative;
+
         margin-top: rem(18);
         padding: rem(15) rem(8);
         border: rem(2) solid $bg-color;
         
         border-radius: rem(5);
         background-color: $bg-color;
+
     }
 
-    &__ansers{
+    &__btn-anser{
+        position: absolute;
+        top: rem(43);
+        right: rem(25);
+
+        padding: rem(5);
+        border: none;
+
+        font-size: rem(12);
+        color: $light-color;
+
+        background-color: $main-color;
+        border-radius: rem(5);
+
+        transition: color .3s, background .3s;
+        
+        &:hover {
+            color: darken($light-color, 5);
+            background-color: lighten($main-color, 2);
+        }
 
     }
 

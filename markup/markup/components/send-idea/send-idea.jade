@@ -1,0 +1,11 @@
+include ../btn/btn
+
+mixin send-idea(data)
+    +b.send-idea&attributes(attributes)
+        +e.FORM.form
+            +e.INPUT.title(type="text" name="idea" placeholder="Название идеи")
+            +e.TEXTAREA.text(placeholder="Описание идеи")
+            +e.LABEL.label-file
+                +e.mark Загрузить файл
+                +e.INPUT.file(type="file" )
+            +btn.__btn Отправить идею

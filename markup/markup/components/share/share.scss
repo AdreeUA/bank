@@ -46,6 +46,21 @@
                 @include bg($icon-like);
             }
         }
+        &_dislike{
+            cursor: pointer;
+
+            &::before{
+                @include bg($icon-like);
+                transform: rotate(180deg) translateY(50%);
+            }
+        }
+
+        &_disliked{
+
+            &::before{
+                @include bg($icon-liked);
+            }
+        }
 
         &_liked{
 

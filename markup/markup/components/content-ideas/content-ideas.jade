@@ -1,6 +1,7 @@
 include ../filter/filter
 include ../btn/btn
 include ../ideas/ideas
+include ../send-idea/send-idea
 include ../news-item/news-item
 
 mixin content-ideas(data)
@@ -9,7 +10,9 @@ mixin content-ideas(data)
 
         +filter
             +search.__search
-            +btn Отправить идею
+            +e.btn-wrap
+                +e.BUTTON.btn_idea.js-idea-btn Отправить идею
+                +send-idea
             +btn-follow.__follow
 
         - for (var i = 0; i < 8; i++)

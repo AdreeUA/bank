@@ -1,0 +1,83 @@
+.send-idea {
+    position: absolute;
+    z-index: 50;
+    top: rem(40);
+    left: -100%;
+
+    width: rem(500);
+
+    transform: translateX(-999px);
+
+    background-color: darken(#fff, 1);
+
+    transition: transform .3s;
+
+    &_active {
+        transform: translateX(0);
+    }
+
+    &__form{
+        border: rem(2) solid $bg-color;
+        padding: rem(10);
+        width: 100%;
+
+        font-size: rem(14);
+        color: $main-color;
+
+        border-radius: rem(10);
+    }
+
+    &__title,
+    &__text,
+    &__label-file {
+        width: 100%;
+        border: rem(2) solid $bg-color;
+        margin-bottom: rem(15);
+        padding: rem(7);
+
+        border-radius: rem(5);
+    }
+
+    &__text {
+        min-height: rem(100);
+
+        resize: none;
+    }
+
+    &__label-file {
+        position: relative;
+
+        display: inline-block;
+        width: 45%;
+
+        overflow: hidden;
+        cursor: pointer;
+        text-align: center;
+
+        transition: background .3s;
+
+        &:hover {
+            background-color: $bg-color;
+        }
+    }
+
+    &__file {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        opacity: 0;
+    }
+
+    &__mark {
+        display: inline-block;
+    }
+
+    &__btn {
+        min-width: 45%;
+        float: right;
+    }
+}
