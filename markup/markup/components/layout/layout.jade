@@ -6,20 +6,23 @@ html(class="no-js", lang="ru")
 
     head
         block head
+body.page
+    | %=symbols=%
 
-    body.page
-        | %=symbols=%
+    .page__wrapper
+        +header-top
 
-        .page__wrapper
-            +header-top
-
-            block content
-
+        block content
 
 
-        //- Main scripts. You can replace it, but I recommend you to leave it here
-        script(src="https://code.jquery.com/jquery-3.0.0.min.js")
-        script
-           | if (!window.jQuery) {document.write('<script src="../node_modules/jquery/dist/jquery.min.js"><\/script>');}
-        </script>
-        script(src='%=static=%js/main%=hash=%%=min=%.js')
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src="https://code.jquery.com/jquery-3.0.0.min.js")
+    script
+        | if (!window.jQuery) {document.write('<script src="../node_modules/jquery/dist/jquery.min.js"><\/script>');}
+    </script>
+    script(src='%=static=%js/separate-js/slick.js')
+    script(src='%=static=%js/separate-js/packery-docs.min.js')
+    script(src='%=static=%js/separate-js/select2.min.js')
+
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

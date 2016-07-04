@@ -29,7 +29,7 @@
     }
 
     &__title-wrap{
-        display: table;
+        display: table-cell;
         width: 100%;
         min-height: rem(60);
 
@@ -42,8 +42,9 @@
         left: 0;
 
         width: 100%;
-        min-height: rem(60);
+        height: rem(60);
         padding: rem(0)  rem(29);
+        display: table;
 
         color: $light-color;
         background-color: rgba($title-bg, .8);
@@ -51,8 +52,6 @@
 
         h3{
             margin: 0;
-            display: table-cell;
-            vertical-align: middle;
 
             font-size: rem(18);
             color: $light-color;

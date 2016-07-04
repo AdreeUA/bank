@@ -20,10 +20,6 @@
         &:hover{
             text-decoration: none;
         }
-
-        //&:visited{
-        //    color: inherit;
-        //}
     }
 
     .container{
@@ -46,7 +42,8 @@
         border-top: rem(4) solid transparent;
 
         text-align: center;
-        transition: all .3s;
+
+        transition: background .3s;
 
         &:first-of-type{
             border-left: rem(2) solid #dadbdb;
@@ -56,7 +53,6 @@
             border-top: rem(4) solid $hover-color;
 
             background-color: $light-color;
-            transition: all .3s;
 
             .main-nav__submenu{
                 height: auto;
@@ -108,11 +104,8 @@
         left: rem(-2);
 
         height: 0;
-        //transform: translateY(-20%);
-        //width: 1355px;
 
         overflow: hidden;
-        transition: all 5s;
 
         &_right{
             right: 0;
