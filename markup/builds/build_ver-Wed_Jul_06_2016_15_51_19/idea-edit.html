@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true" />
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainnd4jhxe0zfr.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="default title" />
         <meta property="og:title" content="" />
@@ -466,71 +466,107 @@
                     </li>
                 </ul>
             </aside>
-            <div class="users">
-                <h1>Хантымансийская Александра Александровна</h1><a href="#" class="users__edit">Редактировать</a>
-                <div class="users__inner">
-                    <div class="users__avatar">
-                        <img src="static/img/content/avatar-big.jpg" />
+            <form class="ideas"><a href="#" class="ideas__link ideas__link_title">Все идеи</a>
+                <h3 class="ideas__subtitle">Идеи в статусе
+        </h3>
+                <ul class="ideas__list">
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-0" class="ideas__checkbox" />
+                        <label for="checkbox-list-0" class="ideas__label ideas__label_list">Новая идея
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-1" class="ideas__checkbox" />
+                        <label for="checkbox-list-1" class="ideas__label ideas__label_list">У автора на доработке
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-2" class="ideas__checkbox" />
+                        <label for="checkbox-list-2" class="ideas__label ideas__label_list">На экспертизе
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-3" class="ideas__checkbox" />
+                        <label for="checkbox-list-3" class="ideas__label ideas__label_list">На рассмотрении
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-4" class="ideas__checkbox" />
+                        <label for="checkbox-list-4" class="ideas__label ideas__label_list">Внедрено
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-5" class="ideas__checkbox" />
+                        <label for="checkbox-list-5" class="ideas__label ideas__label_list">Отклонено
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-6" class="ideas__checkbox" />
+                        <label for="checkbox-list-6" class="ideas__label ideas__label_list">Принята на внедрение
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-7" class="ideas__checkbox" />
+                        <label for="checkbox-list-7" class="ideas__label ideas__label_list">Лучшая практика
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-8" class="ideas__checkbox" />
+                        <label for="checkbox-list-8" class="ideas__label ideas__label_list">Повтор идеи (отклонено)
+                        </label>
+                    </li>
+                </ul>
+                <input type="checkbox" id="checkbox-idea-1" class="ideas__checkbox" />
+                <label for="checkbox-idea-1" class="ideas__label">Ответственный за внедрение
+                </label>
+                <input type="checkbox" id="checkbox-idea-2" class="ideas__checkbox" />
+                <label for="checkbox-idea-2" class="ideas__label">Мои идеи
+                </label>
+                <button class="btn ideas__btn">Искать
+                </button>
+            </form>
+            <div class="content-ideas">
+                <form class="idea-edit">
+                    <input type="text" name="theme" placeholder="Какой-то текст" class="idea-edit__input idea-edit__input_width-full" />
+                    <textarea placeholder="Какой-то текст" class="idea-edit__text"></textarea>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Номер заявки в СУЗ:</span>
+                        <input type="text" name="theme" class="idea-edit__input" />
+                    </label>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Статус:</span>
+                        <select class="categories idea-edit__category js-categories" style="width:69%">
+                            <optgroup label="Group Name">
+                                <option class="categories__item">Категория 1
+                                </option>
+                            </optgroup>
+                            <option class="categories__item">Категория 2
+                            </option>
+                            <option class="categories__item">Категория 3
+                            </option>
+                            <option class="categories__item">Категория 4
+                            </option>
+                            <option class="categories__item">Категория 5
+                            </option>
+                            <option class="categories__item">Категория 2
+                            </option>
+                            <option class="categories__item">Категория 3
+                            </option>
+                            <option class="categories__item">Категория 4
+                            </option>
+                            <option class="categories__item">Категория 5
+                            </option>
+                        </select>
+                    </label>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Эффективность:</span>
+                        <input type="text" name="theme" class="idea-edit__input" />
+                    </label>
+                    <div class="idea-edit__btns">
+                        <input type="checkbox" name="anon" id="edit-1" class="idea-edit__checkbox" />
+                        <label for="edit-1" class="idea-edit__label-checkbox">Анонимно
+                        </label>
+                        <button class="btn idea-edit__btn">Сохранить
+                        </button>
                     </div>
-                    <table class="users__info users__info_main">
-                        <tr>
-                            <td>Внутренний телефон:</td>
-                            <td>3355</td>
-                        </tr>
-                        <tr>
-                            <td>Доп. телефон:</td>
-                            <td>+7 /921/ 123 45 67</td>
-                        </tr>
-                        <tr>
-                            <td>Адрес:</td>
-                            <td>Невский пр., 178, кабинет 37</td>
-                        </tr>
-                        <tr>
-                            <td>e-mail:</td>
-                            <td><a href="mailto: mail@bspb.ru">mail@bspb.ru</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>День рождения:</td>
-                            <td>17 июля</td>
-                        </tr>
-                        <tr>
-                            <td>Работает в Банке с:</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Уволен:</td>
-                            <td>4 апреля 2011 года</td>
-                        </tr>
-                        <tfoot>
-                            <tr>
-                                <td><a href="#">Написать сообщение</a>
-                                </td>
-                                <td><a href="#">Показать переписку</a>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <table class="users__info">
-                        <tr>
-                            <td>Должность:</td>
-                            <td>Заместитель директора – начальник отдела</td>
-                        </tr>
-                        <tr>
-                            <td>Подразделение:</td>
-                            <td><a href="#">ДО Коммерческий департамент – Дирекция планирования и финансового контроля – Отдел отчетности по международным стандартам и аналитической обработке</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Отпуска:</td>
-                            <td>01.06 - 14.06; 03.09 - 10.09; 12.12 - 19.12</td>
-                        </tr>
-                        <tr>
-                            <td>Награды:</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -542,5 +578,5 @@
     <script src="static/js/separate-js/slick.js"></script>
     <script src="static/js/separate-js/packery-docs.min.js"></script>
     <script src="static/js/separate-js/select2.min.js"></script>
-    <script src="static/js/mainnd4jhxe0zfr.min.js"></script>
+    <script src="static/js/main.min.js"></script>
 </body>

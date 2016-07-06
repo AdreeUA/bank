@@ -4194,7 +4194,7 @@ img {
 }
 
 .share__link_comment::before {
-  background-image: url(../img/png-sprite/96dpi/spritend4jhxe0zfr.png);
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
   background-position: 0px 0px;
   width: 20px;
   height: 16px;
@@ -4207,7 +4207,7 @@ img {
 }
 
 .share__link_like::before {
-  background-image: url(../img/png-sprite/96dpi/spritend4jhxe0zfr.png);
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
   background-position: 0px -20px;
   width: 15px;
   height: 18px;
@@ -4220,7 +4220,7 @@ img {
 }
 
 .share__link_dislike::before {
-  background-image: url(../img/png-sprite/96dpi/spritend4jhxe0zfr.png);
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
   background-position: 0px -20px;
   width: 15px;
   height: 18px;
@@ -4231,7 +4231,7 @@ img {
 }
 
 .share__link_disliked::before {
-  background-image: url(../img/png-sprite/96dpi/spritend4jhxe0zfr.png);
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
   background-position: -24px 0px;
   width: 15px;
   height: 18px;
@@ -4240,7 +4240,7 @@ img {
 }
 
 .share__link_liked::before {
-  background-image: url(../img/png-sprite/96dpi/spritend4jhxe0zfr.png);
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
   background-position: -24px 0px;
   width: 15px;
   height: 18px;
@@ -4249,7 +4249,7 @@ img {
 }
 
 .share__link_views::before {
-  background-image: url(../img/png-sprite/96dpi/spritend4jhxe0zfr.png);
+  background-image: url(../img/png-sprite/96dpi/sprite.png);
   background-position: -43px 0px;
   width: 20px;
   height: 11px;
