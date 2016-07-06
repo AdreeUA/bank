@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true" />
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainv5wl4cdte29.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/mainnd4jhxe0zfr.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="default title" />
         <meta property="og:title" content="" />
@@ -466,138 +466,107 @@
                     </li>
                 </ul>
             </aside>
-            <div class="content-idea">
-                <div class="content-idea__btns"><a href="#" class="btn-follow content-idea__follow">Подписаться
-          <!--+e.INPUT.input(type="checkbox" id="follow")-->
-          <!--+e.LABEL.label(for="follow") Подписаться--></a>
-                    <div class="share">
-                        <ul class="share__list">
-                            <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                            </li>
-                            <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                            </li>
-                            <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                            </li>
-                            <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                            </li>
-                        </ul>
+            <form class="ideas"><a href="#" class="ideas__link ideas__link_title">Все идеи</a>
+                <h3 class="ideas__subtitle">Идеи в статусе
+        </h3>
+                <ul class="ideas__list">
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-0" class="ideas__checkbox" />
+                        <label for="checkbox-list-0" class="ideas__label ideas__label_list">Новая идея
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-1" class="ideas__checkbox" />
+                        <label for="checkbox-list-1" class="ideas__label ideas__label_list">У автора на доработке
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-2" class="ideas__checkbox" />
+                        <label for="checkbox-list-2" class="ideas__label ideas__label_list">На экспертизе
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-3" class="ideas__checkbox" />
+                        <label for="checkbox-list-3" class="ideas__label ideas__label_list">На рассмотрении
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-4" class="ideas__checkbox" />
+                        <label for="checkbox-list-4" class="ideas__label ideas__label_list">Внедрено
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-5" class="ideas__checkbox" />
+                        <label for="checkbox-list-5" class="ideas__label ideas__label_list">Отклонено
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-6" class="ideas__checkbox" />
+                        <label for="checkbox-list-6" class="ideas__label ideas__label_list">Принята на внедрение
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-7" class="ideas__checkbox" />
+                        <label for="checkbox-list-7" class="ideas__label ideas__label_list">Лучшая практика
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-8" class="ideas__checkbox" />
+                        <label for="checkbox-list-8" class="ideas__label ideas__label_list">Повтор идеи (отклонено)
+                        </label>
+                    </li>
+                </ul>
+                <input type="checkbox" id="checkbox-idea-1" class="ideas__checkbox" />
+                <label for="checkbox-idea-1" class="ideas__label">Ответственный за внедрение
+                </label>
+                <input type="checkbox" id="checkbox-idea-2" class="ideas__checkbox" />
+                <label for="checkbox-idea-2" class="ideas__label">Мои идеи
+                </label>
+                <button class="btn ideas__btn">Искать
+                </button>
+            </form>
+            <div class="content-ideas">
+                <form class="idea-edit">
+                    <input type="text" name="theme" placeholder="Какой-то текст" class="idea-edit__input idea-edit__input_width-full" />
+                    <textarea placeholder="Какой-то текст" class="idea-edit__text"></textarea>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Номер заявки в СУЗ:</span>
+                        <input type="text" name="theme" class="idea-edit__input" />
+                    </label>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Статус:</span>
+                        <select class="categories idea-edit__category js-categories" style="width:69%">
+                            <optgroup label="Group Name">
+                                <option class="categories__item">Категория 1
+                                </option>
+                            </optgroup>
+                            <option class="categories__item">Категория 2
+                            </option>
+                            <option class="categories__item">Категория 3
+                            </option>
+                            <option class="categories__item">Категория 4
+                            </option>
+                            <option class="categories__item">Категория 5
+                            </option>
+                            <option class="categories__item">Категория 2
+                            </option>
+                            <option class="categories__item">Категория 3
+                            </option>
+                            <option class="categories__item">Категория 4
+                            </option>
+                            <option class="categories__item">Категория 5
+                            </option>
+                        </select>
+                    </label>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Эффективность:</span>
+                        <input type="text" name="theme" class="idea-edit__input" />
+                    </label>
+                    <div class="idea-edit__btns">
+                        <input type="checkbox" name="anon" id="edit-1" class="idea-edit__checkbox" />
+                        <label for="edit-1" class="idea-edit__label-checkbox">Анонимно
+                        </label>
+                        <button class="btn idea-edit__btn">Сохранить
+                        </button>
                     </div>
-                </div>
-                <div class="idea">
-                    <div class="idea__content">
-                        <div class="idea__info">
-                            <div class="idea__row">
-                                <div class="idea__label">Номер:
-                                </div>
-                                <div class="idea__disc">1665
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Идея:
-                                </div>
-                                <div class="idea__disc">Корпаративная On-line библиотека
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Описание:
-                                </div>
-                                <div class="idea__disc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt
-                                        voluptates quibusdam?</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt
-                                        voluptates quibusdam?</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt
-                                        voluptates quibusdam?</p>
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Статус:
-                                </div>
-                                <div class="idea__disc">На экспертизе 12.11.2016
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Комментарий к статусу:
-                                </div>
-                                <div class="idea__disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt
-                                    voluptates quibusdam?
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Эффективность:
-                                </div>
-                                <div class="idea__disc">0 рублей/ 0 ПШЕ
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Номер заявки в СУЗ:
-                                </div>
-                                <div class="idea__disc">
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Хочу учавствовать в реализации:
-                                </div>
-                                <div class="idea__disc">Да
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Конкурс Банк идей:
-                                </div>
-                                <div class="idea__disc">Не учавствует
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="idea__user">
-                        <div class="idea__avatar">
-                            <img src="static/img/content/avatar-big.jpg" alt="Иванов Евгений Владимирович" />
-                        </div><a href="#" class="idea__name">Иванов Евгений Владимирович</a>
-                        <div class="idea__rang">Дополнительный офис Выборгский
-                        </div>
-                    </div>
-                    <div class="comments idea__comments">
-                        <div class="comments__title">Комментарии
-                        </div>
-                        <div class="comments__item">
-                            <div class="comments__date">16 ноября 2015 г. 11.03
-                            </div><a href="#" class="comments__name">Кухочкая Екатерина Владимировна</a>
-                            <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
-                            </div>
-                            <button class="comments__btn-anser">Ответить
-                            </button>
-                        </div>
-                        <div class="comments__item">
-                            <div class="comments__date">16 ноября 2015 г. 11.03
-                            </div><a href="#" class="comments__name">Кухочкая Екатерина Владимировна</a>
-                            <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
-                            </div>
-                            <button class="comments__btn-anser">Ответить
-                            </button>
-                            <div class="comments__item comments__item_anser">
-                                <div class="comments__date">16 ноября 2015 г. 11.03
-                                </div><a href="#" class="comments__name">Кухочкая Екатерина Владимировна</a>
-                                <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
-                                </div>
-                                <button class="comments__btn-anser">Ответить
-                                </button>
-                                <div class="comments__item comments__item_anser">
-                                    <div class="comments__date">16 ноября 2015 г. 11.03
-                                    </div><a href="#" class="comments__name">Кухочкая Екатерина Владимировна</a>
-                                    <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
-                                    </div>
-                                    <button class="comments__btn-anser">Ответить
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comments__anser">
-                            <textarea placeholder="Введите Ваше сообщение" class="comments__entry-fiend"></textarea>
-                            <button class="comments__btn">Отправить комментарий
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -609,5 +578,5 @@
     <script src="static/js/separate-js/slick.js"></script>
     <script src="static/js/separate-js/packery-docs.min.js"></script>
     <script src="static/js/separate-js/select2.min.js"></script>
-    <script src="static/js/mainv5wl4cdte29.min.js"></script>
+    <script src="static/js/mainnd4jhxe0zfr.min.js"></script>
 </body>

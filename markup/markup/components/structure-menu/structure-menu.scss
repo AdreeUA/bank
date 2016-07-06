@@ -1,1 +1,13 @@
-.structure-menu {}
+.structure-menu {
+    float: left;
+    width: 20%;
+
+    color: $main-color;
+
+    overflow: hidden;
+
+    a {
+        display: block;
+    }
+
+}

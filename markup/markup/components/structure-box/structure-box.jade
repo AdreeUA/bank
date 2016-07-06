@@ -2,25 +2,40 @@
 
 mixin structure-box(data)
     +b.structure-box&attributes(attributes)
-        //
-        //each ent, num in data
-        //
-        //    if (ent.active)
-        //        - var activeClass = '_active'
-        //    else
-        //        - var activeClass = ''
-        //
-        //    if (ent.submenu)
-        //        - var hasChild = '_has-child'
-        //    else
-        //        - var hasChild = ''
-        //
-        //    +e.link(class="#{activeClass} #{hasChild}"
-        //            href="#{ent.link}")
-        //
-        //        | #{ent.title}
-        //
-        //    if (ent.submenu)
-        //        +e.SPAN.icon
-        //
-        //        +structure-box(ent.submenu)
+
+        each ent, num in data
+
+            if (ent.active)
+                - var activeClass = 'structure-box__link_active'
+            else
+                - var activeClass = ''
+
+            if (ent.submenu)
+                - var hasChild = 'structure-box__link_has-child'
+            else
+                - var hasChild = ''
+
+            if (ent.root)
+                - var root = '_root'
+            else
+                - var root = ''
+
+            +e.item(class="#{root}")
+
+                if (ent.submenu)
+
+                    +e.SPAN.icon
+
+                    A.structure-box__link(class="#{activeClass} #{hasChild}"
+                    href="#{ent.link}")
+
+                        | #{ent.title}
+
+
+                    +structure-box(ent.submenu)
+
+                else
+                    +e.link(class="#{activeClass} #{hasChild}"
+                            href="#{ent.link}")
+
+                        | #{ent.title}

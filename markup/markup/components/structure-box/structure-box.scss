@@ -1,1 +1,127 @@
-.structure-box {}
+.structure-box {
+    position: relative;
+
+    padding-left: rem(10);
+
+    font-size: rem(12);
+    color: $dark-color;
+
+    &_active {
+
+        > .structure-box__item {
+            display: block;
+        }
+
+        .structure-box__link {
+            color: $main-color;
+            font-weight: bold;
+        }
+
+    }
+
+    &__item {
+        display: none;
+
+        &_root {
+            display: block;
+        }
+    }
+
+    &__link {
+        position: relative;
+        z-index: 2;
+
+        display: block;
+        padding: rem(7);
+
+        color: inherit;
+
+
+        &:hover {
+            text-decoration: none;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: rem(-200);
+
+            height: 100%;
+            width: rem(800);
+
+            background-color: $bg-color;
+            opacity: 0;
+
+            transition: opacity .3s;
+
+            content: '';
+        }
+
+        &::before {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: rem(-200);
+
+            height: 100%;
+            width: rem(800);
+            border-bottom: rem(1) solid #dadbdb;
+
+            content: '';
+
+        }
+
+        &_active {
+            color: $dark-color;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__icon {
+        position: relative;
+        z-index: 12;
+
+        float: left;
+        margin-top: rem(5);
+        width: rem(20);
+        height: rem(20);
+
+        color: $main-color;
+        text-align: center;
+        cursor: pointer;
+        transition: color .3s;
+
+        &::before{
+            display: inline-block;
+            vertical-align: middle;
+
+            font-size: rem(12);
+            font-family: glyphicons;
+            content: '\002b';
+        }
+
+        &:hover{
+            color: $hover-color;
+            
+            + .structure-box__link::after {
+                opacity: 1;
+            }
+        }
+
+        &_active{
+
+            &::before{
+                content: '\2212';
+            }
+        }
+
+    }
+}

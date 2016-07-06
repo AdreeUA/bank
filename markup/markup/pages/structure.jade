@@ -1,8 +1,8 @@
 extends ../components/layout/layout
 include ../components/head/head
 include ../components/bread-crumbs/bread-crumbs
-include ../components/menu-left/menu-left
 include ../components/content-structure/content-structure
+include ../components/structure-menu/structure-menu
 
 block head
     +head(head.defaults)
@@ -10,5 +10,5 @@ block head
 block content
     .container
         +bread-crumbs
-        +menu-left(structure.defaults).menu-left_structure
-        +content-structure
+        +structure-menu
+        +content-structure._padding-left

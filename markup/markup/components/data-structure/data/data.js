@@ -3,6 +3,7 @@ data = {structure: {
         {
             title: "СТРАТЕГИЯ БАНКА",
             link: "#",
+            root: true,
             active: true,
             plus: true,
             submenu: [
@@ -62,6 +63,7 @@ data = {structure: {
             title: "СТРАТЕГИЯ БАНКА",
             link: "#",
             plus: true,
+            root: true,
             submenu: [
                 {
                     title: "ГЛАВНАЯ ЦЕЛЬА",
@@ -99,6 +101,7 @@ data = {structure: {
             title: "СТРАТЕГИЯ БАНКА",
             link: "#",
             plus: true,
+            root: true,
             submenu: [
                 {
                     title: "ГЛАВНАЯ ЦЕЛЬА",
@@ -175,6 +178,7 @@ data = {structure: {
             title: "СТРАТЕГИЯ БАНКА",
             link: "#",
             plus: true,
+            root: true,
             submenu: [
                 {
                     title: "ГЛАВНАЯ ЦЕЛЬА",

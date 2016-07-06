@@ -5,11 +5,15 @@
 
     &__row{
         display: flex;
+        justify-content: space-between;
         border-bottom: rem(2) solid $bg-color;
     }
 
     &__item{
-        padding: rem(20) rem(30) rem(20) rem(20);
+        width: 100%;
+        padding: rem(20) rem(10) rem(20) rem(20);
+
+        text-align: center;
     }
 
     &__avatar-wrap{
@@ -17,12 +21,17 @@
         vertical-align: top;
         padding: rem(5);
         border: rem(1) solid $bg-color;
-        width: rem(200);
+        max-width: rem(200);
     }
 
     &__avatar{
-        width: 100%;
-        height: 100%;
+        width: auto;
+        max-width: 100%;
+        height: rem(170);
+    }
+    
+    &__content {
+        text-align: left;
     }
 
     &__label{
