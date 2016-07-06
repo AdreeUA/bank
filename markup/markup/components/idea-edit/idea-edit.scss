@@ -1,0 +1,61 @@
+.idea-edit {
+    display: flex;
+    flex-direction: column;
+
+    font-size: rem(14);
+    color: $main-color;
+
+    &__label {
+        margin-bottom: rem(15);
+    }
+
+    &__text {
+        color: $main-color;
+
+        @extend .send-idea__text;
+    }
+
+    &__input {
+        max-width: 69%;
+
+        @extend .send-idea__title;
+
+        &_width-full {
+            max-width: 100%;
+        }
+    }
+
+    &__label-checkbox {
+        text-align: left;
+        
+        @extend .ideas__label;
+    }
+
+    &__checkbox {
+        display: none;
+
+        &:checked + .idea-edit__label-checkbox::after {
+            opacity: 1;
+            transition: all .3s;
+        }
+    }
+
+    &__category {
+        max-width: 69%;
+    }
+
+    &__label-text {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: rem(5);
+    }
+
+    &__btns {
+        text-align: center;
+    }
+
+    &__btn {
+        min-width: 40%;
+    }
+}

@@ -1,0 +1,26 @@
+//include ../structure-menu/structure-menu
+
+mixin structure-box(data)
+    +b.structure-box&attributes(attributes)
+        //
+        //each ent, num in data
+        //
+        //    if (ent.active)
+        //        - var activeClass = '_active'
+        //    else
+        //        - var activeClass = ''
+        //
+        //    if (ent.submenu)
+        //        - var hasChild = '_has-child'
+        //    else
+        //        - var hasChild = ''
+        //
+        //    +e.link(class="#{activeClass} #{hasChild}"
+        //            href="#{ent.link}")
+        //
+        //        | #{ent.title}
+        //
+        //    if (ent.submenu)
+        //        +e.SPAN.icon
+        //
+        //        +structure-box(ent.submenu)

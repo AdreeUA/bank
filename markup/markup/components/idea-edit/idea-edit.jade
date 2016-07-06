@@ -1,0 +1,26 @@
+include ../categories/categories
+include ../btn/btn
+
+mixin idea-edit(data)
+    +b.FORM.idea-edit&attributes(attributes)
+        +e.INPUT.input_width-full(type="text" name="theme" placeholder="Какой-то текст")
+        +e.TEXTAREA.text(placeholder="Какой-то текст")
+
+        +e.LABEL.label
+            +e.SPAN.label-text Номер заявки в СУЗ:
+            +e.INPUT.input(type="text" name="theme")
+
+        +e.LABEL.label
+            +e.SPAN.label-text Статус:
+            +categories.__category.js-categories(style="width:69%")
+
+        +e.LABEL.label
+            +e.SPAN.label-text Эффективность:
+            +e.INPUT.input(type="text" name="theme")
+
+        +e.btns
+
+            +e.INPUT.checkbox(type="checkbox" name="anon" id="edit-1")
+            +e.LABEL.label-checkbox(for="edit-1") Анонимно
+
+            +btn.__btn Сохранить
