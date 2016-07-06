@@ -167,24 +167,22 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    var like = $('.share__item_like');
-    var dislike = $('.share__item_dislike');
-    var shareItem = $('.share__item');
+    var like = $('.share__link_like');
+    var dislike = $('.share__link_dislike');
+    var shareItem = $('.share__link');
 
     shareItem.click(function (e) {
         e.preventDefault();
         var self = $(this);
 
-        if (self.hasClass('share__item_like')) {
+        if (self.hasClass('share__link_like')) {
 
-            self.toggleClass('share__item_liked');
-            dislike.removeClass('share__item_disliked');
+            self.toggleClass('share__link_liked');
         }
 
-        if (self.hasClass('share__item_dislike')) {
+        if (self.hasClass('share__link_dislike')) {
 
-            dislike.toggleClass('share__item_disliked');
-            like.removeClass('share__item_liked');
+            self.toggleClass('share__link_disliked');
         }
     });
 });

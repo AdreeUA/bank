@@ -12,11 +12,15 @@
     }
 
     &__item{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &__link {
         position: relative;
         z-index: 1;
 
-        display: inline-block;
-        vertical-align: top;
+        display: block;
         margin-right: rem(25);
         padding: rem(8) rem(8) rem(8) rem(25);
 
@@ -30,6 +34,10 @@
             transform: translateY(-50%);
 
             content: '';
+        }
+
+        &:hover {
+            text-decoration: none;
         }
 
         &_comment{

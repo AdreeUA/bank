@@ -61,19 +61,6 @@
 
     &__item{
         position: relative;
-
-        &::before{
-            position: absolute;
-            left: rem(4);
-            top: 50%;
-            transform: translateY(-50%);
-
-            font-size: rem(15);
-            font-family: glyphicons;
-
-            content: '\2212';
-            pointer-events: none;
-        }
     }
 
     &__label{
@@ -113,15 +100,44 @@
             content: '\e013';
         }
 
+        &_list {
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                position: absolute;
+                left: rem(4);
+                top: 50%;
+                transform: translateY(-50%);
+
+                font-size: rem(15);
+                font-family: glyphicons;
+                opacity: 1;
+
+                content: '\2212';
+                pointer-events: none;
+            }
+        }
+
     }
 
     &__checkbox{
         display: none;
 
-        &:checked + .ideas__label:after{
+        &:checked + .ideas__label::after{
             opacity: 1;
             transition: all .3s;
         }
+
+        &:checked + .ideas__label_list::after{
+            content: '\002b'
+        }
+    }
+
+    &__btn {
+        width: 100%;
     }
 
 }

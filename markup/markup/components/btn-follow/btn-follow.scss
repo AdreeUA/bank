@@ -12,6 +12,8 @@
     text-align: center;
     cursor: pointer;
 
+    transition: color .3s;
+
     &::before{
         position: absolute;
         left: rem(6);
@@ -27,6 +29,8 @@
         border-radius: 50%;
         text-align: center;
         //line-height: rem(26);
+
+        transition: color .3s;
     }
 
     &::after{
@@ -38,6 +42,15 @@
         border-right: rem(2) solid $bg-color;
 
         content: '';
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $title-color;
+
+        &::before {
+            color: $title-color;
+        }
     }
 
     &_followed{

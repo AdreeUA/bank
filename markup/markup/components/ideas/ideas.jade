@@ -1,5 +1,7 @@
+include ../btn/btn
+
 mixin ideas(data)
-    +b.ideas&attributes(attributes)
+    +b.FORM.ideas&attributes(attributes)
         +e.A.link_title(href="#") Все идеи
         +e.H3.subtitle Идеи в статусе
         +e.UL.list
@@ -9,10 +11,13 @@ mixin ideas(data)
             - for (var i = 0; i < items.length; i++)
 
                 +e.item
-                    +e.link(href="#")= items[i]
+                    +e.INPUT.checkbox(type="checkbox" id="checkbox-list-#{i}")
+                    +e.LABEL.label_list(for="checkbox-list-#{i}")= items[i]
 
         +e.INPUT.checkbox(type="checkbox" id="checkbox-idea-1")
         +e.LABEL.label(for="checkbox-idea-1") Ответственный за внедрение
 
         +e.INPUT.checkbox(type="checkbox" id="checkbox-idea-2")
         +e.LABEL.label(for="checkbox-idea-2") Мои идеи
+
+        +btn.__btn Искать
