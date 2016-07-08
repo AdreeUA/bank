@@ -1,0 +1,20 @@
+extends ../components/layout/layout
+include ../components/head/head
+include ../components/bread-crumbs/bread-crumbs
+include ../components/content-structure/content-structure
+include ../components/menu-left/menu-left
+
+block head
+    +head(head.defaults)
+
+block content
+    .container
+        +bread-crumbs
+        +menu-left(menuLeft.defaults)
+        .content-section
+            h1 Дирекция в лицах
+            +form-structure
+            h2 Дирекция по информационным технологиям
+            +structure-catalog(1, 4)
+            h2 Отдел документационного обеспечения производственно-хозяйственной деятельности
+            +structure-catalog(1, 5)

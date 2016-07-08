@@ -1,10 +1,30 @@
-extends ../components/layout/layout
+//extends ../components/layout/layout
 include ../components/head/head
 include ../components/content/content
 
 block head
     +head(head.defaults)
 
-block content
-    .container
-        +content
+ul(style="margin: 30px auto; text-align: center")
+    li
+        a(href="index-main.html") Главная страница портала
+    li
+        a(href="news.html") Станица новостей
+    li
+        a(href="new-simple.html") Станица отдельной новости
+    li
+        a(href="structure.html") Станица структуры подпортала
+    li
+        a(href="ideas.html") Страница с идеями подпортала
+    li
+        a(href="idea-simple.html") Страница отдельной идеи подпортала
+    li
+        a(href="idea-edit.html") Страница редактирования идеи
+    li
+        a(href="user.html") Страница профиля пользователя
+    li
+        a(href="index-direction.html") Главная страница подпортала
+    li
+        a(href="direction.html") Страница дирекции в лицах
+    li
+        a(href="birthday.html") Страница Дни Рождения

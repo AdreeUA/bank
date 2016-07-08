@@ -1926,6 +1926,21 @@ img {
   height: 466px;
 }
 
+.content-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-direction__avatar {
+  width: 35%;
+  margin-right: 1.875rem;
+}
+
+.content-direction__left {
+  width: 65%;
+}
+
 .content-idea {
   float: right;
   overflow: hidden;
@@ -2046,6 +2061,10 @@ img {
 .content-section h1 {
   margin-bottom: 0.875rem;
   color: #202020;
+}
+
+.content-section_birthday .date-bithday {
+  text-align: center;
 }
 
 .content-structure {
@@ -4540,18 +4559,25 @@ img {
   color: #808080;
 }
 
+.structure-catalog_birthday a {
+  text-decoration: none;
+}
+
+.structure-catalog_birthday .structure-catalog__content {
+  text-align: center;
+}
+
 .structure-catalog__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-bottom: 0.125rem solid #F0F0F0;
 }
 
 .structure-catalog__item {
-  width: 100%;
+  width: 33%;
   padding: 1.25rem 0.625rem 1.25rem 1.25rem;
   text-align: center;
 }

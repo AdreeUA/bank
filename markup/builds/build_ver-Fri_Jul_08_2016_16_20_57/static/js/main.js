@@ -11,6 +11,29 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+    var btnFollow = $('.btn-follow');
+
+    btnFollow.click(function (e) {
+
+        e.preventDefault();
+
+        btnFollow.toggleClass('btn-follow_followed');
+
+        if (btnFollow.hasClass('btn-follow_followed')) {
+
+            btnFollow.html('Отписаться');
+            // btnFollow.removeClass('btn-follow_followed')
+        } else {
+
+                btnFollow.html('Подписаться');
+                // btnFollow.addClass('btn-follow_followed')
+            }
+    });
+});
+'use strict';
+
+$(document).ready(function () {
+
     var gridBtnFull = $('.btn-grid-filter__item_grid');
     var gridBtnHalf = $('.btn-grid-filter__item_list');
     var gridItem = $('.news-item');
@@ -29,29 +52,6 @@ $(document).ready(function () {
         gridItem.removeClass('news-item_list');
         gridBtnHalf.removeClass('btn-grid-filter__item_active');
         gridBtnFull.addClass('btn-grid-filter__item_active');
-    });
-});
-'use strict';
-
-$(document).ready(function () {
-
-    var btnFollow = $('.btn-follow');
-
-    btnFollow.click(function (e) {
-
-        e.preventDefault();
-
-        btnFollow.toggleClass('btn-follow_followed');
-
-        if (btnFollow.hasClass('btn-follow_followed')) {
-
-            btnFollow.html('Отписаться');
-            // btnFollow.removeClass('btn-follow_followed')
-        } else {
-
-                btnFollow.html('Подписаться');
-                // btnFollow.addClass('btn-follow_followed')
-            }
     });
 });
 'use strict';

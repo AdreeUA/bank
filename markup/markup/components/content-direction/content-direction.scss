@@ -1,0 +1,13 @@
+.content-direction {
+
+    display: flex;
+
+    &__avatar {
+        width: 35%;
+        margin-right: rem(30);
+    }
+
+    &__left {
+        width: 65%;
+    }
+}

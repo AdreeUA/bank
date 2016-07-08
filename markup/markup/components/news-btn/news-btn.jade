@@ -1,8 +1,17 @@
 mixin news-btn(data)
     +b.UL.news-btn&attributes(attributes)
-        +e.item
-            +e.link_prev(href="#") Предыдущая новость
-        +e.item
-            +e.link_back(href="#") Вернуться к ленте
-        +e.item
-            +e.link_next(href="#") Следующая новость
+
+        - each item, num in data
+
+            if (item.arrow === "left" )
+                - var arrow = "_prev";
+
+            else if (item.arrow === "right")
+                - var arrow = "_next";
+
+            else
+                - var arrow = "";
+
+            +e.item
+                +e.link(href=item.link,
+                        class= arrow)= item.text

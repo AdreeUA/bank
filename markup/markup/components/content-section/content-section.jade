@@ -5,4 +5,11 @@ mixin content-section(data)
     +b.SECTION.content-section&attributes(attributes)
         h1 Возвращение нефтяного гиганта
         +news-details
-        +news-btn
+
+        - var btns = [];
+        - btns.push({text: "Предыдущая новость", link: "#", arrow: "left"});
+        - btns.push({text: "Вернуться к ленте", link: "#"});
+        - btns.push({text: "Следующая новость", link: "#", arrow: "right"});
+
+        +news-btn(btns)
+

@@ -1,16 +1,18 @@
-mixin structure-catalog(data)
+mixin structure-catalog(row, item, fullItem)
     +b.structure-catalog&attributes(attributes)
-        - for(var n = 0; n < 3; n++)
+        - for(var n = 0; n < row; n++)
             +e.row
-                - for(var i = 0; i < 3; i++)
+                - for(var i = 0; i < item; i++)
                     +e.item
                         +e.avatar-wrap
                             +e.IMG.avatar(src="__static__img/content/avatar-big.jpg" alt="Avatar")
                         +e.content
                             +e.label_name Ромашен Кирилл Динисович
-                            +e.label_post Начальник отдела
-                            +e.label_address Молоохтинский пр., д.64, лит.А, к. 1530
-                            +e.label_phones
-                                | Тел.:
-                                +e.SPAN.phone-work  5355,
-                                +e.SPAN.phone-mob 355525455-5224
+
+                            if (!fullItem)
+                                +e.label_post Начальник отдела
+                                +e.label_address Молоохтинский пр., д.64, лит.А, к. 1530
+                                +e.label_phones
+                                    | Тел.:
+                                    +e.SPAN.phone-work  5355,
+                                    +e.SPAN.phone-mob 355525455-5224

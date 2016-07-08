@@ -1,0 +1,29 @@
+extends ../components/layout/layout
+include ../components/head/head
+include ../components/bread-crumbs/bread-crumbs
+include ../components/content-structure/content-structure
+include ../components/menu-left/menu-left
+include ../components/news-btn/news-btn
+
+block head
+    +head(head.defaults)
+
+block content
+    .container
+        +bread-crumbs
+        +menu-left(menuLeft.defaults)
+        .content-section.content-section_birthday
+            h1 Все Дни Рождения
+
+            - var btns = [];
+            - btns.push({text: "Предыдущий месяц", link: "#", arrow: "left"});
+            - btns.push({text: "Предыдущая неделя", link: "#", arrow: "left"});
+            - btns.push({text: "Следующий месяц", link: "#", arrow: "right"});
+            - btns.push({text: "Следующая неделя", link: "#", arrow: "right"});
+
+            +news-btn(btns)
+
+            h2.date-bithday 11 декабря, пятница
+            +structure-catalog(1, 3, true)._birthday
+            h2.date-bithday 12 декабря, суббота
+            +structure-catalog(2, 3, true)._birthday
