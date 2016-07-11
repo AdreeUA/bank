@@ -484,7 +484,7 @@ html {
 }
 
 .page {
-  font-family: 'Calibri-light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: PFBeauSansPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   padding: 0 0.9375rem;
 }
@@ -1561,58 +1561,6 @@ img {
   transition: all .3s;
 }
 
-.btn-follow {
-  position: relative;
-  border: 0.0625rem solid #bcbec0;
-  padding: 0.4375rem 0.625rem 0.4375rem 2.0625rem;
-  border-radius: 0.375rem;
-  color: #808080;
-  background-color: #fff;
-  font-size: 0.875rem;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition: color .3s;
-  transition: color .3s;
-}
-
-.btn-follow::before {
-  position: absolute;
-  left: 0.375rem;
-  top: 0.1875rem;
-  margin-top: 0.1875rem;
-  font-family: glyphicons;
-  content: '\e013';
-  font-size: 1rem;
-  font-weight: bold;
-  color: #808080;
-  border-radius: 50%;
-  text-align: center;
-  -webkit-transition: color .3s;
-  transition: color .3s;
-}
-
-.btn-follow::after {
-  position: absolute;
-  left: 1.875rem;
-  top: 0;
-  height: 100%;
-  border-right: 0.0625rem solid #bcbec0;
-  content: '';
-}
-
-.btn-follow:hover {
-  text-decoration: none;
-  color: #39A9DC;
-}
-
-.btn-follow:hover::before {
-  color: #39A9DC;
-}
-
-.btn-follow_followed::before {
-  content: '\e014';
-}
-
 .btn-grid-filter {
   position: relative;
   z-index: 2;
@@ -1698,6 +1646,58 @@ img {
 
 .btn-grid-filter__decor-line::after {
   bottom: 0.3125rem;
+}
+
+.btn-follow {
+  position: relative;
+  border: 0.0625rem solid #bcbec0;
+  padding: 0.4375rem 0.625rem 0.4375rem 2.0625rem;
+  border-radius: 0.375rem;
+  color: #808080;
+  background-color: #fff;
+  font-size: 0.875rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.btn-follow::before {
+  position: absolute;
+  left: 0.375rem;
+  top: 0.1875rem;
+  margin-top: 0.1875rem;
+  font-family: glyphicons;
+  content: '\e013';
+  font-size: 1rem;
+  font-weight: bold;
+  color: #808080;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.btn-follow::after {
+  position: absolute;
+  left: 1.875rem;
+  top: 0;
+  height: 100%;
+  border-right: 0.0625rem solid #bcbec0;
+  content: '';
+}
+
+.btn-follow:hover {
+  text-decoration: none;
+  color: #39A9DC;
+}
+
+.btn-follow:hover::before {
+  color: #39A9DC;
+}
+
+.btn-follow_followed::before {
+  content: '\e014';
 }
 
 .btn-more-news {
@@ -2377,6 +2377,7 @@ img {
 
 .footer {
   padding: 0.875rem 0;
+  margin-top: 1.25rem;
   font-size: 0.8125rem;
   color: #808080;
   background-color: #F0F0F0;
@@ -2543,11 +2544,6 @@ img {
   cursor: pointer;
 }
 
-.header-top__notification-phone::before, .header-top__notification-message::before {
-  font-family: glyphicons;
-  font-size: 2.3125rem;
-}
-
 .header-top__user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2581,14 +2577,19 @@ img {
 
 .header-top__notification-phone {
   margin-right: 2.125rem;
+  width: 2.6875rem;
+  height: 2.0625rem;
+  background-image: url(../img/content/phone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.header-top__notification-phone::before {
-  content: '\e183';
-}
-
-.header-top__notification-message::before {
-  content: '\e123';
+.header-top__notification-message {
+  width: 2rem;
+  height: 2.25rem;
+  background-image: url(../img/content/messages.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-top__notification-count {
@@ -3445,6 +3446,7 @@ img {
   max-width: 100%;
   color: #808080;
   font-size: 1.125rem;
+  font-weight: 300;
   -webkit-transition: all .3s;
   transition: all .3s;
 }

@@ -39,8 +39,8 @@
         cursor: pointer;
 
         &::before{
-            font-family: glyphicons;
-            font-size: rem(37);
+            //font-family: glyphicons;
+            //font-size: rem(37);
         }
     }
 
@@ -75,16 +75,28 @@
 
     &__notification-phone{
         margin-right: rem(34);
+        width: rem(43);
+        height: rem(33);
+
+        background-image: url(__static__content/phone.png);
+        background-repeat: no-repeat;
+        background-size: cover;
 
         &::before{
-            content: '\e183';
+            //content: '\e183';
         }
     }
 
     &__notification-message{
+        width: rem(32);
+        height: rem(36);
+
+        background-image: url(__static__content/messages.png);
+        background-repeat: no-repeat;
+        background-size: cover;
 
         &::before{
-            content: '\e123';
+            //content: '\e123';
             //font-size: rem(35);
         }
     }
