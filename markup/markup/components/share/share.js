@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    var like = $('.share__link_like');
-    var dislike = $('.share__link_dislike');
-    var shareItem = $('.share__link');
+    const like = $('.share__link_like');
+    const dislike = $('.share__link_dislike');
+    const shareItem = $('.share__link');
 
     shareItem.click(function (e) {
         e.preventDefault();

@@ -8,8 +8,8 @@ mixin content-ideas(data)
     +b.SECTION.content-ideas&attributes(attributes)
         h1 Банк Идей
 
-        +filter
-            +search.__search
+        +filter._ideas
+            +search("Поиск по идеям ...").__search
             +e.btn-wrap
                 +e.BUTTON.btn_idea.js-idea-btn Отправить идею
                 +send-idea

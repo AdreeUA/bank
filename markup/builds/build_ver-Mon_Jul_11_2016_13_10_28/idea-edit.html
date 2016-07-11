@@ -525,207 +525,59 @@
                 <button class="btn ideas__btn">Искать
                 </button>
             </form>
-            <section class="content-ideas">
-                <h1>Банк Идей</h1>
-                <div class="filter">
-                    <form class="search filter__search">
-                        <input type="text" name="search" placeholder="Поиск сотрудника, документов, информации..." />
-                        <button>Поиск</button>
-                    </form>
-                    <div class="filter__btn-wrap">
-                        <button class="filter__btn filter__btn_idea js-idea-btn">Отправить идею
+            <div class="content-ideas">
+                <form class="idea-edit">
+                    <input type="text" name="theme" placeholder="Какой-то текст" class="idea-edit__input idea-edit__input_width-full" />
+                    <textarea placeholder="Какой-то текст" class="idea-edit__text"></textarea>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Номер заявки в СУЗ:</span>
+                        <input type="text" name="theme" class="idea-edit__input" />
+                    </label>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Статус:</span>
+                        <select class="categories idea-edit__category js-categories" style="width:69%">
+                            <optgroup label="Group Name">
+                                <option class="categories__item">Категория 1
+                                </option>
+                            </optgroup>
+                            <option class="categories__item">Категория 2
+                            </option>
+                            <option class="categories__item">Категория 3
+                            </option>
+                            <option class="categories__item">Категория 4
+                            </option>
+                            <option class="categories__item">Категория 5
+                            </option>
+                            <option class="categories__item">Категория 2
+                            </option>
+                            <option class="categories__item">Категория 3
+                            </option>
+                            <option class="categories__item">Категория 4
+                            </option>
+                            <option class="categories__item">Категория 5
+                            </option>
+                        </select>
+                    </label>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Эффективность:</span>
+                        <input type="text" name="theme" class="idea-edit__input" />
+                    </label>
+                    <div class="idea-edit__btns">
+                        <input type="checkbox" name="anon" id="edit-1" class="idea-edit__checkbox" />
+                        <label for="edit-1" class="idea-edit__label-checkbox">Анонимно
+                        </label>
+                        <button class="btn idea-edit__btn">Сохранить
                         </button>
-                        <div class="send-idea">
-                            <form class="send-idea__form">
-                                <input type="text" name="idea" placeholder="Название идеи" class="send-idea__title" />
-                                <textarea placeholder="Описание идеи" class="send-idea__text"></textarea>
-                                <div class="send-idea__btns">
-                                    <label class="send-idea__label-file"><span class="send-idea__mark">Загрузить файл</span>
-                                        <input type="file" class="send-idea__file" />
-                                    </label>
-                                    <input type="checkbox" id="send-idea" class="send-idea__checkbox" />
-                                    <label for="send-idea" class="send-idea__label">Ананимно
-                                    </label>
-                                    <button class="btn send-idea__btn">Отправить идею
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div><a href="#" class="btn-follow filter__follow">Подписаться
-          <!--+e.INPUT.input(type="checkbox" id="follow")-->
-          <!--+e.LABEL.label(for="follow") Подписаться--></a>
-                </div>
-                <div class="news-item news-item_list news-item_idea">
-                    <a href="#" class="news-item__link"></a>
-                    <div class="news-item__content">
-                        <div class="date news-item__date">
-                            <sapn class="date__day">26
-                            </sapn><span class="date__month">07</span><span class="date__year">2016</span><span class="date__time">21:01:58</span>
-                        </div><a href="#" class="news-item__idea">Идея №<span>1599</span></a>
-                        <div class="share news-item__share">
-                            <ul class="share__list">
-                                <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><a href="##" class="news-item__title">Банк начинает эквайринг карт платежной системы МИР</a><a href="#" class="news-item__name">Васильев Андрей Павлович</a>
-                </div>
-                <div class="news-item news-item_list news-item_idea">
-                    <a href="#" class="news-item__link"></a>
-                    <div class="news-item__content">
-                        <div class="date news-item__date">
-                            <sapn class="date__day">26
-                            </sapn><span class="date__month">07</span><span class="date__year">2016</span><span class="date__time">21:01:58</span>
-                        </div><a href="#" class="news-item__idea">Идея №<span>1599</span></a>
-                        <div class="share news-item__share">
-                            <ul class="share__list">
-                                <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><a href="##" class="news-item__title">Банк начинает эквайринг карт платежной системы МИР</a><a href="#" class="news-item__name">Васильев Андрей Павлович</a>
-                </div>
-                <div class="news-item news-item_list news-item_idea">
-                    <a href="#" class="news-item__link"></a>
-                    <div class="news-item__content">
-                        <div class="date news-item__date">
-                            <sapn class="date__day">26
-                            </sapn><span class="date__month">07</span><span class="date__year">2016</span><span class="date__time">21:01:58</span>
-                        </div><a href="#" class="news-item__idea">Идея №<span>1599</span></a>
-                        <div class="share news-item__share">
-                            <ul class="share__list">
-                                <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><a href="##" class="news-item__title">Банк начинает эквайринг карт платежной системы МИР</a><a href="#" class="news-item__name">Васильев Андрей Павлович</a>
-                </div>
-                <div class="news-item news-item_list news-item_idea">
-                    <a href="#" class="news-item__link"></a>
-                    <div class="news-item__content">
-                        <div class="date news-item__date">
-                            <sapn class="date__day">26
-                            </sapn><span class="date__month">07</span><span class="date__year">2016</span><span class="date__time">21:01:58</span>
-                        </div><a href="#" class="news-item__idea">Идея №<span>1599</span></a>
-                        <div class="share news-item__share">
-                            <ul class="share__list">
-                                <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><a href="##" class="news-item__title">Банк начинает эквайринг карт платежной системы МИР</a><a href="#" class="news-item__name">Васильев Андрей Павлович</a>
-                </div>
-                <div class="news-item news-item_list news-item_idea">
-                    <a href="#" class="news-item__link"></a>
-                    <div class="news-item__content">
-                        <div class="date news-item__date">
-                            <sapn class="date__day">26
-                            </sapn><span class="date__month">07</span><span class="date__year">2016</span><span class="date__time">21:01:58</span>
-                        </div><a href="#" class="news-item__idea">Идея №<span>1599</span></a>
-                        <div class="share news-item__share">
-                            <ul class="share__list">
-                                <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><a href="##" class="news-item__title">Банк начинает эквайринг карт платежной системы МИР</a><a href="#" class="news-item__name">Васильев Андрей Павлович</a>
-                </div>
-                <div class="news-item news-item_list news-item_idea">
-                    <a href="#" class="news-item__link"></a>
-                    <div class="news-item__content">
-                        <div class="date news-item__date">
-                            <sapn class="date__day">26
-                            </sapn><span class="date__month">07</span><span class="date__year">2016</span><span class="date__time">21:01:58</span>
-                        </div><a href="#" class="news-item__idea">Идея №<span>1599</span></a>
-                        <div class="share news-item__share">
-                            <ul class="share__list">
-                                <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><a href="##" class="news-item__title">Банк начинает эквайринг карт платежной системы МИР</a><a href="#" class="news-item__name">Васильев Андрей Павлович</a>
-                </div>
-                <div class="news-item news-item_list news-item_idea">
-                    <a href="#" class="news-item__link"></a>
-                    <div class="news-item__content">
-                        <div class="date news-item__date">
-                            <sapn class="date__day">26
-                            </sapn><span class="date__month">07</span><span class="date__year">2016</span><span class="date__time">21:01:58</span>
-                        </div><a href="#" class="news-item__idea">Идея №<span>1599</span></a>
-                        <div class="share news-item__share">
-                            <ul class="share__list">
-                                <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><a href="##" class="news-item__title">Банк начинает эквайринг карт платежной системы МИР</a><a href="#" class="news-item__name">Васильев Андрей Павлович</a>
-                </div>
-                <div class="news-item news-item_list news-item_idea">
-                    <a href="#" class="news-item__link"></a>
-                    <div class="news-item__content">
-                        <div class="date news-item__date">
-                            <sapn class="date__day">26
-                            </sapn><span class="date__month">07</span><span class="date__year">2016</span><span class="date__time">21:01:58</span>
-                        </div><a href="#" class="news-item__idea">Идея №<span>1599</span></a>
-                        <div class="share news-item__share">
-                            <ul class="share__list">
-                                <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                                </li>
-                                <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><a href="##" class="news-item__title">Банк начинает эквайринг карт платежной системы МИР</a><a href="#" class="news-item__name">Васильев Андрей Павлович</a>
-                </div>
-            </section>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">© 1990 – 2016 ПАО «Банк «Санкт-Петербург»
+            </div>
+            <button class="footer__btn-up js-btn-up">Наверх
+            </button>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script>
         if (!window.jQuery) {document.write('<script src="../node_modules/jquery/dist/jquery.min.js"><\/script>');}

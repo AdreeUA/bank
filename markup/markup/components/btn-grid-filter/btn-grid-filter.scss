@@ -4,9 +4,9 @@
 
     width: rem(70);
     height: rem(33);
-    border: rem(2) solid $bg-color;
+    border: rem(1) solid $border-color;
 
-    border-radius: rem(4);
+    border-radius: rem(6);
     font-size: 0;
     overflow: hidden;
 
@@ -32,7 +32,7 @@
         background: transparent;
 
         &:first-of-type{
-            border-right: rem(2) solid $bg-color;
+            border-right: rem(1) solid $border-color;
         }
 
         &_active{

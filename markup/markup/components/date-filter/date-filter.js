@@ -6,8 +6,8 @@ $(document).ready(function () {
 
     });
 
-    var btn = $('.date-filter__btn');
-    var calendar = $('.date-filter__inner');
+    const btn = $('.date-filter__btn');
+    const calendar = $('.date-filter__inner');
 
     btn.click(function () {
         calendar.toggleClass('date-filter__inner_open');

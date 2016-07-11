@@ -6,7 +6,7 @@
     margin: 0 rem(8) rem(8) 0;
     height: rem(241);
     padding: rem(20);
-    border: rem(2) solid $bg-color;
+    border: rem(1) solid $border-color;
 
     overflow: hidden;
     transition: background .3s;
@@ -56,7 +56,7 @@
 
         .news-item__title{
             color: $light-color;
-            background-color: rgba(#0e3c62, .9);
+            background-color: rgba(#0e3c62, .7);
         }
 
         .news-item__image{
@@ -83,7 +83,8 @@
         margin: 0 !important;
         height: auto;
         border-color: transparent;
-        border-bottom-color: $bg-color;
+        border-bottom-color: $border-color;
+        border-top-color: $border-color;
 
         &:hover{
             border-bottom-color: $title-color;
@@ -305,7 +306,7 @@
         display: block;
 
         color: $main-color;
-        font-size: rem(14);
+        font-size: rem(12);
 
         transition: color .3s;
 

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('.js-slider-small').slick({
+    $('.js-news-bank').slick({
         // arrows: false
     });
 

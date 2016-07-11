@@ -20,8 +20,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 @font-face {
   font-family: 'PFBeauSansPro';
   src: url('../fonts/pfbeausanspro-regular/pfbeausanspro-reg-webfont.ttf');
-  src: url('../fonts/pfbeausanspro-regular/pfbeausanspro-reg-webfont.woff') format('woff'),
-       url('../fonts/pfbeausanspro-regular/pfbeausanspro-reg-webfont.ttf') format('ttf');
+  src: url('../fonts/pfbeausanspro-regular/pfbeausanspro-reg-webfont.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -29,8 +28,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 @font-face {
   font-family: 'PFBeauSansPro-bold';
   src: url('../fonts/pfbeausanspro-bold/pfbeausanspro-sebold-webfont.ttf');
-  src: url('../fonts/pfbeausanspro-bold/pfbeausanspro-sebold-webfont.woff') format('woff'),
-       url('../fonts/pfbeausanspro-bold/pfbeausanspro-sebold-webfont.ttf') format('ttf');
+  src: url('../fonts/pfbeausanspro-bold/pfbeausanspro-sebold-webfont.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }

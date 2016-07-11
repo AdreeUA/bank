@@ -8,16 +8,16 @@
     input{
         width: 100%;
         padding: rem(8) rem(35) rem(6) rem(11);
-        border: 2px solid $bg-color;
+        border: rem(1) solid $border-color;
 
-        border-radius: rem(4);
+        border-radius: rem(6);
         outline: none;
 
         height: rem(33);
 
-        //&::-webkit-input-placeholder{
-        //    color: $bg-color;
-        //}
+        &::-webkit-input-placeholder{
+            color: $border-color;
+        }
     }
 
     button{
@@ -29,7 +29,7 @@
 
         font-size: 0;
         background-color: transparent;
-        color: $bg-color;
+        color: #bcbec0;
         transition: all .3s;
 
         &::before{

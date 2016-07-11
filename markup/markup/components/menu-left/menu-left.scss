@@ -25,132 +25,6 @@
         z-index: 2;
     }
 
-    &_structure{
-        width: 18%;
-
-        font-size: rem(12);
-
-        li{
-            border-bottom: rem(2) solid #dadbdb;
-            //margin-top: rem(-2);
-        }
-
-        .menu-left__list{
-
-            ul {
-                display: none;
-            }
-        }
-
-        .menu-left__item_active{
-            a{
-                &:before{
-                    display: none;
-                }
-            }
-        }
-
-        .menu-left__item{
-
-            &:hover{
-                .menu-left__link::before{
-                    display: none;
-                }
-            }
-        }
-
-        .menu-left__item_dropdown,
-        .menu-left__submenu-2lvl-item_dropdown{
-
-            &::before {
-                display: none;
-            }
-        }
-
-        .menu-left__submenu-2lvl-item_dropdown{
-
-            &:hover{
-                .menu-left__submenu-3lvl{
-                    display: none;
-                }
-            }
-        }
-
-        .menu-left__link{
-            padding: rem(10) rem(15) rem(10) rem(18);
-            border: none;
-
-            font-size: rem(12);
-            text-transform: capitalize;
-        }
-
-        .menu-left__submenu-2lvl-link{
-            padding: rem(10) rem(10) rem(10) rem(22);
-
-            font-size: rem(12);
-            text-transform: capitalize;
-        }
-
-
-        .menu-left__submenu-2lvl-item{
-            .menu-left__plus{
-                top: rem(8);
-                left: rem(0);
-            }
-        }
-
-        .menu-left__submenu-3lvl-item{
-            .menu-left__plus{
-                left: rem(8);
-            }
-        }
-
-        .menu-left__submenu-4lvl-item{
-            .menu-left__plus{
-                left: rem(16);
-            }
-        }
-
-        .menu-left__submenu-5lvl-item{
-            .menu-left__plus{
-                left: rem(24);
-            }
-        }
-
-        .menu-left__submenu-3lvl-link{
-            padding: rem(10) rem(10) rem(10) rem(32);
-
-            font-size: rem(12);
-            font-weight: 400;
-        }
-
-        .menu-left__submenu-4lvl-link{
-            padding: rem(10) rem(10) rem(10) rem(42);
-
-            font-size: rem(12);
-        }
-
-        .menu-left__submenu-5lvl-link{
-            padding: rem(10) rem(10) rem(10) rem(52);
-
-            font-size: rem(12);
-        }
-
-        .menu-left__submenu-3lvl{
-            position: static;
-
-            padding: 0;
-            width: auto;
-            border: none;
-        }
-
-        .menu-left__submenu-2lvl{
-            height: auto;
-            visibility: visible;
-            transition: none;
-        }
-    }
-
     &__list{
         margin: 0;
         padding: 0;
@@ -167,7 +41,6 @@
         &:hover{
 
             .menu-left__link{
-                //transition: all .3s;
 
                 &::before{
                     position: absolute;
@@ -180,8 +53,6 @@
                     color: $hover-color;
                     content: '';
                 }
-
-
             }
         }
 
@@ -249,7 +120,6 @@
 
             .menu-left__submenu-2lvl{
                 position: relative;
-                //z-index: 1;
                 height: 100%;
 
                 opacity: 1;

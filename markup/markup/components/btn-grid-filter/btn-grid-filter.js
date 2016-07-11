@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    var gridBtnFull = $('.btn-grid-filter__item_grid');
-    var gridBtnHalf = $('.btn-grid-filter__item_list');
-    var gridItem = $('.news-item');
+    const gridBtnFull = $('.btn-grid-filter__item_grid');
+    const gridBtnHalf = $('.btn-grid-filter__item_list');
+    const gridItem = $('.news-item');
 
     gridBtnHalf.click(function (e) {
         e.preventDefault();
@@ -21,7 +21,6 @@ $(document).ready(function () {
         gridBtnFull.addClass('btn-grid-filter__item_active');
 
     });
-
 
 });
 

@@ -1,7 +1,7 @@
 $(document).ready( function () {
 
-    var $iconPlus = $('.structure-box__icon');
-    var $tree = $('.structure-box');
+    const $iconPlus = $('.structure-box__icon');
+    const $tree = $('.structure-box');
 
     $(this).find($iconPlus).each(function () {
 

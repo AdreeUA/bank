@@ -1,0 +1,24 @@
+.footer {
+    padding: rem(14) 0;
+
+    font-size: rem(13);
+    color: $main-color;
+
+    background-color: $bg-color;
+
+    .container {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn-up {
+        margin-left: auto;
+        border: rem(1) solid $border-color;
+        padding: rem(8) rem(12);
+
+        background-color: #fff;
+        border-radius: rem(6);
+    }
+}

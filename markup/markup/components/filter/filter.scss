@@ -3,9 +3,17 @@
     justify-content: space-between;
     margin-bottom: rem(20);
 
+    &_ideas {
+
+        .filter__search {
+            margin-right: 0;
+        }
+    }
+
     &__search{
         max-width: rem(200);
         min-width: 1px;
+        margin-right: rem(115);
     }
 
     &__follow{
@@ -19,7 +27,7 @@
     &__btn{
         position: relative;
 
-        border: rem(2) solid $bg-color;
+        border: rem(1) solid $border-color;
         //height: rem(33);
         width: 100%;
         padding: rem(7) rem(10) rem(7) rem(33);
@@ -58,7 +66,7 @@
             top: 0;
 
             height: 100%;
-            border-right: rem(2) solid $bg-color;
+            border-right: rem(1) solid $border-color;
 
             content: '';
         }

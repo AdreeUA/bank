@@ -10,7 +10,10 @@
     }
 
     &__header{
-        @include clearfix;
+        //@include clearfix;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__date{

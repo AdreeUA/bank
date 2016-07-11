@@ -7,7 +7,7 @@ mixin content-news(data)
     +b.SECTION.content-news&attributes(attributes)
         h1 Новости Банка
         +filter
-            +search.__search
+            +search('Поис по новостям ...').__search
             +categories.js-categories.__caterories(style="width: 12.5rem")
             +btn-follow.__follow
             +btn-grid-filter

@@ -16,9 +16,9 @@
 
         display: block;
         padding: rem(10) rem(14) rem(8);
-        border: rem(1) solid $bg-color;
+        border: rem(1) solid $border-color;
 
-        border-radius: rem(5);
+        border-radius: rem(6);
         color: inherit;
         font-size: rem(14);
         transition: background .3s;

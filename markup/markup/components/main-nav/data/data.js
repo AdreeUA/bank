@@ -24,6 +24,24 @@ data = {mainNav: {
                     ]
                 },
                 {
+                    title: "Стратегия Банка",
+                    link: "#",
+                    submenu:[
+                        {
+                            title: "Главная цель",
+                            link: "#"
+                        },
+                        {
+                            title: "Приоритеты",
+                            link: "#"
+                        },
+                        {
+                            title: "На пути реализации",
+                            link: "#"
+                        }
+                    ]
+                },
+                {
                     title: "Правление Банка",
                     link: "#",
                     col: true,
@@ -605,6 +623,24 @@ data = {mainNav: {
                     title: "Стратегия Банка",
                     link: "#",
                     col: true,
+                    submenu:[
+                        {
+                            title: "Главная цель",
+                            link: "#"
+                        },
+                        {
+                            title: "Приоритеты",
+                            link: "#"
+                        },
+                        {
+                            title: "На пути реализации",
+                            link: "#"
+                        }
+                    ]
+                },
+                {
+                    title: "Стратегия Банка",
+                    link: "#",
                     submenu:[
                         {
                             title: "Главная цель",

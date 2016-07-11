@@ -22,12 +22,10 @@ $(document).ready(function () {
         if (btnFollow.hasClass('btn-follow_followed')) {
 
             btnFollow.html('Отписаться');
-            // btnFollow.removeClass('btn-follow_followed')
         } else {
 
-                btnFollow.html('Подписаться');
-                // btnFollow.addClass('btn-follow_followed')
-            }
+            btnFollow.html('Подписаться');
+        }
     });
 });
 'use strict';
@@ -61,8 +59,6 @@ $(document).ready(function () {
     $('.js-categories').select2();
 
     $('.js-categories-structure').select2({
-        // allowClear: true,
-        // tags: true,
         placeholder: ' Подразделение '
     });
 });
@@ -92,14 +88,26 @@ $(document).ready(function () {
 });
 'use strict';
 
+// Кнопка для плавного прокручивания ВВЕРХ
+
+$(document).ready(function () {
+    $('.js-btn-up').on('click', function (event) {
+        // отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        // анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1500);
+    });
+});
+'use strict';
+
 $('.grid').packery({
     // options
     itemSelector: '.grid__item',
     gutter: 8
 });
-'use strict';
-
-console.log('q');
 'use strict';
 
 $(document).ready(function () {
@@ -125,24 +133,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    var $plus = $('.menu-left__plus');
-
-    $(this).find($plus).each(function () {
-
-        $(this).click(function (e) {
-
-            e.preventDefault();
-
-            $(this).toggleClass('menu-left__plus_active');
-
-            if ($(this).hasClass('menu-left__plus_active')) {
-
-                $(this).siblings('ul').attr('style', 'display:none').slideDown(300);
-            } else {
-
-                $(this).siblings('ul').attr('style', 'display:block').slideUp(300);
-            }
-        });
+    $('.js-news-bank').slick({
+        // arrows: false
     });
 });
 'use strict';
@@ -189,7 +181,6 @@ $(document).ready(function () {
 'use strict';
 
 $(document).ready(function () {
-    console.log('q');
 
     $('.js-slider-large').slick({
         arrows: true,
@@ -202,7 +193,6 @@ $(document).ready(function () {
 
     $('.js-slider-small').slick({
         // arrows: false
-
     });
 });
 'use strict';

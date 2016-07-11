@@ -466,141 +466,194 @@
                     </li>
                 </ul>
             </aside>
-            <div class="content-idea">
-                <div class="content-idea__btns"><a href="#" class="btn-follow content-idea__follow">Подписаться
-          <!--+e.INPUT.input(type="checkbox" id="follow")-->
-          <!--+e.LABEL.label(for="follow") Подписаться--></a>
-                    <div class="share">
-                        <ul class="share__list">
-                            <li class="share__item"><a href="#" class="share__link share__link_comment">500</a>
-                            </li>
-                            <li class="share__item"><a href="#" class="share__link share__link_like">500</a>
-                            </li>
-                            <li class="share__item"><a href="#" class="share__link share__link_dislike share__link_disliked">400</a>
-                            </li>
-                            <li class="share__item"><a href="#" class="share__link share__link_views">2500</a>
-                            </li>
-                        </ul>
+            <div class="content-section">
+                <h1>Дирекция в лицах</h1>
+                <form action="#" class="form-structure">
+                    <label class="form-structure__label">
+                        <input type="text" name="name" placeholder="Ф.И.О." class="form-structure__input" />
+                    </label>
+                    <!--+e.LABEL.label-->
+                    <!--    +e.INPUT.input(type="text"-->
+                    <!--                    name="email"-->
+                    <!--                    placeholder="E-mail")-->
+                    <!--+e.LABEL.label-->
+                    <!--    +e.INPUT.input(type="text"-->
+                    <!--                    name="phone"-->
+                    <!--                    placeholder="Телефон")-->
+                    <label class="form-structure__label">
+                        <input type="text" name="phone-out" placeholder="Внутрений телефон" class="form-structure__input" />
+                    </label>
+                    <!--+categories.js-categories-structure(style="width: 22%" multiple="multiple")-->
+                    <!--+e.LABEL.label-->
+                    <!--    +e.INPUT.input(type="text"-->
+                    <!--                    name="key-words"-->
+                    <!--                    placeholder="Ключевые слова")-->
+                    <!--+e.INPUT.checkbox(type="checkbox"-->
+                    <!--                    id="myOffice")-->
+                    <!--+e.LABEL.label-checkbox(for="myOffice")-->
+                    <!--    +e.SPAN.label-text Мой офис-->
+                    <input type="checkbox" id="online" class="form-structure__checkbox" />
+                    <label for="online" class="form-structure__label-checkbox"><span class="form-structure__label-text">Онлайн</span>
+                    </label>
+                    <button class="btn form-structure__btn">Найти
+                    </button>
+                </form>
+                <h2>Дирекция по информационным технологиям</h2>
+                <div class="structure-catalog">
+                    <div class="structure-catalog__row">
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
+                            </div>
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
+                            </div>
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
+                            </div>
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
+                            </div>
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="idea">
-                    <div class="idea__content">
-                        <div class="idea__info">
-                            <div class="idea__row">
-                                <div class="idea__label">Номер:
-                                </div>
-                                <div class="idea__disc">1665
-                                </div>
+                <h2>Отдел документационного обеспечения производственно-хозяйственной деятельности</h2>
+                <div class="structure-catalog">
+                    <div class="structure-catalog__row">
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
                             </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Идея:
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
                                 </div>
-                                <div class="idea__disc">Корпаративная On-line библиотека
+                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
                                 </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Описание:
+                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
                                 </div>
-                                <div class="idea__disc">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt
-                                        voluptates quibusdam?</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt
-                                        voluptates quibusdam?</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt
-                                        voluptates quibusdam?</p>
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Статус:
-                                </div>
-                                <div class="idea__disc">На экспертизе 12.11.2016
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Комментарий к статусу:
-                                </div>
-                                <div class="idea__disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eaque, ullam quibusdam debitis nemo. Nihil, quia perspiciatis dolorem. Nulla praesentium maxime expedita, perspiciatis rem nihil iusto consequuntur nesciunt
-                                    voluptates quibusdam?
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Эффективность:
-                                </div>
-                                <div class="idea__disc">0 рублей/ 0 ПШЕ
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Номер заявки в СУЗ:
-                                </div>
-                                <div class="idea__disc">
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Хочу учавствовать в реализации:
-                                </div>
-                                <div class="idea__disc">Да
-                                </div>
-                            </div>
-                            <div class="idea__row">
-                                <div class="idea__label">Конкурс Банк идей:
-                                </div>
-                                <div class="idea__disc">Не учавствует
+                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="idea__user">
-                        <div class="idea__avatar">
-                            <img src="static/img/content/avatar-big.jpg" alt="Иванов Евгений Владимирович" />
-                        </div><a href="#" class="idea__name">Иванов Евгений Владимирович</a>
-                        <div class="idea__rang">Дополнительный офис Выборгский
-                        </div>
-                    </div>
-                    <div class="comments idea__comments">
-                        <div class="comments__title">Комментарии
-                        </div>
-                        <div class="comments__item">
-                            <div class="comments__date">16 ноября 2015 г. 11.03
-                            </div><a href="#" class="comments__name">Кухочкая Екатерина Владимировна</a>
-                            <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
                             </div>
-                            <button class="comments__btn-anser">Ответить
-                            </button>
-                        </div>
-                        <div class="comments__item">
-                            <div class="comments__date">16 ноября 2015 г. 11.03
-                            </div><a href="#" class="comments__name">Кухочкая Екатерина Владимировна</a>
-                            <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
-                            </div>
-                            <button class="comments__btn-anser">Ответить
-                            </button>
-                            <div class="comments__item comments__item_anser">
-                                <div class="comments__date">16 ноября 2015 г. 11.03
-                                </div><a href="#" class="comments__name">Кухочкая Екатерина Владимировна</a>
-                                <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
                                 </div>
-                                <button class="comments__btn-anser">Ответить
-                                </button>
-                                <div class="comments__item comments__item_anser">
-                                    <div class="comments__date">16 ноября 2015 г. 11.03
-                                    </div><a href="#" class="comments__name">Кухочкая Екатерина Владимировна</a>
-                                    <div class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi.
-                                    </div>
-                                    <button class="comments__btn-anser">Ответить
-                                    </button>
+                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="comments__anser">
-                            <textarea placeholder="Введите Ваше сообщение" class="comments__entry-fiend"></textarea>
-                            <button class="comments__btn">Отправить комментарий
-                            </button>
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
+                            </div>
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
+                            </div>
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
+                            </div>
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
+                                </div>
+                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">© 1990 – 2016 ПАО «Банк «Санкт-Петербург»
+            </div>
+            <button class="footer__btn-up js-btn-up">Наверх
+            </button>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script>
         if (!window.jQuery) {document.write('<script src="../node_modules/jquery/dist/jquery.min.js"><\/script>');}

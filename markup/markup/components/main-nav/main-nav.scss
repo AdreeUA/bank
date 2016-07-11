@@ -3,7 +3,7 @@
 
     border-bottom: 2px solid #e1e0df;
 
-    background: linear-gradient(to top, #f6f4f4, #e1e0df);
+    background: linear-gradient(to top, #e0e0df, #f6f4f4);
 
     ul{
         margin: 0;
@@ -34,12 +34,13 @@
     }
 
     &__item{
-        flex-grow: 1;
+        flex: 1;
         position: relative;
 
 
         border-right: rem(2) solid #dadbdb;
         border-top: rem(4) solid transparent;
+        box-shadow: rem(1) 0 rem(2) 0 #fff;
 
         text-align: center;
 
@@ -47,6 +48,7 @@
 
         &:first-of-type{
             border-left: rem(2) solid #dadbdb;
+            box-shadow: rem(1) 0 rem(2) 0 #fff, rem(-1) 0 rem(2) 0 #fff;
         }
 
         &:hover{

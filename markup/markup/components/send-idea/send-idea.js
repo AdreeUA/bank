@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    var btn = $('.js-idea-btn');
-    var sendIdeaWrap = $('.send-idea');
+    const btn = $('.js-idea-btn');
+    const sendIdeaWrap = $('.send-idea');
 
     btn.click(function () {
         sendIdeaWrap.toggleClass('send-idea_active');

@@ -16,11 +16,11 @@
         position: relative;
 
         padding: rem(7) rem(25) rem(7) rem(10);
-        border: rem(2) solid $bg-color;
+        border: rem(1) solid $border-color;
 
         font-size: rem(14);
         background-color: #fff;
-        border-radius: rem(5);
+        border-radius: rem(6);
 
         &::before{
             position: absolute;
@@ -43,7 +43,7 @@
         z-index: 10;
 
         transform: translateX(9999px);
-        border: rem(2) solid $bg-color;
+        border: rem(1) solid $border-color;
 
         background-color: #fff;
         border-radius: rem(10);
@@ -91,7 +91,7 @@
     &__month-item{
         width: rem(84);
         display: block;
-        border: rem(2) solid $bg-color;
+        border: rem(1) solid $border-color;
         padding: rem(9) rem(11);
 
         text-align: center;
@@ -108,7 +108,7 @@
         display: none;
 
         &:checked + .date-filter__month-item{
-            border: rem(2) solid $title-color;
+            border: rem(1) solid $title-color;
 
             background-color: $title-color;
             color: $light-color;

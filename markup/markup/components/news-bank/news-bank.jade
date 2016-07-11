@@ -7,13 +7,24 @@ mixin news-bank(data)
             +e.A.header(href="#") #{ent.header}
 
             if ent.news
-                +e.UL.list
-                    each ent2, num2 in ent.news
+                .js-news-bank
+                    +e.UL.list
+                        each ent2, num2 in ent.news
 
-                        +e.item
-                            +e.link(href="#{ent2.link}")
-                                +date.__date
-                                    +e.SPAN.day #{ent2.dateDay}
-                                    +e.SPAN.month #{ent2.dateMonth}
-                                +e.H3.title= ent2.title
+                            +e.item
+                                +e.link(href="#{ent2.link}")
+                                    +date.__date
+                                        +e.SPAN.day #{ent2.dateDay}
+                                        +e.SPAN.month #{ent2.dateMonth}
+                                    +e.H3.title= ent2.title
+
+                    +e.UL.list
+                        each ent2, num2 in ent.news
+
+                            +e.item
+                                +e.link(href="#{ent2.link}")
+                                    +date.__date
+                                        +e.SPAN.day #{ent2.dateDay}
+                                        +e.SPAN.month #{ent2.dateMonth}
+                                    +e.H3.title= ent2.title
 

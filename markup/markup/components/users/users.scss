@@ -16,14 +16,14 @@
         font-size: rem(15);
 
         td{
-            padding: 0 rem(10) rem(20) 0;
+            padding: 0 rem(10) rem(12) 0;
 
             vertical-align: top;
 
             &:first-of-type{
                 width: 25%;
                 color: $main-color;
-                padding: 0 rem(23) rem(20) 0;
+                padding: 0 rem(23) rem(12) 0;
             }
             &:last-of-type{
                 width: 75%;
@@ -33,7 +33,7 @@
         tfoot{
             td{
                 vertical-align: bottom;
-                padding: rem(20) 0 rem(8) 0;
+                padding: rem(50) 0 rem(8) 0;
 
                 &:first-of-type{
                     padding-bottom: rem(8);

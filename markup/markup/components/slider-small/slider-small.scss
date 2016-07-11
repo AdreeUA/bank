@@ -47,7 +47,7 @@
         display: table;
 
         color: $light-color;
-        background-color: rgba($title-bg, .8);
+        background-color: rgba($title-bg, .5);
         text-align: center;
 
         h3{
@@ -84,6 +84,7 @@
 
         &::before{
             @include triangle(14px, $light-color, left);
+            border-right-color: #fff;
         }
 
         &:hover{
@@ -98,6 +99,7 @@
 
         &::before{
             @include triangle(14px, $light-color, right);
+            border-left-color: #fff;
         }
 
         &:hover{

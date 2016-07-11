@@ -69,4 +69,60 @@
         font-size: rem(18);
         transition: all .3s;
     }
+
+    // Slick arrows
+
+    .slick-arrow {
+        position: absolute;
+        top: rem(-62);
+
+        width: rem(34);
+        height: rem(31);
+        border: rem(1) solid $border-color;
+
+        font-size: 0;
+
+        background-color: #fff;
+        transition: background .3s;
+
+        &::before {
+            content: '';
+        }
+    }
+
+    .slick-prev{
+        right: 0;
+
+        border-top-left-radius: rem(6);
+        border-bottom-left-radius: rem(6);
+
+        &::before{
+            margin-right: rem(5);
+
+            @include triangle(14px, $main-color, left);
+        }
+
+        &:hover{
+            background-color: $bg-color;
+        }
+    }
+
+    .slick-next{
+        right: rem(-34);
+
+        border-left-color: transparent;
+
+        border-top-right-radius: rem(6);
+        border-bottom-right-radius: rem(6);
+
+        &::before{
+            margin-left: rem(5);
+
+            @include triangle(14px, $main-color, right);
+        }
+
+        &:hover{
+            background-color: $bg-color;
+        }
+    }
 }

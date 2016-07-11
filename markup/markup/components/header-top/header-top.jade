@@ -6,7 +6,7 @@ mixin header-top(data)
     +b.HEADER.header-top&attributes(attributes)
         .container.header-top__inner
             +logo.__logo
-            +search.__search
+            +search("Поиск сотрудника, документов, информации...").__search
             +e.notification
                 +e.A.user(href="#")
                     +e.user-avatar
