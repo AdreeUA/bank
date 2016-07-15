@@ -3,6 +3,7 @@
 
     display: inline-block;
     vertical-align: top;
+    min-height: rem(33);
     //min-width: 22%;
     padding: rem(8) rem(15) rem(6) rem(35);
     margin: 0 rem(15) rem(0) 0;
@@ -17,19 +18,28 @@
 
     &:hover{
         background-color: $hover-color;
+
+        &::before {
+            @include bg($icon-checked);
+        }
     }
 
     &::before{
         position: absolute;
-        left: rem(10);
+        left: rem(5);
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-48%);
 
-        font-family: glyphicons;
-        font-size: rem(22);
-        content: '\e084';
-        color: $light-color;
-        transition: all .3s;
+        //font-family: glyphicons;
+        //font-size: rem(22);
+        //content: '\e084';
+        //color: $light-color;
+        //transition: all .3s;
+
+        content: '';
+
+        @include bg($icon-check);
+        height: 26px;
 
     }
 

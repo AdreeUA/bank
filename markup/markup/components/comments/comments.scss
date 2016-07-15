@@ -14,7 +14,7 @@
         position: relative;
 
         padding: rem(20) rem(10);
-        border: rem(2) solid $bg-color;
+        border: rem(1) solid $border-color;
         margin-bottom: rem(25);
 
         border-radius: rem(5);
@@ -70,7 +70,7 @@
 
         margin-top: rem(18);
         padding: rem(15) rem(8);
-        border: rem(2) solid $bg-color;
+        border: rem(1) solid $border-color;
         
         border-radius: rem(5);
         background-color: $bg-color;
@@ -103,7 +103,7 @@
     &__entry-fiend{
         width: 100%;
         padding: rem(10);
-        border: rem(2) solid $bg-color;
+        border: rem(1) solid $border-color;
         min-height: rem(100);
         margin-bottom: rem(15);
 
@@ -115,7 +115,7 @@
 
     &__btn{
         padding: rem(8);
-        border: rem(2) solid $bg-color;
+        border: rem(1) solid $border-color;
         margin-bottom: rem(15);
 
         color: $main-color;

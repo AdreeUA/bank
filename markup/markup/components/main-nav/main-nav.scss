@@ -106,8 +106,10 @@
         left: rem(-2);
 
         height: 0;
+        width: rem(1185);
 
         overflow: hidden;
+        text-align: left;
 
         &_right{
             right: 0;
@@ -117,8 +119,8 @@
 
     &__submenu-wrap{
         display: inline-block;
-        vertical-align: top;
-        max-width: 1155px;
+        //vertical-align: top;
+        max-width: rem(1185);
 
     }
 

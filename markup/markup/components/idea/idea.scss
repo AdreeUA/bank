@@ -14,7 +14,7 @@
     }
 
     &__avatar{
-        border: rem(1) solid $bg-color;
+        border: rem(1) solid $border-color;
         padding: rem(5);
         margin-bottom: rem(5);
     }
@@ -73,7 +73,7 @@
     &__disc{
         padding: rem(8) 0;
         min-height: rem(34);
-        border-bottom: rem(2) solid $bg-color;
+        border-bottom: rem(1) solid $border-color;
 
         overflow: hidden;
     }

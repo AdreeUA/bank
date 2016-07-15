@@ -281,6 +281,10 @@
 
         color: $main-color;
         font-size: rem(15);
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &__idea{

@@ -19,7 +19,7 @@
         display: flex;
         flex-wrap: wrap;
         //justify-content: flex-start;
-        border-bottom: rem(2) solid $bg-color;
+        border-bottom: rem(1) solid $border-color;
     }
 
     &__item{
@@ -33,7 +33,7 @@
         display: inline-block;
         vertical-align: top;
         padding: rem(5);
-        border: rem(1) solid $bg-color;
+        border: rem(1) solid $border-color;
         max-width: rem(200);
     }
 

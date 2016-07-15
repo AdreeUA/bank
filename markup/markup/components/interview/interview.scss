@@ -105,10 +105,14 @@
         border-radius: rem(30);
         color: $light-color;
         text-transform: uppercase;
-        transition: all .3s;
+        transition: background .3s;
 
         &:hover{
             background-color: $hover-color;
+
+            &::before {
+                @include bg($icon-checked);
+            }
             //transition: all .3s;
 
             //&::before{
@@ -121,17 +125,20 @@
             position: absolute;
             left: rem(3);
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-51%);
 
             display: inline-block;
             vertical-align: middle;
 
-            font-family: glyphicons;
-            font-size: rem(28);
-            content: '\e084';
-            color: #fff;
-            text-align: center;
-            transition: all .3s;
+            //font-family: glyphicons;
+            //font-size: rem(28);
+            //content: '\e084';
+            //color: #fff;
+            //text-align: center;
+            content: '';
+            //transition: all .3s;
+
+            @include bg($icon-check);
 
         }
     }

@@ -75,30 +75,13 @@
 
     &__notification-phone{
         margin-right: rem(34);
-        width: rem(43);
-        height: rem(33);
 
-        background-image: url(__static__content/phone.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include bg($phone);
 
-        &::before{
-            //content: '\e183';
-        }
     }
 
     &__notification-message{
-        width: rem(32);
-        height: rem(36);
-
-        background-image: url(__static__content/messages.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        &::before{
-            //content: '\e123';
-            //font-size: rem(35);
-        }
+        @include bg($messages);
     }
 
     &__notification-count{

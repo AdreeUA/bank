@@ -2,8 +2,9 @@
     position: relative;
     z-index: 10;
 
-    //display: flex;
-    display: table;
+    display: inline-flex;
+    max-width: rem(1185);
+    //display: table;
     //width: 100%;
     
     //columns: 5;
@@ -15,9 +16,10 @@
     background-color: $light-color;
 
     &__col{
-        display: table-cell;
+        //display: table-cell;
         
-        max-width: rem(233);
+        //max-width: rem(240);
+        min-width: rem(220);
         padding-left: rem(18);
         padding-right: rem(30);
 
@@ -25,8 +27,8 @@
             border-right: rem(1) solid #dadbdb;
         }
 
-        white-space: nowrap;
-        word-break: break-all;
+        //white-space: nowrap;
+        word-break: break-word;
     }
 
     &__item{
@@ -55,7 +57,7 @@
         font-weight: 400;
 
         overflow: hidden;
-        white-space: nowrap;
+        //white-space: nowrap;
         text-overflow: ellipsis;
     }
 

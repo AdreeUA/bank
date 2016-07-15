@@ -53,6 +53,8 @@
 
     &__btns {
         text-align: center;
+        display: flex;
+        align-items: flex-start;
     }
 
     &__btn {
