@@ -9,7 +9,11 @@ mixin main-nav(data)
                         - var mainMenuDropdownClass = '_dropdown'
                     else
                         - var mainMenuDropdownClass = ''
-                    +e.LI.item(class="#{mainMenuDropdownClass}")
+                    if (ent.active)
+                        - var mainMenuActiveClass = '_active'
+                    else
+                        - var mainMenuActiveClass = ''
+                    +e.LI.item(class="#{mainMenuDropdownClass} #{mainMenuActiveClass}")
                         +e.link(href="#{ent.link}") #{ent.title}
                         if (ent.submenu)
                             +e.submenu

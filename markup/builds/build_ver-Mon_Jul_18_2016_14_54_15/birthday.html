@@ -53,7 +53,7 @@
             <nav class="main-nav header-top__menu">
                 <div class="container">
                     <ul class="main-nav__list">
-                        <li class="main-nav__item main-nav__item_dropdown"><a href="#" class="main-nav__link">МОЙ БАНК</a>
+                        <li class="main-nav__item main-nav__item_dropdown main-nav__item_active"><a href="#" class="main-nav__link">МОЙ БАНК</a>
                             <div class="main-nav__submenu">
                                 <div class="main-nav__submenu-wrap">
                                     <ul class="submenu">
@@ -466,40 +466,20 @@
                     </li>
                 </ul>
             </aside>
-            <div class="content-section">
-                <h1>Дирекция в лицах</h1>
-                <form action="#" class="form-structure">
-                    <label class="form-structure__label">
-                        <input type="text" name="name" placeholder="Ф.И.О." class="form-structure__input" />
-                    </label>
-                    <!--+e.LABEL.label-->
-                    <!--    +e.INPUT.input(type="text"-->
-                    <!--                    name="email"-->
-                    <!--                    placeholder="E-mail")-->
-                    <!--+e.LABEL.label-->
-                    <!--    +e.INPUT.input(type="text"-->
-                    <!--                    name="phone"-->
-                    <!--                    placeholder="Телефон")-->
-                    <label class="form-structure__label">
-                        <input type="text" name="phone-out" placeholder="Внутрений телефон" class="form-structure__input" />
-                    </label>
-                    <!--+categories.js-categories-structure(style="width: 22%" multiple="multiple")-->
-                    <!--+e.LABEL.label-->
-                    <!--    +e.INPUT.input(type="text"-->
-                    <!--                    name="key-words"-->
-                    <!--                    placeholder="Ключевые слова")-->
-                    <!--+e.INPUT.checkbox(type="checkbox"-->
-                    <!--                    id="myOffice")-->
-                    <!--+e.LABEL.label-checkbox(for="myOffice")-->
-                    <!--    +e.SPAN.label-text Мой офис-->
-                    <input type="checkbox" id="online" class="form-structure__checkbox" />
-                    <label for="online" class="form-structure__label-checkbox"><span class="form-structure__label-text">Онлайн</span>
-                    </label>
-                    <button class="btn form-structure__btn">Найти
-                    </button>
-                </form>
-                <h2>Дирекция по информационным технологиям</h2>
-                <div class="structure-catalog">
+            <div class="content-section content-section_birthday">
+                <h1>Все Дни Рождения</h1>
+                <ul class="news-btn">
+                    <li class="news-btn__item"><a href="#" class="news-btn__link news-btn__link_prev">Предыдущий месяц</a>
+                    </li>
+                    <li class="news-btn__item"><a href="#" class="news-btn__link news-btn__link_prev">Предыдущая неделя</a>
+                    </li>
+                    <li class="news-btn__item"><a href="#" class="news-btn__link news-btn__link_next">Следующий месяц</a>
+                    </li>
+                    <li class="news-btn__item"><a href="#" class="news-btn__link news-btn__link_next">Следующая неделя</a>
+                    </li>
+                </ul>
+                <h2 class="date-bithday">11 декабря, пятница</h2>
+                <div class="structure-catalog structure-catalog_birthday">
                     <div class="structure-catalog__row">
                         <div class="structure-catalog__item">
                             <div class="structure-catalog__avatar-wrap">
@@ -508,12 +488,6 @@
                             <div class="structure-catalog__content">
                                 <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
                                 </div>
-                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
-                                </div>
                             </div>
                         </div>
                         <div class="structure-catalog__item">
@@ -523,12 +497,6 @@
                             <div class="structure-catalog__content">
                                 <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
                                 </div>
-                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
-                                </div>
                             </div>
                         </div>
                         <div class="structure-catalog__item">
@@ -537,34 +505,13 @@
                             </div>
                             <div class="structure-catalog__content">
                                 <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="structure-catalog__item">
-                            <div class="structure-catalog__avatar-wrap">
-                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
-                            </div>
-                            <div class="structure-catalog__content">
-                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h2>Отдел документационного обеспечения производственно-хозяйственной деятельности</h2>
-                <div class="structure-catalog">
+                <h2 class="date-bithday">12 декабря, суббота</h2>
+                <div class="structure-catalog structure-catalog_birthday">
                     <div class="structure-catalog__row">
                         <div class="structure-catalog__item">
                             <div class="structure-catalog__avatar-wrap">
@@ -573,11 +520,14 @@
                             <div class="structure-catalog__content">
                                 <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
                                 </div>
-                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
+                            </div>
+                        </div>
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
+                            </div>
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
                                 </div>
                             </div>
                         </div>
@@ -588,11 +538,16 @@
                             <div class="structure-catalog__content">
                                 <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
                                 </div>
-                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="structure-catalog__row">
+                        <div class="structure-catalog__item">
+                            <div class="structure-catalog__avatar-wrap">
+                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
+                            </div>
+                            <div class="structure-catalog__content">
+                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
                                 </div>
                             </div>
                         </div>
@@ -603,12 +558,6 @@
                             <div class="structure-catalog__content">
                                 <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
                                 </div>
-                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
-                                </div>
                             </div>
                         </div>
                         <div class="structure-catalog__item">
@@ -617,27 +566,6 @@
                             </div>
                             <div class="structure-catalog__content">
                                 <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="structure-catalog__item">
-                            <div class="structure-catalog__avatar-wrap">
-                                <img src="static/img/content/avatar-big.jpg" alt="Avatar" class="structure-catalog__avatar" title="" />
-                            </div>
-                            <div class="structure-catalog__content">
-                                <div class="structure-catalog__label structure-catalog__label_name">Ромашен Кирилл Динисович
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_post">Начальник отдела
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_address">Молоохтинский пр., д.64, лит.А, к. 1530
-                                </div>
-                                <div class="structure-catalog__label structure-catalog__label_phones">Тел.:<span class="structure-catalog__phone-work"> 5355,</span><span class="structure-catalog__phone-mob">355525455-5224</span>
                                 </div>
                             </div>
                         </div>

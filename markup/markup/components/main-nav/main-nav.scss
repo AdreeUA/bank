@@ -76,6 +76,10 @@
             }
         }
 
+        &_active {
+            border-top-color: $hover-color;
+        }
+
     }
 
     &__link{

@@ -2015,6 +2015,23 @@ img {
   min-width: 30%;
 }
 
+.content-section {
+  float: right;
+  width: 75%;
+  padding-bottom: 4.5625rem;
+  margin-top: -2.1875rem;
+}
+
+.content-section h1 {
+  margin-bottom: 0.875rem;
+  margin-top: 0;
+  color: #202020;
+}
+
+.content-section_birthday .date-bithday {
+  text-align: center;
+}
+
 .content-news {
   float: right;
   overflow: hidden;
@@ -2060,23 +2077,6 @@ img {
 
 .lt-ie8 .content-news__footer {
   zoom: 1;
-}
-
-.content-section {
-  float: right;
-  width: 75%;
-  padding-bottom: 4.5625rem;
-  margin-top: -2.1875rem;
-}
-
-.content-section h1 {
-  margin-bottom: 0.875rem;
-  margin-top: 0;
-  color: #202020;
-}
-
-.content-section_birthday .date-bithday {
-  text-align: center;
 }
 
 .content-structure {
@@ -2499,7 +2499,7 @@ img {
 }
 
 .grid__item_width-3x {
-  width: 42.8125rem;
+  width: 42.6875rem;
 }
 
 .grid__item_width-2x {
@@ -3108,6 +3108,10 @@ img {
   height: 0.625rem;
   background-color: #fff;
   content: '';
+}
+
+.main-nav__item_active {
+  border-top-color: #DA002E;
 }
 
 .main-nav__link {
@@ -4681,13 +4685,13 @@ img {
 
 .submenu__col {
   min-width: 13.75rem;
-  padding-left: 1.125rem;
-  padding-right: 1.875rem;
+  padding-left: 1.425rem;
+  padding-right: 2.175rem;
   word-break: break-word;
 }
 
-.submenu__col:not(:last-of-type) {
-  border-right: 0.0625rem solid #dadbdb;
+.submenu__col:not(:first-of-type) {
+  border-left: 0.0625rem solid #dadbdb;
 }
 
 .submenu__item {

@@ -3,6 +3,7 @@ data = {mainNav: {
         {
             title: "МОЙ БАНК",
             link: "#",
+            active: true,
             submenu: [
                 {
                     title: "Стратегия Банка",
