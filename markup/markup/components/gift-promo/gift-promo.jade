@@ -1,0 +1,14 @@
+mixin gift-promo(data)
+    +b.A.gift-promo&attributes(attributes)(href="#")
+
+        each ent, num in data
+
+            if ent.image
+                +e.image-wrap
+                    +e.IMG.img(src="__static__img/content/#{ent.image}" alt="Image")
+
+            if ent.icon
+                +e.icon(class="_#{ent.name}")
+
+            if ent.title
+                +e.H2.title= ent.title

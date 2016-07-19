@@ -1,0 +1,95 @@
+.gift-bank {
+    padding: rem(24);
+    color: $main-color;
+
+    &:hover {
+        .gift-bank__title {
+            color: $title-color;
+        }
+    }
+
+    &_order {
+
+        .gift-bank__item:nth-child(3){
+            margin-right: rem(165);
+        }
+    }
+
+    &__title {
+        margin: 0 0 rem(42);
+
+        color: $hover-color;
+
+        transition: color .3s;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+    }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: rem(26);
+        }
+
+        &::before {
+            content: '\25CF';
+
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: rem(17);
+
+            color: $hover-color;
+            font-size: 90%;
+
+            transition: color .3s;
+        }
+
+        &:hover {
+            &::before {
+                color: $title-color;
+            }
+        }
+    }
+    
+    &__link {
+        display: inline-block;
+
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: rem(-10);
+    }
+
+    &__btn {
+        display: inline-block;
+        vertical-align: top;
+        max-height: rem(31);
+
+        font-size: rem(14);
+        color: inherit;
+
+        transition: background .3s;
+
+        @extend .footer__btn-up;
+
+        padding: rem(7) rem(18);
+        
+        &:hover {
+            text-decoration: none;
+            background-color: $bg-color;
+        }
+    }
+}

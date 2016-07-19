@@ -12,6 +12,19 @@
         }
     }
 
+    &_gift {
+        .calendar__header {
+            color: $hover-color;
+        }
+
+        &:hover {
+            .calendar__header{
+                color: $title-color;
+            }
+        }
+
+    }
+
     &__header{
         margin: 0 0 rem(30);
         display: block;

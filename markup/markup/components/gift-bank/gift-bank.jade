@@ -1,0 +1,18 @@
+mixin gift-bank(data)
+    +b.gift-bank&attributes(attributes)
+
+        each ent, num in data
+
+            +e.H2.title= ent.title
+
+            if ent.items
+                +e.UL.list
+
+                    each item, num2 in ent.items
+
+                        +e.item
+                            +e.link(href="#")= item.text
+
+            if ent.btn
+                +e.btn-wrap
+                    +e.A.btn(href="#") Перейти к заказу

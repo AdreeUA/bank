@@ -1,0 +1,104 @@
+.gift-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(25) rem(18);
+
+    color: #231f20;
+    font-size: rem(22);
+
+    transition: transform .3s;
+
+    &:hover {
+        text-decoration: none;
+
+        .gift-promo__img,
+        .gift-promo__icon {
+            transform: scale(1.05);;
+        }
+
+        .gift-promo__title {
+            color: $main-color;
+        }
+
+    }
+
+    &__title {
+        margin-top: rem(32);
+        margin-bottom: 0;
+
+        color: inherit;
+        font-size: inherit;
+        font-weight: 300;
+
+        transition: color .3s;
+    }
+
+    &_horizontal {
+        padding: rem(20);
+
+        .gift-promo__image-wrap {
+            max-height: rem(140);
+        }
+    }
+
+    &_vartical {
+        padding: rem(34) rem(22);
+
+        .gift-promo__image-wrap {
+            max-height: rem(230);
+        }
+    }
+
+    &_icon {
+        height: 100%;
+        width: 100%;
+
+        text-align: center;
+        color: #fff;
+        font-size: rem(19);
+        font-weight: 400;
+
+        background: #12b5ea;
+        background: radial-gradient(circle, #12b5ea, #15a8e0);
+
+        &:hover {
+            .gift-promo__title {
+                color: $light-color;
+            }
+        }
+
+        .gift-promo__title {
+            margin-top: rem(22);
+
+            font-weight: 400;
+        }
+    }
+
+    &__img {
+        transition: transform .3s;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: rem(90);
+        height: rem(90);
+
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        transition: transform .3s;
+
+        &_phone {
+            margin-top: rem(18);
+
+            @include bg($icon-phone-large)
+        }
+
+        &_arrow {
+            margin-top: rem(6);
+
+            @include bg($icon-arrow-large)
+        }
+    }
+}

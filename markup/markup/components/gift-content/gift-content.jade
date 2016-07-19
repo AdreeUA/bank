@@ -1,0 +1,26 @@
+include ../grid/grid
+include ../calendar/calendar
+include ../gift-promo/gift-promo
+include ../gift-bank/gift-bank
+
+mixin gift-content(data)
+    +b.gift-content&attributes(attributes)
+        +grid
+            +e.item_width-3x
+                +gift-promo(giftPromo.large)._horizontal
+            +e.item_height-2x
+                +calendar(calendar.gift)._gift
+            +e.item
+                +gift-promo(giftPromo.personaOffice)._icon
+            +e.item_width-2x
+                +gift-bank(giftBank.first)
+            +e.item
+                +gift-promo(giftPromo.small)
+            +e.item_height-2x
+                +gift-promo(giftPromo.long)._vertical
+            +e.item
+                +gift-promo(giftPromo.small)
+            +e.item_width-2x
+                +gift-bank(giftBank.second)._order
+            +e.item
+                +gift-promo(giftPromo.feedback)._icon
