@@ -100,26 +100,26 @@
             content: '\e013';
         }
 
-        &_list {
-
-            &::before {
-                display: none;
-            }
-
-            &::after {
-                position: absolute;
-                left: rem(4);
-                top: 50%;
-                transform: translateY(-50%);
-
-                font-size: rem(15);
-                font-family: glyphicons;
-                opacity: 1;
-
-                content: '\2212';
-                pointer-events: none;
-            }
-        }
+        //&_list {
+        //
+        //    &::before {
+        //        display: none;
+        //    }
+        //
+        //    &::after {
+        //        position: absolute;
+        //        left: rem(4);
+        //        top: 50%;
+        //        transform: translateY(-50%);
+        //
+        //        font-size: rem(15);
+        //        font-family: glyphicons;
+        //        opacity: 1;
+        //
+        //        content: '\2212';
+        //        pointer-events: none;
+        //    }
+        //}
 
     }
 
@@ -131,9 +131,9 @@
             transition: all .3s;
         }
 
-        &:checked + .ideas__label_list::after{
-            content: '\002b'
-        }
+        //&:checked + .ideas__label_list::after{
+        //    content: '\002b'
+        //}
     }
 
     &__btn {

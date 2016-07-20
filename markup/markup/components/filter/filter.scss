@@ -27,56 +27,56 @@
     &__btn{
         position: relative;
 
-        border: rem(1) solid $border-color;
+        border: rem(1) solid transparent;
         //height: rem(33);
         width: 100%;
-        padding: rem(7) rem(10) rem(7) rem(33);
+        padding: rem(7) rem(10) rem(7) rem(10);
 
         border-radius: rem(4);
-        color: $main-color;
-        background-color: $light-color;
+        color: $light-color;
+        background-color: $title-color;
         font-size: rem(14);
         text-align: center;
         cursor: pointer;
 
-        transition: color .3s;
+        transition: background .3s;
 
-        &::before{
-            position: absolute;
-            left: rem(6);
-            top: rem(3);
+        //&::before{
+        //    position: absolute;
+        //    left: rem(6);
+        //    top: rem(3);
+        //
+        //    margin-top: rem(3);
+        //
+        //    font-family: glyphicons;
+        //    //content: '\e086';
+        //    font-size: rem(16);
+        //    font-weight: bold;
+        //    color: $main-color;
+        //    border-radius: 50%;
+        //    text-align: center;
+        //    //line-height: rem(26);
+        //
+        //    transition: color .3s;
+        //}
 
-            margin-top: rem(3);
-
-            font-family: glyphicons;
-            content: '\e086';
-            font-size: rem(16);
-            font-weight: bold;
-            color: $main-color;
-            border-radius: 50%;
-            text-align: center;
-            //line-height: rem(26);
-
-            transition: color .3s;
-        }
-
-        &::after{
-            position: absolute;
-            left: rem(30);
-            top: 0;
-
-            height: 100%;
-            border-right: rem(1) solid $border-color;
-
-            content: '';
-        }
+        //&::after{
+        //    position: absolute;
+        //    left: rem(30);
+        //    top: 0;
+        //
+        //    height: 100%;
+        //    border-right: rem(1) solid $border-color;
+        //
+        //    content: '';
+        //}
 
         &:hover {
-            color: $title-color;
+            background-color: $hover-color;
 
-            &::before {
-                color: $title-color;
-            }
+            //&::before {
+            //    color: $title-color;
+            //}
         }
 
     }
