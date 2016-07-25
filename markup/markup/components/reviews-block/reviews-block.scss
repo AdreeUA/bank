@@ -1,0 +1,194 @@
+.reviews-block-container{
+    font-size: rem(15);
+
+    .reviews-text {
+        margin: rem(18) 0;
+        padding: rem(15) rem(8);
+        border: rem(1) solid $border-color;
+
+        border-radius: rem(5);
+        background-color: $bg-color;
+    }
+
+    div.reviews-text table.forum-quote {
+        margin-bottom: rem(15);
+    }
+
+    div.reviews-post-reply-buttons {
+        height: rem(30);
+        margin-bottom: rem(3);
+    }
+
+    .review-avatar {
+        overflow: hidden;
+
+        border-radius: 50%;
+    }
+
+    .reviews-button-small {
+        padding: rem(5);
+        border: none;
+
+        font-size: rem(12);
+        color: $light-color;
+
+        background-color: $main-color;
+        border-radius: rem(5);
+
+        transition: color .3s, background .3s;
+
+        &:hover {
+            color: darken($light-color, 5);
+            background-color: lighten($main-color, 2);
+            text-decoration: none;
+        }
+    }
+
+    .ilike-light .bx-ilike-right {
+        position: relative;
+        z-index: 1;
+
+        display: block;
+        padding-left: rem(21);
+
+        color: $main-color;
+
+        &::before{
+            position: absolute;
+            left: rem(3);
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            content: '';
+            @include bg($icon-like);
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .bx-you-like .bx-ilike-right,
+    .bx-ilike-button-hover .bx-ilike-right{
+        &::before{
+            @include bg($icon-liked);
+        }
+    }
+
+    .ilike-light .bx-ilike-text {
+        height: rem(30);
+
+        transition: color .3s;
+
+        &:hover {
+            color: $title-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.reviews-link-box {
+    margin-top: rem(10);
+
+    .reviews-link-box-text a{
+        font-size: 1.125rem;
+        font-weight: 800;
+    }
+}
+
+.reviews-reply-form {
+
+    font-size: rem(15);
+
+    border: 0.0625rem solid #bcbec0;
+
+    border-radius: rem(5);
+
+    form {
+        background-color: transparent;
+
+    }
+
+    div.reviews-reply-header {
+        border-radius: rem(5);
+    }
+
+    .reviews-reply-field-setting {
+        label {
+            position: relative;
+
+            display: inline-block;
+            vertical-align: top;
+            padding-left: rem(25);
+            margin: rem(7) rem(15) rem(15) 0;
+
+            font-size: rem(14);
+            color: $main-color;
+            cursor: pointer;
+
+            &::before{
+                position: absolute;
+                left: 0;
+                top: 50%;
+
+                margin-top: rem(-9);
+                width: rem(18);
+                height: rem(18);
+                border: rem(1) solid ;
+
+                border-radius: rem(5);
+                content: '';
+            }
+
+            &::after{
+                position: absolute;
+                left: rem(3);
+                top: 0;
+
+                opacity: 0;
+
+                font-size: rem(12);
+                font-family: glyphicons;
+                content: '\e013';
+            }
+
+            &:hover{
+
+                .interview__label-text{
+                    color: $hover-color;
+                    transition: all .3s;
+                }
+            }
+        }
+
+        input {
+            display: none;
+
+            &:checked + label:after{
+                opacity: 1;
+                transition: all .3s;
+            }
+        }
+    }
+
+    .reviews-reply-buttons {
+        input {
+            padding: rem(8);
+            border: rem(1) solid $border-color;
+            margin-bottom: rem(15);
+
+            color: $main-color;
+            font-size:inherit;
+
+            background-color: transparent;
+            border-radius: rem(5);
+
+            transition: background .3s;
+
+            &:hover{
+                background-color: $bg-color;
+            }
+        }
+    }
+}

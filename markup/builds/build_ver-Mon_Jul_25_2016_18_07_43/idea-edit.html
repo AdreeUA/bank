@@ -12,7 +12,7 @@
         <meta name="HandheldFriendly" content="true" />
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/mainbyohxrjxlxr.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="default title" />
         <meta property="og:title" content="" />
@@ -466,17 +466,107 @@
                     </li>
                 </ul>
             </aside>
-            <div class="content-direction content-section">
-                <div class="content-direction__avatar">
-                    <img src="static/img/content/avatar-big.jpg" />
-                </div>
-                <div class="content-direction__left">
-                    <h2>Уважаемые коллеги, добро пожаловать на портал Дирекциии по информационным технологиям!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime deserunt rem facilis aut amet id a in asperiores accusantium deleniti.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quia ad, saepe eveniet rem? Quia, nobis iure in vitae illum, nisi enim voluptas quae exercitationem, ad minus aut modi eos eum tenetur architecto consequatur nihil blanditiis
-                        quod possimus laborum odio!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, libero!</p>
-                </div>
+            <form class="ideas"><a href="#" class="ideas__link ideas__link_title">Все идеи</a>
+                <h3 class="ideas__subtitle">Идеи в статусе
+        </h3>
+                <ul class="ideas__list">
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-0" class="ideas__checkbox" />
+                        <label for="checkbox-list-0" class="ideas__label ideas__label_list">Новая идея
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-1" class="ideas__checkbox" />
+                        <label for="checkbox-list-1" class="ideas__label ideas__label_list">У автора на доработке
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-2" class="ideas__checkbox" />
+                        <label for="checkbox-list-2" class="ideas__label ideas__label_list">На экспертизе
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-3" class="ideas__checkbox" />
+                        <label for="checkbox-list-3" class="ideas__label ideas__label_list">На рассмотрении
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-4" class="ideas__checkbox" />
+                        <label for="checkbox-list-4" class="ideas__label ideas__label_list">Внедрено
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-5" class="ideas__checkbox" />
+                        <label for="checkbox-list-5" class="ideas__label ideas__label_list">Отклонено
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-6" class="ideas__checkbox" />
+                        <label for="checkbox-list-6" class="ideas__label ideas__label_list">Принята на внедрение
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-7" class="ideas__checkbox" />
+                        <label for="checkbox-list-7" class="ideas__label ideas__label_list">Лучшая практика
+                        </label>
+                    </li>
+                    <li class="ideas__item">
+                        <input type="checkbox" id="checkbox-list-8" class="ideas__checkbox" />
+                        <label for="checkbox-list-8" class="ideas__label ideas__label_list">Повтор идеи (отклонено)
+                        </label>
+                    </li>
+                </ul>
+                <input type="checkbox" id="checkbox-idea-1" class="ideas__checkbox" />
+                <label for="checkbox-idea-1" class="ideas__label">Ответственный за внедрение
+                </label>
+                <input type="checkbox" id="checkbox-idea-2" class="ideas__checkbox" />
+                <label for="checkbox-idea-2" class="ideas__label">Мои идеи
+                </label>
+                <button class="btn ideas__btn">Искать
+                </button>
+            </form>
+            <div class="content-ideas">
+                <form class="idea-edit">
+                    <input type="text" name="theme" placeholder="Какой-то текст" class="idea-edit__input idea-edit__input_width-full" />
+                    <textarea placeholder="Какой-то текст" class="idea-edit__text"></textarea>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Номер заявки в СУЗ:</span>
+                        <input type="text" name="theme" class="idea-edit__input" />
+                    </label>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Статус:</span>
+                        <select class="categories idea-edit__category js-categories" style="width:69%">
+                            <optgroup label="Group Name">
+                                <option class="categories__item">Категория 1
+                                </option>
+                            </optgroup>
+                            <option class="categories__item">Категория 2
+                            </option>
+                            <option class="categories__item">Категория 3
+                            </option>
+                            <option class="categories__item">Категория 4
+                            </option>
+                            <option class="categories__item">Категория 5
+                            </option>
+                            <option class="categories__item">Категория 2
+                            </option>
+                            <option class="categories__item">Категория 3
+                            </option>
+                            <option class="categories__item">Категория 4
+                            </option>
+                            <option class="categories__item">Категория 5
+                            </option>
+                        </select>
+                    </label>
+                    <label class="idea-edit__label"><span class="idea-edit__label-text">Эффективность:</span>
+                        <input type="text" name="theme" class="idea-edit__input" />
+                    </label>
+                    <div class="idea-edit__btns">
+                        <input type="checkbox" name="anon" id="edit-1" class="idea-edit__checkbox" />
+                        <label for="edit-1" class="idea-edit__label-checkbox">Анонимно
+                        </label>
+                        <button class="btn idea-edit__btn">Сохранить
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -496,5 +586,5 @@
     <script src="static/js/separate-js/slick.js"></script>
     <script src="static/js/separate-js/packery-docs.min.js"></script>
     <script src="static/js/separate-js/select2.min.js"></script>
-    <script src="static/js/mainbyohxrjxlxr.min.js"></script>
+    <script src="static/js/main.min.js"></script>
 </body>
