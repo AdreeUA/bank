@@ -4,6 +4,14 @@
     font-size: rem(14);
     color: $main-color;
 
+    &_center {
+        float: none;
+
+        .pagination__list {
+            justify-content: center;
+        }
+    }
+
     &__list{
         margin: 0;
         padding: 0;

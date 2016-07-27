@@ -1,0 +1,20 @@
+include ../news-btn/news-btn
+include ../shop-item/shop-item
+include ../pagination/pagination
+
+mixin content-shop(data)
+    +b.content-shop&attributes(attributes)
+
+        - var btns = [];
+        - btns.push({text: "Популярное", link: "#"});
+        - btns.push({text: "Поддержка здорового образа жизни", link: "#"});
+        - btns.push({text: "Социальная функция (семья)", link: "#"});
+        - btns.push({text: "Техника и коммуникации", link: "#"});
+
+        +news-btn(btns)._shop
+
+        +e.list
+            - for(var i = 0; i < 6; i++)
+                +shop-item.__item
+
+        +pagination._center

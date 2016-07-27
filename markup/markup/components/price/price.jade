@@ -1,0 +1,30 @@
+include ../btn/btn
+
+mixin price(data)
+    +b.price&attributes(attributes)
+
+        +e.title Выбрать номинал
+
+        -for (var i = 0; i < 5; i++ )
+
+            +e.INPUT.radio(type="radio"
+                            name="price"
+                            id="radio-price-#{i}")
+
+            +e.LABEL.label(for="radio-price-#{i}") #{i+1}000
+
+
+        +e.INPUT.radio(type="radio"
+        name="price"
+        id="radio-price-7")
+        +e.LABEL.label_select(for="radio-price-7")
+
+            +e.SELECT.select.js-categories(style="width:80px")
+                +e.OPTION.select-item 5000
+                +e.OPTION.select-item 6000
+                +e.OPTION.select-item 7000
+                +e.OPTION.select-item 10000
+                +e.OPTION.select-item 15000
+                +e.OPTION.select-item 20000
+
+        +btn.__btn Заказать

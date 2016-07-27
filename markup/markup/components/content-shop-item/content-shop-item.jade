@@ -1,0 +1,15 @@
+include ../price/price
+
+mixin content-shop-item(data)
+    +b.content-shop-item&attributes(attributes)
+        h1 Оформление заказа
+        +e.H2.subtitle Sportmaster
+
+        +e.inner
+            +e.image-wrap
+                +e.IMG.img(src="__static__img/content/spormaster.png")
+
+            +e.content
+                +price
+
+        +e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ab tenetur unde necessitatibus ut libero quam vel, tempore aut et veritatis repellendus, iste delectus harum ratione accusamus ipsam. Adipisci commodi rem similique earum perferendis ut harum, consequuntur facilis odio soluta maiores unde consequatur ullam animi assumenda, ex est architecto vero.

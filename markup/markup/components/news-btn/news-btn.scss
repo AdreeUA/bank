@@ -4,7 +4,22 @@
 
     list-style-type: none;
     text-align: center;
-    color: #939598;;
+    color: #939598;
+
+    &_shop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .news-btn__item {
+            min-width: 49%;
+            margin-bottom: rem(8);
+
+            &:not(:nth-of-type(odd)) {
+                margin-left: 1%;
+            }
+        }
+    }
 
     &__item{
         display: inline-block;

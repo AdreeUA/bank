@@ -1,0 +1,72 @@
+.price {
+
+    &__title {
+        margin-bottom: rem(20);
+
+        color: $title-color;
+    }
+
+    &__label {
+        position: relative;
+
+        display: block;
+        padding-left: rem(25);
+        margin: rem(7) rem(15) rem(15) 0;
+
+        font-size: rem(14);
+        color: $main-color;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            left: 0;
+
+            width: rem(18);
+            height: rem(18);
+            border: rem(1) solid;
+
+            border-radius: 50%;
+            content: '';
+        }
+
+        &::after {
+            position: absolute;
+            left: rem(5);
+            top: rem(5);
+
+            width: rem(8);
+            height: rem(8);
+
+            background-color: $hover-color;
+            border-radius: 50%;
+            opacity: 0;
+
+            content: '';
+        }
+
+        &_select {
+            &::before,
+            &::after {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__radio{
+        display: none;
+
+        &:checked + .price__label::after{
+            opacity: 1;
+            transition: all .3s;
+        }
+    }
+
+    .select2 {
+        margin-left: rem(3);
+    }
+
+    &__btn {
+        min-width: rem(150);
+    }
+}

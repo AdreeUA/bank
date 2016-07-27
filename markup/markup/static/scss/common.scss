@@ -9,6 +9,9 @@ html{
 }
 
 .page {
+    display: flex;
+    flex-direction: column;
+
     //font-family: 'Calibri-light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-family: PFBeauSansPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: rem(18);
@@ -16,9 +19,13 @@ html{
 }
 
 .page__wrapper {
+    flex: 1 0 auto;
+
     padding-top: rem(34);
     min-height: 100%;
     min-width: 1185px;
+
+    @include clearfix;
 }
 
 *, *::before, *::after {

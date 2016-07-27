@@ -1,0 +1,9 @@
+include ../btn/btn
+
+mixin shop-item(data)
+    +b.shop-item&attributes(attributes)
+        +e.inner
+            +e.title Спортмастер
+            +e.image-wrap
+                +e.IMG.img(src="__static__img/content/spormaster.png")
+            +btn.__btn Заказать

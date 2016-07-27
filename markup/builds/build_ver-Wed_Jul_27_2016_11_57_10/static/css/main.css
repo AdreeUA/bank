@@ -484,15 +484,38 @@ html {
 }
 
 .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: PFBeauSansPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   padding: 0 0.9375rem;
 }
 
 .page__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   padding-top: 2.125rem;
   min-height: 100%;
   min-width: 1185px;
+}
+
+.page__wrapper:before, .page__wrapper:after {
+  display: table;
+  content: "";
+}
+
+.page__wrapper:after {
+  clear: both;
+}
+
+.lt-ie8 .page__wrapper {
+  zoom: 1;
 }
 
 *, *::before, *::after {
@@ -1546,6 +1569,7 @@ img {
 
 .btn:hover {
   background-color: #DA002E;
+  text-decoration: none;
 }
 
 .btn:hover::before {
@@ -2087,6 +2111,46 @@ img {
   text-align: center;
 }
 
+.content-shop__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 0.625rem;
+}
+
+.content-shop__item {
+  width: 33%;
+}
+
+.content-shop-item__inner {
+  margin-bottom: 0.9375rem;
+}
+
+.content-shop-item__subtitle {
+  color: #39A9DC;
+}
+
+.content-shop-item__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-shop-item__image-wrap {
+  width: 45%;
+}
+
+.content-shop-item__img {
+  width: 100%;
+}
+
+.content-shop-item__content {
+  width: 51%;
+  margin-left: 4%;
+}
+
 .content-structure {
   float: right;
   width: 75%;
@@ -2367,6 +2431,9 @@ img {
 }
 
 .footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   padding: 0.875rem 0;
   margin-top: 1.25rem;
   font-size: 0.8125rem;
@@ -3712,6 +3779,26 @@ img {
   color: #939598;
 }
 
+.news-btn_shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news-btn_shop .news-btn__item {
+  min-width: 49%;
+  margin-bottom: 0.5rem;
+}
+
+.news-btn_shop .news-btn__item:not(:nth-of-type(odd)) {
+  margin-left: 1%;
+}
+
 .news-btn__item {
   display: inline-block;
   vertical-align: top;
@@ -4121,6 +4208,16 @@ img {
   color: #808080;
 }
 
+.pagination_center {
+  float: none;
+}
+
+.pagination_center .pagination__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .pagination__list {
   margin: 0;
   padding: 0;
@@ -4199,6 +4296,67 @@ img {
   border-left-color: #808080;
   -webkit-transform: translate(-25%, -50%);
           transform: translate(-25%, -50%);
+}
+
+.price__title {
+  margin-bottom: 1.25rem;
+  color: #39A9DC;
+}
+
+.price__label {
+  position: relative;
+  display: block;
+  padding-left: 1.5625rem;
+  margin: 0.4375rem 0.9375rem 0.9375rem 0;
+  font-size: 0.875rem;
+  color: #808080;
+  cursor: pointer;
+}
+
+.price__label::before {
+  position: absolute;
+  left: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 0.0625rem solid;
+  border-radius: 50%;
+  content: '';
+}
+
+.price__label::after {
+  position: absolute;
+  left: 0.3125rem;
+  top: 0.3125rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #DA002E;
+  border-radius: 50%;
+  opacity: 0;
+  content: '';
+}
+
+.price__label_select::before, .price__label_select::after {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.price__radio {
+  display: none;
+}
+
+.price__radio:checked + .price__label::after {
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.price .select2 {
+  margin-left: 0.1875rem;
+}
+
+.price__btn {
+  min-width: 9.375rem;
 }
 
 .reviews-block-container {
@@ -4653,6 +4811,48 @@ img {
   height: 11px;
   background-size: 179px, 179px;
   background-repeat: no-repeat;
+}
+
+.shop-item {
+  display: inline-block;
+  padding: 0.625rem;
+  text-align: center;
+  color: #39A9DC;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.shop-item:hover {
+  color: #DA002E;
+}
+
+.shop-item__inner {
+  padding: 0.625rem;
+  border: 0.0625rem solid #bcbec0;
+  border-radius: 0.3125rem;
+}
+
+.shop-item__title {
+  margin-bottom: 0.9375rem;
+  font-size: 1.5625rem;
+  text-align: center;
+}
+
+.shop-item__image-wrap {
+  margin-bottom: 0.9375rem;
+  overflow: hidden;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+
+.shop-item__img {
+  display: inline-block;
+  vertical-align: top;
+  height: 11.25rem;
+}
+
+.shop-item__btn {
+  width: 100%;
 }
 
 .slider-large {

@@ -1,0 +1,12 @@
+.content-shop {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: rem(10);
+    }
+
+    &__item {
+        width: 33%;
+    }
+}

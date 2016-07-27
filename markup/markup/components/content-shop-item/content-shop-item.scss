@@ -1,0 +1,31 @@
+.content-shop-item {
+
+    &__inner {
+        margin-bottom: rem(15);
+    }
+    
+    &__subtitle {
+        color: $title-color;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__image-wrap {
+        width: 45%;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__content {
+        width: 51%;
+        margin-left: 4%;
+        //padding: rem(10);
+        //border: rem(1) solid $border-color;
+        //
+        //border-radius: rem(5);
+    }
+}

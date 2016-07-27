@@ -18,6 +18,7 @@
 
     &:hover{
         background-color: $hover-color;
+        text-decoration: none;
 
         &::before {
             @include bg($icon-checked);
