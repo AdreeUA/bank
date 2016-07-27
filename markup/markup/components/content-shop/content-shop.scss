@@ -3,10 +3,12 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin-bottom: rem(10);
     }
 
     &__item {
-        width: 33%;
+        width: calc(33% - .25rem);
+        margin-bottom: rem(8);
     }
 }
