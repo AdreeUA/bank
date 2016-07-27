@@ -1,5 +1,21 @@
 .content-shop {
 
+    &__header {
+        display: flex;
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 75%;
+    }
+
+    &__basket {
+        width: 25%;
+        padding: rem(5) rem(5) rem(5) rem(15);
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;

@@ -1,0 +1,45 @@
+.basket {
+    padding: rem(5);
+    width: rem(196);
+    border: rem(1) solid $border-color;
+
+    color: $main-color;
+    font-size: rem(14);
+    text-align: center;
+
+    background-color: #fff;
+    border-radius: rem(5);
+
+    &_fixed {
+        position: fixed;
+        top: rem(15);
+        z-index: 20;
+    }
+    
+    &__title {
+        margin-bottom: rem(7);
+
+        color: $hover-color;
+    }
+
+    &__current-ball {
+        margin-bottom: rem(7);
+
+        text-align: center;
+    }
+
+    &__link {
+        display: block;
+        border: rem(1) solid $border-color;
+        padding: rem(3) rem(4);
+
+        background-color: #fff;
+        border-radius: rem(5);
+        color: inherit;
+
+        &:hover{
+            text-decoration: none;
+            background-color: rgba(#bcbec0, .3);
+        }
+    }
+}

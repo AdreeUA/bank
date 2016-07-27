@@ -1,6 +1,7 @@
 include ../news-btn/news-btn
 include ../shop-item/shop-item
 include ../pagination/pagination
+include ../basket/basket
 
 mixin content-shop(data)
     +b.content-shop&attributes(attributes)
@@ -11,7 +12,11 @@ mixin content-shop(data)
         - btns.push({text: "Социальная функция (семья)", link: "#"});
         - btns.push({text: "Техника и коммуникации", link: "#"});
 
-        +news-btn(btns)._shop
+        +e.header
+            +e.nav
+                +news-btn(btns)._shop
+            +e.basket
+                +basket.js-basket
 
         +e.list
             - for(var i = 0; i < 6; i++)
