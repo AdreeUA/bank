@@ -494,6 +494,7 @@ html {
   font-family: PFBeauSansPro, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   padding: 0 0.9375rem;
+  overflow-x: hidden;
 }
 
 .page__wrapper {
@@ -5110,6 +5111,14 @@ img {
   display: block;
 }
 
+.structure-box_active > .structure-box__item_active {
+  display: block;
+}
+
+.structure-box_active > .structure-box__item_active > .structure-box__icon::before {
+  content: '\2212';
+}
+
 .structure-box_active .structure-box__link {
   color: #808080;
   font-weight: bold;
@@ -5120,6 +5129,10 @@ img {
 }
 
 .structure-box__item_root {
+  display: block;
+}
+
+.structure-box__item_active {
   display: block;
 }
 

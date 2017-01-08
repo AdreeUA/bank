@@ -12,6 +12,16 @@
             display: block;
         }
 
+        > .structure-box__item_active {
+            display: block;
+
+            > .structure-box__icon {
+                &::before{
+                    content: '\2212';
+                }
+            }
+        }
+
         .structure-box__link {
             color: $main-color;
             font-weight: bold;
@@ -24,6 +34,16 @@
 
         &_root {
             display: block;
+        }
+
+        &_active {
+            display: block;
+
+            //> .structure-box__icon {
+            //    &::before{
+            //        content: '\2212';
+            //    }
+            //}
         }
     }
 

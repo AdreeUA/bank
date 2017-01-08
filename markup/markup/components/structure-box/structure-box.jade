@@ -20,13 +20,19 @@ mixin structure-box(data)
             else
                 - var root = ''
 
+            if (ent.iconActive)
+                - var iconActive = '_active'
+            else
+                - var iconActive = ''
+
             +e.item(class="#{root}")
 
                 if (ent.submenu)
 
-                    +e.SPAN.icon
+                    +e.SPAN.icon(class="#{iconActive}")
 
-                    A.structure-box__link(class="#{activeClass} #{hasChild}"
+
+                    A.structure-box__link(class="#{activeClass} #{hasChild} #{iconActive}"
                     href="#{ent.link}")
 
                         | #{ent.title}

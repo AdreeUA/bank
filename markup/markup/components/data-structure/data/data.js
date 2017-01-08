@@ -4,7 +4,7 @@ data = {structure: {
             title: "СТРАТЕГИЯ БАНКА",
             link: "#",
             root: true,
-            active: true,
+            // active: true,
             plus: true,
             submenu: [
                 {
@@ -43,7 +43,8 @@ data = {structure: {
                                 },
                                 {
                                     title: "Заголовок третьего уровня 1",
-                                    link: "#"
+                                    link: "#",
+                                    active: true
                                 }
                             ]
                         },
@@ -198,7 +199,7 @@ data = {structure: {
                             link: "#"
                         },
                         {
-                            title: "Заголовок третьего уровня 1",
+                            title: "Заголовок третьего уровня 1 qweweq",
                             link: "#",
                             plus: true,
                             submenu:[
